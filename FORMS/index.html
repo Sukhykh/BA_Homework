@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework_Forms</title>
+        <link rel="icon" type="image/x-icon" href="./img/icons8-futurama-bender-48.png">
+        
+        <link rel="stylesheet" href="./styles/styles.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header style="display: flex; flex-direction: column;">
+
+            <div class="header">
+                <div class="BA_container">
+                    <a href="https://beetroot.academy/" target="_blank">
+                        <img src="./img/1200px-Beetroot_Logo_140x50px.svg.png" alt="Beetroot_logo" width="100px" height="100%">
+                    </a>
+                </div>
+                
+                <div style="align-self: center; color: white;">
+                    AND
+                </div>
+                
+                <div class="SKI_container">
+                    <a style="text-decoration: none; color: #1C1C1C;" href="../CV/index.html" target="_blank;">Kostiantyn Sukhykh</a>
+                </div>
+
+                <div style="align-self: center; color: white; margin-right: 40px;">
+                    REPRESENT:
+                </div>
+            </div>
+
+            <h1 style="align-self: center;">FORMS</h1>
+
+            <nav class="menu">
+                <div class="menu_position">
+                    <a style="text-decoration: none; color: #1C1C1C;" href="#form_1">Form 1: Create an Account</a>
+                </div>
+                <div class="menu_position">
+                    <a style="text-decoration: none; color: #1C1C1C;" href="#form_2">Form 2: Profile</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="display: flex; flex-direction: column;">
+            <div class="form">
+                <form action="#" method="get" autocomplete="off" target="_blank">
+                    <h2 style="margin: 35px 0px 0px 35px;" id="form_1">Create an Account</h2>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 20px 35px;">
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="First Name 1">First Name</label>
+                            <input type="text" minlength="3" name="First Name" id="First Name 1" value="First Name" placeholder="Input your First Name here" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="Last Name 1">Last Name</label>
+                            <input type="text" minlength="3" name="Last Name" id="Last Name 1" value="Last Name" placeholder="Input your Last Name here" required>
+                        </div>                    
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 92px; width: 500px; margin: 0px 35px;">
+                        <label class="label" for="E-mail 1">E-mail</label>
+                        <input type="email" minlength="3" name="E-mail" id="E-mail 1" value="test@test.com" placeholder="Input your E-mail here" required autofocus>
+                        <p class="paragraf">
+                            We'll never share your email with anyone else.
+                        </p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; height: 22px; margin: 20px 35px 0px 35px;;">
+                        <div>
+                            <input type="radio" name="Gender" id="Male" value="Male">
+                            <label class="label" for="Male">Male</label>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <input type="radio" name="Gender" id="Female" value="Female">
+                            <label class="label" for="Female">Female</label>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 20px 35px;">
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="Country 1">Country</label>
+                            <select name="Country" id="Country 1" value="Ukraine">
+                                <optgroup label="Europe">
+                                    <option value="Poland">Poland</option>
+                                    <option value="Ukraine" selected>Ukraine</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                </optgroup>
+                                <optgroup label="North America">
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="City">City</label>
+                            <input type="text" minlength="3" name="City" id="City" value="Kyiv" placeholder="Input your City here">
+                        </div>
+                    </div>
+                    <button class="button_1" type="submit">
+                        Sign Up
+                    </button>
+                </form>
+                <div style="align-self: center; width: 400px; margin: 20px 0px;">
+                    <p class="paragraf" style="text-align: center;">
+                        By clicking the 'Sign Up' button, you confirm that you accept our 
+                        <span><a href="terms.html" target="_blank">Terms of Use</a></span>
+                        and
+                        <span><a href="policy.html" target="_blank">Privacy Policy</a></span>
+                    </p>
+                </div>
+                <div style="align-self: center; margin-top: 20px;">
+                    <div style="width: 177; display: flex; flex-direction: row;">
+                        <p class="paragraf">Have an account?</p>
+                        <p style="margin-left: 20px;" class="paragraf"><span><a href="login.html" target="_blank">Log In</a></span></p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="form">
+                <form action="#" method="PUT" autocomplete="off" target="_blank">
+                    <h2 style="margin: 35px 0px 0px 35px;" id="form_2">Profile</h2>
+                    <div style="display: flex; flex-direction: row; margin: 20px 35px 0px 35px;">
+                        <img src="./img/icons8-futurama-bender-240.png" alt="photo" width="80px" height="80px" class="border">
+                        <div style="display: flex; flex-direction: column; justify-content: center; margin: 0px 20px;">
+                            <input type="file" name="photo" accept="image/*" id="Photo" style="border: 1px solid #1C1C1C; border-radius: 2px;">
+                            <label class="paragraf" for="Photo">Up to 1 MB (300x300 px)</label>
+                        </div>
+                        <div style="display: flex; flex-direction: column; margin-top: 20px;">
+                            <button style="width: 30px; height: 30px;" type="reset">X</button>
+                        </div>
+                    </div>
+                </form>   
+
+                <form action="#" method="PUT" autocomplete="off" target="_blank">
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 20px 35px;">
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="Name">Name</label>
+                            <input type="text" minlength="3" name="Name" id="Name" value="Name"
+                                placeholder="Input your Name here" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="E-mail 2">E-mail</label>
+                            <input type="email" minlength="3" name="E-mail" id="E-mail 2" value="test@test.com" placeholder="Input your E-mail here"
+                                required>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 20px 35px;">
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="Country 2">Country</label>
+                            <select name="Country" id="Country 2" value="Ukraine">
+                                <optgroup label="Europe">
+                                    <option value="Poland">Poland</option>
+                                    <option value="Ukraine" selected>Ukraine</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                </optgroup>
+                                <optgroup label="North America">
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="City 2">City</label>
+                            <input type="text" minlength="3" name="City" id="City 2" value="Kyiv" placeholder="Input your City here">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 20px 35px;">
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="Zip Code">Zip Code</label>
+                            <input type="password" minlength="3" name="pass" id="Zip Code" value="123456789" placeholder="Input your Zip Code here" required>
+                        </div>
+                        <div style="display: flex; flex-direction: column; height: 67px; width: 245px;">
+                            <label class="label" for="Phone Number">Phone Number</label>
+                            <input type="tel" minlength="3" name="Phone Number" id="Phone Number" value="380123456789"
+                                placeholder="Input your Phone Number here" required>
+                        </div>
+                    </div>
+                    <button class="button_2" type="submit">
+                        Update
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <footer style="display: flex; flex-direction: column; margin-top: 20px;">
+            <nav class="menu">
+                <div class="menu_position">
+                    <a style="text-decoration: none; color: #1C1C1C;" href="#form_1">Form 1: Create an Account</a>
+                </div>
+                <div class="menu_position">
+                    <a style="text-decoration: none; color: #1C1C1C;" href="#form_2">Form 2: Profile</a>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>
