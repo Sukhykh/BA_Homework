@@ -23,6 +23,12 @@
         It`s contains an ugly site about project IT-Generation
       </p>
       
+      <h1> 03_FORMS </h1>
+      <p>
+        This is the homework from lesson 6. <br>
+        It`s contains a few forms without backend
+      </p>
+      
     </main>
   </body>
 </html>
