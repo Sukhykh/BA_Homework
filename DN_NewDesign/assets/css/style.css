@@ -112,6 +112,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.skill_img_mb_25 {
+    margin-bottom: 25px;
+}
 
 .portfolio_mb_70 {
     margin-bottom: 70px;
