@@ -45,6 +45,7 @@ a:active {
 
 a {
     font-weight: 400;
+    font-size: 16px;
     line-height: 28px;
     text-decoration: none;
 }
@@ -52,6 +53,7 @@ a {
 .button__header {
     min-width: 110px;
     font-weight: 600;
+    font-size: 16px;
     line-height: 20px;
 }
 
@@ -59,6 +61,7 @@ a {
     font-family: 'Poppins', sans-serif;
     min-width: 180px;
     font-weight: 700;
+    font-size: 16px;
     line-height: 24px;
 }
 
@@ -86,6 +89,7 @@ h3 {
 /*second lvl title section 3, 5 */ 
 h4 {
     font-weight: 700;
+    font-size: 16px;
 }
 
 /*footr only*/ 
@@ -95,23 +99,28 @@ h5 {
     line-height: 30px;
 }
 
+/* main text */
+p {
+    font-size: 16px;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    font-size: 0;
 }
 header .container {
-    margin-top: 17px;
-    margin-bottom: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 0;
 }
 
-.img__cover {
-    display: inline-block;
+img {
     vertical-align: top;
 }
 
-header .img__cover {
-    display: inline-block;
+header img {
     padding: 7px 0;
 }
 
