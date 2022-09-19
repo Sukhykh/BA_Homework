@@ -222,7 +222,7 @@ hr + .container {
 .footer_list {
     display: inline-block;
     vertical-align: middle;
-    max-width: 135px;
+    min-width: 135px;
 }
 
 footer .container .footer_list ul li a {
