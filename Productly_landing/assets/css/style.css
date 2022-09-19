@@ -256,3 +256,10 @@ form {
 hr + .container > * ~ * {
     margin-left: 130px;
 }
+
+/* section__content */
+
+.section__content {
+    display: inline-block;
+    vertical-align: middle;
+}
