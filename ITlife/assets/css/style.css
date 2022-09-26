@@ -116,6 +116,7 @@ body {
     font-size: 34px;
     line-height: 41px;
     letter-spacing: 0.13em;
+    color: #3c3c3c;
 }
 
 .who-we-are__line {
@@ -265,7 +266,7 @@ body {
 .footer-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
     justify-content: center;
     align-items: center;
 }

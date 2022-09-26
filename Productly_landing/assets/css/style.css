@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     line-height: 26px;
     color: #544837;
@@ -11,15 +11,21 @@ body {
 
 * {
     box-sizing: border-box;
-    transition: all .1s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 /* text color */
-h1, h2, h3, h4, h5, a {
-    color: #2F281E;
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    color: #2f281e;
 }
-a:hover, a:active {
-    color: #FF9900;
+a:hover,
+a:active {
+    color: #ff9900;
 }
 
 /* buttons & links */
@@ -29,12 +35,12 @@ button {
     text-align: center;
     border: 1px solid #ff9900;
     border-radius: 4px;
-    background-color: #FF9900;
+    background-color: #ff9900;
 }
 
 button:hover {
-    border: 1px solid #BCD0E5;
-    color: #2F281E;
+    border: 1px solid #bcd0e5;
+    color: #2f281e;
     background-color: #fff;
 }
 
@@ -58,7 +64,7 @@ a {
 }
 
 .button__site {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     min-width: 180px;
     font-weight: 700;
     font-size: 16px;
@@ -79,21 +85,21 @@ h2 {
     line-height: 44px;
 }
 
-/* second lvl title section 2 */ 
+/* second lvl title section 2 */
 h3 {
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
-    margin: 30px 0 16px 0;  
+    margin: 30px 0 16px 0;
 }
 
-/*second lvl title section 3, 5 */ 
+/*second lvl title section 3, 5 */
 h4 {
     font-weight: 700;
     font-size: 16px;
 }
 
-/*footr only*/ 
+/*footr only*/
 h5 {
     font-weight: 700;
     font-size: 20px;
@@ -120,7 +126,7 @@ header .container {
     font-size: 0;
 }
 
-header div nav, 
+header div nav,
 header div nav ul li {
     display: inline-block;
     vertical-align: middle;
@@ -206,8 +212,10 @@ section > .container {
 /* footer */
 
 hr {
-   border: 1 solid rgba(188, 208, 229, 0.496913);
-   margin-bottom: 70px;
+    border: none;
+    background: rgba(188, 208, 229, 0.496913);
+    margin-bottom: 70px;
+    height: 1px;
 }
 
 hr + .container {
@@ -216,7 +224,7 @@ hr + .container {
 
 .img__container__footer {
     display: inline-block;
-    vertical-align: top;    
+    vertical-align: top;
 }
 
 .footer_list {
@@ -243,14 +251,14 @@ form {
 .input__menu {
     display: inline-block;
     margin-bottom: 25px;
-    border: 1px solid #BCD0E5;
+    border: 1px solid #bcd0e5;
     border-radius: 4px;
-    padding: 15px 0 15px 10px;
+    padding: 15px 10px;
     min-width: 340px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #BCD0E5;
+    color: #bcd0e5;
 }
 
 hr + .container > * ~ * {
