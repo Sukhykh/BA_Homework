@@ -1,3 +1,122 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --text: #000;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4.8rem;
+    color: var(--text);
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__container {
+    margin: 13px auto;
+}
+
+.header-content {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content__navigation-block {
+    display: inline-flex;
+    gap: 50px;
+}
+.language-bottom__link {
+    text-decoration: none;
+    font-family: "Tourney", cursive;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    letter-spacing: 0.04rem;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.nav__menu {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.nav__link {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Staatliches", cursive;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.03rem;
+    color: var(--text);
+}
+
+.main-content {
+    margin-top: 70px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.main-content__block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.chapter {
+    margin-left: 10px;
+    font-family: "Farro", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.04rem;
+}
+
+.text__italic {
+    font-style: italic;
+}
+
+.text__underline {
+    text-decoration: underline;
+}
+
+.text__bold {
+    font-weight: 700;
+}
+
+.text__mark {
+    background-color: #dadada;
+}
