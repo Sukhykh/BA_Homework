@@ -212,6 +212,7 @@ body {
     border-radius: 5px;
     width: 38px;
     height: 38px;
+    padding: 9px;
 }
 
 .link-item_icon {
@@ -220,4 +221,8 @@ body {
 
 .link-item:hover .ink-item_icon {
     fill: var(--siteGreen);
+}
+
+.svg-container--footer {
+    height: 100%;
 }
