@@ -218,7 +218,7 @@ h1 {
 .card-back__sector {
     padding: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* or colum */
     align-items: baseline;
     z-index: 1;
 }
@@ -233,6 +233,7 @@ h1 {
 
     text-transform: uppercase;
     margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .card-back__title--black {
