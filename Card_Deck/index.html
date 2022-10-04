@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Lesson 14</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__content">
+                    <div class="header-icon">
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#clubs"
+                            ></use>
+                        </svg>
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#diamonds"
+                            ></use>
+                        </svg>
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#spades"
+                            ></use>
+                        </svg>
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#hearts"
+                            ></use>
+                        </svg>
+                    </div>
+                    <h1 class="header__title">Card deck flipper</h1>
+                    <div class="header-icon">
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#hearts"
+                            ></use>
+                        </svg>
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#spades"
+                            ></use>
+                        </svg>
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#diamonds"
+                            ></use>
+                        </svg>
+                        <svg class="header-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#clubs"
+                            ></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container container">
+                <div class="content">
+                    <div class="card">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >a</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >a</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-05">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-1">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-15">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-2">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-25">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-3">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-35">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-4">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-45">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >J</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >J</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-45">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >Q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >Q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-4">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >K</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >K</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#clubs"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-35">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >A</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >A</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-3">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-25">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-2">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-15">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-1">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-05">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-05">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-1">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-15">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >j</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >j</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-2">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-25">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >k</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >k</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#diamonds"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-3">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >a</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >a</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-35">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-4">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-45">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-45">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-4">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-35">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-3">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-25">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-2">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >j</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >j</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-15">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-1">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--red">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >k</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--black"
+                                    >k</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#spades"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-05">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >a</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >a</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >2</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-05">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >3</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-1">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >4</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-15">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >5</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-2">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >6</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-25">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >7</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-3">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >8</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-35">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >9</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-4">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >10</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-45">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >j</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >j</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >q</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card animation-delay-45">
+                        <div class="card-face">
+                            <img
+                                class="card-face__img"
+                                src="assets/img/Dragon-face.png"
+                                alt="Dragon"
+                            />
+                        </div>
+                        <div class="card-back">
+                            <svg class="card-back__img card-back__img--black">
+                                <use
+                                    class="svg-link"
+                                    xlink:href="assets/img/sprite.svg#goku"
+                                ></use>
+                            </svg>
+                            <div class="card-back__sector">
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >k</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div
+                                class="card-back__sector card-back__sector--rotation"
+                            >
+                                <span
+                                    class="card-back__title card-back__title--red"
+                                    >k</span
+                                >
+                                <div>
+                                    <svg class="card-back__suit">
+                                        <use
+                                            class="svg-link"
+                                            xlink:href="assets/img/sprite.svg#hearts"
+                                        ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <div class="footer-icon">
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#clubs"
+                            ></use>
+                        </svg>
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#diamonds"
+                            ></use>
+                        </svg>
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#spades"
+                            ></use>
+                        </svg>
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#hearts"
+                            ></use>
+                        </svg>
+                    </div>
+                    <h1 class="footer__title">Card deck flipper</h1>
+                    <div class="footer-icon">
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#hearts"
+                            ></use>
+                        </svg>
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#spades"
+                            ></use>
+                        </svg>
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#diamonds"
+                            ></use>
+                        </svg>
+                        <svg class="footer-icon__container">
+                            <use
+                                class="svg-link"
+                                xlink:href="assets/img/sprite.svg#clubs"
+                            ></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

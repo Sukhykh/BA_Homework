@@ -64,3 +64,8 @@ html {
     font-size: 38px;
     line-height: 40px;
 }
+
+.flip:hover {
+    transform: rotateY(180deg);
+    transition: 2s;
+}
