@@ -1,0 +1,47 @@
+.left-section {
+    &__foto-container {
+        position: relative;
+        margin: 15px;
+    }
+
+    &__photo {
+        width: auto;
+        max-height: 100%;
+        border: 1px solid $gold;
+    }
+
+    &__photo-angle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 2px solid $gold;
+
+        &--left-top {
+            top: -15px;
+            left: -15px;
+            border-bottom: transparent;
+            border-right: transparent;
+        }
+
+        &--right-top {
+            top: -15px;
+            right: -15px;
+            border-bottom: transparent;
+            border-left: transparent;
+        }
+
+        &--left-bottom {
+            bottom: -15px;
+            left: -15px;
+            border-top: transparent;
+            border-right: transparent;
+        }
+
+        &--right-bottom {
+            bottom: -15px;
+            right: -15px;
+            border-top: transparent;
+            border-left: transparent;
+        }
+    }
+}

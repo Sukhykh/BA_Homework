@@ -1,0 +1,16 @@
+/* Base resets */
+@import "normalize";
+@import "reset";
+
+/* General styles */
+@import "variables";
+@import "general";
+@import "mixins";
+
+/* Site styles */
+@import "head";
+@import "divider";
+@import "slider";
+@import "left-section";
+@import "right-section";
+@import "social-bar";

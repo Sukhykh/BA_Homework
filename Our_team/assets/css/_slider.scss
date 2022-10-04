@@ -1,0 +1,24 @@
+.slider {
+    position: relative;
+
+    &__container {
+        @include container;
+    }
+
+    &__contant {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 170px;
+        padding: 65px 70px;
+    }
+
+    &__middle-section {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: $gold;
+        display: inline-block;
+        right: 50%;
+    }
+}

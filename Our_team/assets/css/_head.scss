@@ -1,0 +1,38 @@
+.head {
+    text-align: center;
+
+    &__container {
+        @include container;
+    }
+
+    &__subtitle {
+        font-family: "Raleway", sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+        color: $sub-text;
+        text-transform: uppercase;
+
+        &--margin {
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+    }
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-size: 6rem;
+        line-height: 6.6rem;
+        font-weight: 900;
+        color: $gold;
+        text-transform: uppercase;
+
+        &--margin {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__divider {
+        margin-bottom: 40px;
+    }
+}

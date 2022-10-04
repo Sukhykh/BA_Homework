@@ -1,0 +1,41 @@
+.social-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid $social-icon;
+
+        padding: 7px 0;
+
+        &:hover .social-bar__icon {
+            fill: $gold;
+        }
+
+        &:hover {
+            border: 2px solid $gold;
+        }
+
+        &:active .social-bar__icon {
+            fill: $social-icon;
+        }
+
+        &:active {
+            border: 2px solid $social-icon;
+            background-color: $gold;
+        }
+    }
+
+    &__icon {
+        max-height: 100%;
+        width: auto;
+        fill: $social-icon;
+    }
+}

@@ -1,0 +1,24 @@
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 210px;
+        height: 2px;
+        background-color: $gold;
+    }
+
+    &__container {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+    &__link {
+        fill: $gold;
+    }
+}
