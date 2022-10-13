@@ -1,0 +1,17 @@
+.header {
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		padding: 38px 0;
+
+		@media screen and (max-width: $tablet) {
+			padding: 18px 0;
+		}
+	}
+
+	&__logo {
+		@include logo;
+	}
+}

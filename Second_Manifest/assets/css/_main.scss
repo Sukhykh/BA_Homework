@@ -1,0 +1,108 @@
+.first-screen {
+	@include mainMargin;
+	margin-top: 0;
+
+	@media screen and (max-width: $tablet) {
+		margin-top: 0;
+	}
+
+	&__container {
+		@include container;
+	}
+
+	&__title {
+		@include mainTitle;
+
+		&--margin {
+			margin-bottom: 70px;
+
+			@media screen and (max-width: $tablet) {
+				margin: 50px 0;
+			}
+
+			@media screen and (max-width: $mobile) {
+				margin: 0 0 40px 0;
+			}
+		}
+	}
+
+	&__img-wrapper {
+		@include imgWrapper;
+	}
+
+	&__img {
+		@include img;
+	}
+}
+
+.description {
+	@include mainMargin;
+
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		max-width: 570px;
+
+		@media screen and (max-width: $tablet) {
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		@include title;
+
+		&--margin {
+			margin-bottom: 50px;
+
+			@media screen and (max-width: $mobile) {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	&__text {
+		@include text;
+
+		& ~ p {
+			margin-top: 32px;
+		}
+	}
+}
+
+.site-section {
+	@include mainMargin;
+
+	&__container {
+		@include container;
+	}
+
+	&__title {
+		@include title;
+	}
+
+	&__img-wrapper {
+		@include imgWrapper;
+
+		&--margin {
+			margin: 50px 0 20px 0;
+
+			@media screen and (max-width: $mobile) {
+				margin-top: 40px;
+			}
+		}
+	}
+
+	&__img {
+		@include img;
+	}
+
+	&__text {
+		@include text;
+
+		& ~ p {
+			margin-top: 32px;
+		}
+	}
+}

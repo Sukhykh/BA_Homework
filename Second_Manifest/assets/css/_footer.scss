@@ -1,0 +1,103 @@
+.footer {
+	background-color: $footer;
+
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 20px;
+
+		@media screen and (max-width: $tablet) {
+			flex-direction: column;
+		}
+	}
+
+	&__left,
+	&__right {
+		width: 100%;
+	}
+
+	&__left-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (max-width: $tablet) {
+			align-items: center;
+		}
+
+		&--margin {
+			margin-top: 70px;
+		}
+
+		@media screen and (max-width: $tablet) {
+			margin-top: 50px;
+		}
+	}
+
+	&__title {
+		@include footerTitle;
+
+		&--margin {
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $tablet) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__tel {
+		display: inline-block;
+		text-decoration: none;
+
+		@include contacts;
+
+		&--margin {
+			margin-bottom: 27px;
+
+			@media screen and (max-width: $tablet) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__mail {
+		display: inline-block;
+		text-decoration: none;
+
+		@include contacts;
+	}
+
+	&__right-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+
+		@media screen and (max-width: $tablet) {
+			align-items: center;
+		}
+
+		&--margin {
+			margin-top: 125px;
+
+			@media screen and (max-width: $tablet) {
+				margin: 20px 0 10px 0;
+			}
+		}
+	}
+
+	&__copyright {
+		width: 100%;
+		text-align: center;
+
+		@include copyright;
+
+		&--padding {
+			padding: 30px 0 16px 0;
+		}
+	}
+}
