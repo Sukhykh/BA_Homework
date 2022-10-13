@@ -1,289 +1,313 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-    --site: rgb(193, 241, 193);
-    --text: rgb(1, 15, 7);
-    --white: white;
-    --card: bisque;
-    --black: #515262;
-    --red: #ff6464;
+	--site: rgb(193, 241, 193);
+	--text: rgb(1, 15, 7);
+	--white: white;
+	--card: bisque;
+	--black: #515262;
+	--red: #ff6464;
 }
 
 html {
-    background-color: var(--site);
-    font-size: 10px;
+	background-color: var(--site);
+	font-size: 10px;
 }
 
 body {
-    font-family: "Fruktur", cursive;
-    font-weight: 400;
+	font-family: 'Fruktur', cursive;
+	font-weight: 400;
 }
 
 .header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    background-color: var(--site);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+	background-color: var(--site);
 }
 
 .footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    z-index: 5;
-    background-color: var(--site);
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	z-index: 5;
+	background-color: var(--site);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .svg-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .footer__content,
 .header__content {
-    display: flex;
-    align-items: center;
-    gap: 5%;
+	display: flex;
+	align-items: center;
+	gap: 5%;
 
-    width: 100%;
+	width: 100%;
 
-    padding: 20px 0;
+	padding: 20px 0;
 }
 
 .footer-icon,
 .header-icon {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 }
 
 .footer-icon__container,
 .header-icon__container {
-    max-width: 25%;
-    max-height: 45px;
+	max-width: 25%;
+	max-height: 45px;
 }
 
 h1 {
-    color: var(--text);
-    font-size: 4rem;
-    line-height: 4.5rem;
-    min-width: 40%;
-    text-align: center;
-    text-transform: uppercase;
+	color: var(--text);
+	font-size: 4rem;
+	line-height: 4.5rem;
+	min-width: 40%;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .content {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
 }
 
 .card {
-    position: relative;
+	position: relative;
 
-    width: 124px;
-    height: 176px;
+	width: 124px;
+	height: 176px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    animation: rotation 5s linear infinite;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	-webkit-animation: rotation 5s linear infinite;
+	animation: rotation 5s linear infinite;
 }
 
 .card:hover {
-    animation: none;
+	-webkit-animation: none;
+	animation: none;
 }
 
 .card:hover .card-face {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .card:hover .card-back {
-    transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}
+
+@-webkit-keyframes rotation {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
 
 .animation-delay-05 {
-    animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
 .animation-delay-1 {
-    animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
 }
 .animation-delay-15 {
-    animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
 }
 .animation-delay-2 {
-    animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
 }
 .animation-delay-25 {
-    animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+	animation-delay: 2.5s;
 }
 .animation-delay-3 {
-    animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
 }
 .animation-delay-35 {
-    animation-delay: 3.5s;
+	-webkit-animation-delay: 3.5s;
+	animation-delay: 3.5s;
 }
 .animation-delay-4 {
-    animation-delay: 4s;
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s;
 }
 .animation-delay-45 {
-    animation-delay: 4.5s;
+	-webkit-animation-delay: 4.5s;
+	animation-delay: 4.5s;
 }
 
 /* card face */
 .card-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    border-radius: 8px;
-    backface-visibility: hidden;
-    transition: transform 2s cubic-bezier(0.51, -0.52, 0.56, 0.74);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+	border-radius: 8px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: transform 2s cubic-bezier(0.51, -0.52, 0.56, 0.74);
 }
 
 .card-face::before {
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-color: var(--card);
-    border-radius: 8px;
+	position: absolute;
+	content: '';
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: var(--card);
+	border-radius: 8px;
 }
 
 .card-face::after {
-    position: absolute;
-    content: "";
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border: 1px solid var(--text);
-    border-radius: 8px;
-    background-color: var(--white);
+	position: absolute;
+	content: '';
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border: 1px solid var(--text);
+	border-radius: 8px;
+	background-color: var(--white);
 }
 
 .card-face__img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 1;
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
 }
 
 /* card back */
 .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: var(--white);
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
+	border: 2px solid black;
+	border-radius: 8px;
+	background-color: var(--white);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
 
-    transition: transform 2s cubic-bezier(0.51, -0.52, 0.56, 0.74);
+	transition: transform 2s cubic-bezier(0.51, -0.52, 0.56, 0.74);
 }
 
 .card-back__sector {
-    padding: 5px;
-    display: flex;
-    flex-direction: row; /* or colum */
-    align-items: baseline;
-    z-index: 1;
+	padding: 5px;
+	display: flex;
+	flex-direction: row; /* or colum */
+	align-items: baseline;
+	z-index: 1;
 }
 
 .card-back__sector--rotation {
-    transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
 }
 
 .card-back__title {
-    font-size: 3rem;
-    line-height: 3rem;
+	font-size: 3rem;
+	line-height: 3rem;
 
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    margin-right: 5px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	margin-right: 5px;
 }
 
 .card-back__title--black {
-    color: var(--black);
+	color: var(--black);
 }
 
 .card-back__title--red {
-    color: var(--red);
+	color: var(--red);
 }
 
 .card-back__suit {
-    width: 20px;
-    height: 20px;
+	width: 20px;
+	height: 20px;
 }
 
 .card-back__img {
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    align-self: center;
-    justify-self: center;
-    z-index: 1;
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	align-self: center;
+	justify-self: center;
+	z-index: 1;
 }
 
 .card-back__img--black {
-    fill: var(--black);
+	fill: var(--black);
 }
 
 .card-back__img--red {
-    fill: var(--red);
+	fill: var(--red);
 }
 .card-back::before {
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-color: var(--white);
-    border-radius: 8px;
+	position: absolute;
+	content: '';
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: var(--white);
+	border-radius: 8px;
 }
 
 .card-back::after {
-    position: absolute;
-    content: "";
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background-color: var(--card);
-    border-radius: 8px;
-    border: 1px solid var(--text);
+	position: absolute;
+	content: '';
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	background-color: var(--card);
+	border-radius: 8px;
+	border: 1px solid var(--text);
 }

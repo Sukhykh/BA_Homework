@@ -1,0 +1,30 @@
+.blog {
+	@include mainMargin;
+
+	&__container {
+		@include container;
+	}
+
+	&__title {
+		@include redHat-400;
+
+		font-size: 4.8rem;
+		line-height: 6.4rem;
+		letter-spacing: 0.05em;
+		color: $black;
+
+		@media screen and (max-width: $mobileBig) {
+			text-align: center;
+		}
+
+		&--margin {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+}

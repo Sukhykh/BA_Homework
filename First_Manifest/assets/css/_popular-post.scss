@@ -1,0 +1,98 @@
+.popular-post {
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	width: 100%;
+	gap: 20px;
+
+	@media screen and (max-width: $tabletSmall) {
+		max-width: 100%;
+		gap: 25px;
+	}
+
+	&__img-wrapper {
+		width: 100%;
+	}
+
+	&__content {
+		max-width: 100%;
+	}
+
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	&__heading {
+		@include row-spaceBetween;
+
+		&--margin {
+			margin-bottom: 20px;
+
+			@media screen and (max-width: $tabletSmall) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__tag {
+		@include lato-400;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		letter-spacing: 0.1em;
+		color: $grey500;
+
+		@media screen and (max-width: $mobileBig) {
+			font-size: 1.6rem;
+			line-height: 2.7rem;
+		}
+	}
+
+	&__date {
+		@include lato-400;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		letter-spacing: 0.1em;
+		color: $grey500;
+
+		@media screen and (max-width: $mobileBig) {
+			font-size: 1.6rem;
+			line-height: 2.7rem;
+		}
+	}
+
+	&__title {
+		@include redHat-500;
+		font-size: 2.4rem;
+		line-height: 4rem;
+		letter-spacing: 0.1em;
+		color: $black;
+
+		@media screen and (max-width: $tabletBig) {
+			font-size: 2.2rem;
+			line-height: 3.7rem;
+		}
+
+		&--margin {
+			margin-bottom: 20px;
+
+			@media screen and (max-width: $tabletSmall) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__descr {
+		@include lato-400;
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+		letter-spacing: 0.05em;
+		color: $grey700;
+	}
+}

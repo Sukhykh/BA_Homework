@@ -1,0 +1,139 @@
+.footer {
+	background-color: $grey100;
+
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 20px;
+
+		@media screen and (max-width: $tabletBig) {
+			flex-direction: column;
+		}
+	}
+
+	&__left,
+	&__right {
+		width: 100%;
+	}
+
+	&__left-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (max-width: $tabletBig) {
+			align-items: center;
+		}
+
+		&--margin {
+			margin-top: 70px;
+		}
+
+		@media screen and (max-width: $tabletBig) {
+			margin-top: 50px;
+		}
+	}
+
+	&__title {
+		@include redHat-400;
+		font-size: 4.8rem;
+		line-height: 6.4rem;
+		letter-spacing: 0.05em;
+		color: $black;
+
+		&--margin {
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $tabletBig) {
+				margin-bottom: 20px;
+			}
+
+			@media screen and (max-width: $mobileBig) {
+				font-size: 3.2rem;
+				line-height: 4.2rem;
+			}
+		}
+	}
+
+	&__tel {
+		display: inline-block;
+		text-decoration: none;
+
+		@include lato-400;
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+		letter-spacing: 0.1em;
+		color: $black;
+
+		@media screen and (max-width: $mobileBig) {
+			font-size: 1.8rem;
+			line-height: 3rem;
+		}
+
+		&--margin {
+			margin-bottom: 27px;
+
+			@media screen and (max-width: $tabletBig) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__mail {
+		display: inline-block;
+		text-decoration: none;
+
+		@include lato-400;
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+		letter-spacing: 0.1em;
+		color: $black;
+
+		@media screen and (max-width: $mobileBig) {
+			font-size: 1.8rem;
+			line-height: 3rem;
+		}
+	}
+
+	&__right-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+
+		@media screen and (max-width: $tabletBig) {
+			align-items: center;
+		}
+
+		&--margin {
+			margin-top: 125px;
+
+			@media screen and (max-width: $tabletBig) {
+				margin: 20px 0 10px 0;
+			}
+		}
+	}
+
+	&__copyright {
+		width: 100%;
+		text-align: center;
+
+		@include lato-400;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		letter-spacing: 0.1em;
+		color: $black;
+
+		@media screen and (max-width: $mobileBig) {
+			font-size: 1.6rem;
+			line-height: 2.7rem;
+		}
+
+		&--padding {
+			padding: 30px 0 16px 0;
+		}
+	}
+}

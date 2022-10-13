@@ -1,0 +1,40 @@
+.arrow {
+	display: inline-block;
+	text-decoration: none;
+
+	transition: all 0.3s ease;
+	//transform-style: preserve-3d;
+	//perspective: 1000px;
+
+	&--margin {
+		margin-left: 30px;
+	}
+
+	&__title {
+		@include lato-400;
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+		letter-spacing: 0.05em;
+		color: $black;
+
+		display: inline-flex;
+		transform: scale(0);
+	}
+
+	&__img {
+		fill: $grey500;
+		transform: translateX(-85px);
+	}
+
+	&:hover,
+	&:active {
+		& .arrow__img {
+			fill: $black;
+			transform: translateX(0);
+		}
+
+		& .arrow__title {
+			transform: scale(1);
+		}
+	}
+}

@@ -1,0 +1,115 @@
+.header {
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		@include row-spaceBetween;
+		padding: 40px 0;
+
+		@media screen and (max-width: $tablet) {
+			padding: 20px 0;
+		}
+
+		@media screen and (max-width: $mobileSmall) {
+			flex-direction: column;
+			gap: 15px;
+		}
+	}
+
+	&__logo {
+		width: 142px;
+		height: 12px;
+
+		@media screen and (max-width: $tablet) {
+			width: 145px;
+			height: 13px;
+		}
+	}
+
+	&__navigation {
+		@include row-spaceBetween;
+		gap: 84px;
+	}
+
+	&__menu-bar {
+		display: flex;
+		gap: 42px;
+
+		@media screen and (max-width: $tablet) {
+			display: none;
+		}
+	}
+
+	&__menu-item {
+		@include lato-400;
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+
+		color: $black;
+		letter-spacing: 0.3em;
+		text-transform: uppercase;
+
+		display: inline-block;
+		position: relative;
+
+		transition: scale 0.3s linear;
+
+		&::after {
+			content: '';
+			position: absolute;
+			margin-top: 5px;
+			display: inline-block;
+			right: 16%;
+			left: 16%;
+			bottom: -4px;
+			height: 1px;
+			background-color: $black;
+			transform: scale(0);
+		}
+
+		&:active {
+			color: $black;
+
+			&::after {
+				transform: scale(1);
+			}
+		}
+	}
+
+	&__menu-link {
+		text-decoration: none;
+		color: $black;
+	}
+
+	&__mobile {
+		@include row-spaceBetween;
+		gap: 0px;
+
+		@media screen and (max-width: $tablet) {
+			gap: 40px;
+		}
+
+		@media screen and (max-width: $mobile) {
+			gap: 20px;
+		}
+	}
+
+	&__search {
+		width: 18px;
+		height: 16px;
+
+		@media screen and (max-width: $tablet) {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__burger {
+		display: none;
+
+		@media screen and (max-width: $tablet) {
+			display: block;
+		}
+	}
+}

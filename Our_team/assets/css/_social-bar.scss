@@ -1,41 +1,41 @@
 .social-bar {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
 
-    &__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 2px solid $social-icon;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border: 2px solid $social-icon;
 
-        padding: 7px 0;
+		padding: 7px 0;
 
-        &:hover .social-bar__icon {
-            fill: $gold;
-        }
+		&:hover {
+			border: 2px solid $gold;
 
-        &:hover {
-            border: 2px solid $gold;
-        }
+			& .social-bar__icon {
+				fill: $gold;
+			}
+		}
 
-        &:active .social-bar__icon {
-            fill: $social-icon;
-        }
+		&:active {
+			border: 2px solid $social-icon;
+			background-color: $gold;
 
-        &:active {
-            border: 2px solid $social-icon;
-            background-color: $gold;
-        }
-    }
+			& .social-bar__icon {
+				fill: $social-icon;
+			}
+		}
+	}
 
-    &__icon {
-        max-height: 100%;
-        width: auto;
-        fill: $social-icon;
-    }
+	&__icon {
+		max-height: 100%;
+		width: auto;
+		fill: $social-icon;
+	}
 }

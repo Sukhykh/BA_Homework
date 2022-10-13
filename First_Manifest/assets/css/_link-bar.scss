@@ -1,0 +1,43 @@
+.link-bar {
+	&__menu {
+		display: flex;
+		gap: 23px;
+	}
+
+	&__link-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__icon {
+		fill: $grey700;
+	}
+
+	&__link {
+		display: inline-block;
+		height: 50px;
+		width: 50px;
+		padding: 10px;
+
+		border: 1px solid $grey700;
+
+		&:hover {
+			background-color: $grey700;
+
+			& .link-bar__icon {
+				fill: $white;
+			}
+		}
+
+		&:active {
+			background-color: $grey700;
+
+			& .link-bar__icon {
+				fill: $white;
+			}
+		}
+	}
+}

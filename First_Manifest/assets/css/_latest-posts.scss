@@ -1,0 +1,79 @@
+.latest-posts {
+	@include mainMargin;
+
+	&__container {
+		@include container;
+	}
+
+	&__title-wrapper {
+		@include row-spaceBetween;
+
+		@media screen and (max-width: $mobileBig) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&--margin {
+			margin-bottom: 50px;
+
+			@media screen and (max-width: $mobileBig) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	&__title {
+		@include redHat-600;
+		font-size: 2.8rem;
+		line-height: 4.6rem;
+		letter-spacing: 0.1em;
+		color: $black;
+
+		@media screen and (max-width: $mobileBig) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__title-link {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		text-decoration: none;
+
+		&:hover {
+			& .latest-posts__link-text {
+				color: $black;
+			}
+
+			& .latest-posts__link-svg {
+				fill: $black;
+			}
+		}
+	}
+
+	&__link-text {
+		@include lato-400;
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+		letter-spacing: 0.1em;
+		color: $grey500;
+	}
+
+	&__link-svg {
+		fill: $grey500;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 30px;
+
+		@media screen and (max-width: $tabletBig) {
+			flex-direction: column;
+		}
+
+		@media screen and (max-width: $mobileBig) {
+			gap: 50px;
+		}
+	}
+}

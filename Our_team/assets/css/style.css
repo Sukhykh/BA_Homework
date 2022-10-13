@@ -1026,18 +1026,18 @@ html {
   border: 2px solid #cccccc;
   padding: 7px 0;
 }
-.social-bar__item:hover .social-bar__icon {
-  fill: #ffcc00;
-}
 .social-bar__item:hover {
   border: 2px solid #ffcc00;
 }
-.social-bar__item:active .social-bar__icon {
-  fill: #cccccc;
+.social-bar__item:hover .social-bar__icon {
+  fill: #ffcc00;
 }
 .social-bar__item:active {
   border: 2px solid #cccccc;
   background-color: #ffcc00;
+}
+.social-bar__item:active .social-bar__icon {
+  fill: #cccccc;
 }
 .social-bar__icon {
   max-height: 100%;
