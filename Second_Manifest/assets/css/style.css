@@ -913,6 +913,16 @@ html {
     margin: 70px 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .description {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .description {
+    margin-top: 70px;
+  }
+}
 .description__container {
   margin: 0 auto;
   max-width: 1170px;
@@ -1062,6 +1072,17 @@ html {
   margin-top: 32px;
 }
 
+@media screen and (max-width: 768px) {
+  .final-design {
+    margin-bottom: 90px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .final-design {
+    margin-bottom: 70px;
+  }
+}
+
 .footer {
   background-color: #f4f4f4;
 }
@@ -1085,14 +1106,24 @@ html {
   }
 }
 .footer__wrapper {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+    padding: 50px 0;
+  }
+}
+.footer__media {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
 }
 @media screen and (max-width: 768px) {
-  .footer__wrapper {
+  .footer__media {
     flex-direction: column;
+    gap: 0;
   }
 }
 .footer__left, .footer__right {
@@ -1107,14 +1138,6 @@ html {
     align-items: center;
   }
 }
-.footer__left-wrapper--margin {
-  margin-top: 70px;
-}
-@media screen and (max-width: 768px) {
-  .footer__left-wrapper {
-    margin-top: 50px;
-  }
-}
 .footer__title {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
@@ -1127,6 +1150,11 @@ html {
   .footer__title {
     font-size: 3.2rem;
     line-height: 4.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__title {
+    text-align: center;
   }
 }
 .footer__title--margin {
@@ -1179,18 +1207,17 @@ html {
   display: flex;
   flex-direction: column;
   align-items: end;
+  justify-content: center;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .footer__right-wrapper {
     align-items: center;
   }
 }
-.footer__right-wrapper--margin {
-  margin-top: 125px;
-}
 @media screen and (max-width: 768px) {
   .footer__right-wrapper--margin {
-    margin: 20px 0 10px 0;
+    margin: 40px 0;
   }
 }
 .footer__copyright {
@@ -1209,7 +1236,12 @@ html {
   }
 }
 .footer__copyright--padding {
-  padding: 30px 0 16px 0;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__copyright--padding {
+    margin-top: 0;
+  }
 }
 
 .link-bar__menu {
@@ -1232,6 +1264,7 @@ html {
   width: 50px;
   padding: 10px;
   border: 1px solid #565656;
+  transition: all 0.5s ease;
 }
 .link-bar__link:hover {
   background-color: #565656;

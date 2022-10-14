@@ -38,6 +38,14 @@
 .description {
 	@include mainMargin;
 
+	@media screen and (max-width: $tablet) {
+		margin-top: 90px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		margin-top: 70px;
+	}
+
 	&__container {
 		@include container;
 	}
@@ -104,5 +112,15 @@
 		& ~ p {
 			margin-top: 32px;
 		}
+	}
+}
+
+.final-design {
+	@media screen and (max-width: $tablet) {
+		margin-bottom: 90px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		margin-bottom: 70px;
 	}
 }
