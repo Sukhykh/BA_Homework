@@ -3,7 +3,6 @@
 
 	&__img {
 		width: 100%;
-		height: auto;
 	}
 
 	&__content {
@@ -47,16 +46,14 @@
 		@media screen and (max-width: $mobileBig) {
 			font-size: 3rem;
 			line-height: 5rem;
-			max-width: 70%;
 			margin-top: 70px;
 		}
 
 		@media screen and (max-width: $mobile) {
-			max-width: 90%;
+			max-width: 100%;
 		}
 
 		@media screen and (max-width: $mobileSmall) {
-			max-width: 100%;
 			margin-top: 10px;
 		}
 	}

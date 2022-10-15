@@ -136,6 +136,7 @@
 		<main class="main">
 			<section class="first-screen">
 				<div class="first-screen__background">
+					<!--
 					<img
 						class="first-screen__img"
 						srcset="
@@ -150,28 +151,29 @@
 							900w"
 						alt="background"
 					/>
-
-					<!--<picture>
-							<source
-								media="(min-width: 1441px)"
-								type="image/webp"
-								srcset="assets/img/bg-image-1440+.webp"
-							/>
-							<source
-								media="(max-width: 1440px)"
-								type="image/webp"
-								srcset="assets/img/bg-image-1440.webp"
-							/>
-							<source
-								media="(max-width: 320px)"
-								type="image/webp"
-								srcset="assets/img/bg-image-320.webp"
-							/>
-							<img
-								src="assets/img/bg-image.png"
-								alt="background"
-							/>
-						</picture>-->
+					-->
+					<picture>
+						<source
+							media="(min-width: 1441px)"
+							type="image/webp"
+							srcset="assets/img/bg-image-1440+.webp"
+						/>
+						<source
+							media="(max-width: 1440px)"
+							type="image/webp"
+							srcset="assets/img/bg-image-1440.webp"
+						/>
+						<source
+							media="(max-width: 480px)"
+							type="image/webp"
+							srcset="assets/img/bg-image-320.webp"
+						/>
+						<img
+							class="first-screen__img"
+							src="assets/img/bg-image-320.png"
+							alt="background"
+						/>
+					</picture>
 				</div>
 				<div class="first-screen__content">
 					<div class="first-screen__container">
@@ -591,94 +593,104 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__wrapper">
-					<div class="footer__left">
-						<div
-							class="footer__left-wrapper footer__left-wrapper--margin"
-						>
-							<div class="footer__title footer__title--margin">
-								Need a project?
-							</div>
-							<a
-								class="footer__tel footer__tel--margin"
-								href="tel:+2395550108"
-								>(239) 555-0108</a
-							>
-							<a
-								class="footer__mail"
-								href="mailto:tanya.hill@example.com"
-								>tanya.hill@example.com</a
-							>
-						</div>
-					</div>
-					<div class="footer__right">
-						<div
-							class="footer__right-wrapper footer__right-wrapper--margin"
-						>
-							<div class="footer__link-bar link-bar">
-								<ul class="link-bar__menu">
-									<li class="link-bar__item">
-										<a
-											class="link-bar__link"
-											href="https://www.instagram.com/"
-											target="_blank"
-										>
-											<svg class="link-bar__link-wrapper">
-												<use
-													class="link-bar__icon"
-													xlink:href="assets/img/sprite.svg#instagram"
-												></use>
-											</svg>
-										</a>
-									</li>
-									<li class="link-bar__item">
-										<a
-											class="link-bar__link"
-											href="https://www.facebook.com/"
-											target="_blank"
-										>
-											<svg class="link-bar__link-wrapper">
-												<use
-													class="link-bar__icon"
-													xlink:href="assets/img/sprite.svg#facebook"
-												></use>
-											</svg>
-										</a>
-									</li>
-									<li class="link-bar__item">
-										<a
-											class="link-bar__link"
-											href="https://twitter.com/"
-											target="_blank"
-										>
-											<svg class="link-bar__link-wrapper">
-												<use
-													class="link-bar__icon"
-													xlink:href="assets/img/sprite.svg#twitter"
-												></use>
-											</svg>
-										</a>
-									</li>
-									<li class="link-bar__item">
-										<a
-											class="link-bar__link"
-											href="https://www.linkedin.com/"
-											target="_blank"
-										>
-											<svg class="link-bar__link-wrapper">
-												<use
-													class="link-bar__icon"
-													xlink:href="assets/img/sprite.svg#linkedin"
-												></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
+					<div class="footer__media">
+						<div class="footer__left">
+							<div class="footer__left-wrapper">
+								<div
+									class="footer__title footer__title--margin"
+								>
+									Need a project?
+								</div>
+								<a
+									class="footer__tel footer__tel--margin"
+									href="tel:+2395550108"
+									>(239) 555-0108</a
+								>
+								<a
+									class="footer__mail"
+									href="mailto:tanya.hill@example.com"
+									>tanya.hill@example.com</a
+								>
 							</div>
 						</div>
+						<div class="footer__right">
+							<div
+								class="footer__right-wrapper footer__right-wrapper--margin"
+							>
+								<div class="footer__link-bar link-bar">
+									<ul class="link-bar__menu">
+										<li class="link-bar__item">
+											<a
+												class="link-bar__link"
+												href="https://www.instagram.com/"
+												target="_blank"
+											>
+												<svg
+													class="link-bar__link-wrapper"
+												>
+													<use
+														class="link-bar__icon"
+														xlink:href="assets/img/sprite.svg#instagram"
+													></use>
+												</svg>
+											</a>
+										</li>
+										<li class="link-bar__item">
+											<a
+												class="link-bar__link"
+												href="https://www.facebook.com/"
+												target="_blank"
+											>
+												<svg
+													class="link-bar__link-wrapper"
+												>
+													<use
+														class="link-bar__icon"
+														xlink:href="assets/img/sprite.svg#facebook"
+													></use>
+												</svg>
+											</a>
+										</li>
+										<li class="link-bar__item">
+											<a
+												class="link-bar__link"
+												href="https://twitter.com/"
+												target="_blank"
+											>
+												<svg
+													class="link-bar__link-wrapper"
+												>
+													<use
+														class="link-bar__icon"
+														xlink:href="assets/img/sprite.svg#twitter"
+													></use>
+												</svg>
+											</a>
+										</li>
+										<li class="link-bar__item">
+											<a
+												class="link-bar__link"
+												href="https://www.linkedin.com/"
+												target="_blank"
+											>
+												<svg
+													class="link-bar__link-wrapper"
+												>
+													<use
+														class="link-bar__icon"
+														xlink:href="assets/img/sprite.svg#linkedin"
+													></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="footer__copyright footer__copyright--padding">
-					© Copyright Manifest Theme. Allrights reserved
+					<div class="footer__copyright footer__copyright--padding">
+						© Copyright Manifest Theme. Allrights reserved
+					</div>
 				</div>
 			</div>
 		</footer>
