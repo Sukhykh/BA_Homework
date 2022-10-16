@@ -1,0 +1,115 @@
+@mixin container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+@mixin formWrapper {
+	max-width: 500px;
+	margin: 35px;
+	margin-bottom: 16px;
+}
+
+@mixin lineWrapper {
+	display: flex;
+	width: 100%;
+	gap: 12px;
+}
+
+@mixin itemWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+@mixin input {
+	@include text;
+	padding: 8px 10px;
+	border: 1px solid $border;
+	border-radius: 6px;
+
+	&:focus {
+		border-color: $color;
+	}
+
+	&::placeholder {
+		@include text;
+	}
+}
+
+@mixin title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 133%;
+	color: $title;
+}
+
+@mixin text {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 147%;
+	letter-spacing: -0.02rem;
+	color: $text;
+}
+
+@mixin description {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 138%;
+	letter-spacing: -0.01rem;
+	color: $textDescr;
+}
+
+@mixin link {
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+	letter-spacing: -0.01rem;
+	color: $color;
+
+	transition: all 0.3s linear;
+
+	&:hover,
+	&:active {
+		color: $text;
+	}
+}
+
+@mixin link-small {
+	@include link;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 138%;
+}
+
+@mixin link-big {
+	@include link;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 147%;
+}
+
+@mixin button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 147%;
+	letter-spacing: -0.1px;
+
+	text-align: center;
+	color: $white;
+
+	background: $color;
+	border: 1px solid $border;
+	border-radius: 6px;
+
+	transition: all 0.3s linear;
+
+	&:hover,
+	&:active {
+		border: 1px solid $color;
+		background: $border;
+		color: $text;
+	}
+}

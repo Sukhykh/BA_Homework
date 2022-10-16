@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Forms__2-0</title>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="assets/img/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="assets/img/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="assets/img/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="assets/img/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="assets/img/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="assets/img/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="assets/img/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="assets/img/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/img/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="assets/img/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="assets/img/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/img/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/img/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="assets/img/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body>
+		<main>
+			<section class="forms">
+				<div class="forms__container">
+					<div class="forms__wrapper">
+						<div class="account">
+							<div class="account__wrapper">
+								<h2 class="account__title">
+									Create an Account
+								</h2>
+								<form
+									class="account__form"
+									action="#"
+									method="get"
+									autocomplete="off"
+								>
+									<div class="account__line-wrapper">
+										<div class="account__first-name">
+											<label
+												class="account__first-name-label"
+												for="firstName"
+												>First Name</label
+											>
+											<input
+												class="account__first-name-input"
+												type="text"
+												name="firstName"
+												id="firstName"
+												minlength="3"
+												placeholder="Input your First Name here"
+												required
+												autofocus
+											/>
+										</div>
+										<div class="account__last-name">
+											<label
+												class="account__last-name-label"
+												for="lastName"
+												>Last Name</label
+											>
+											<input
+												class="account__last-name-input"
+												type="text"
+												name="lastName"
+												id="lasttName"
+												minlength="3"
+												placeholder="Input your Last Name here"
+												required
+											/>
+										</div>
+									</div>
+									<div class="account__email">
+										<label
+											class="account__email-label"
+											for="email"
+											>E-mail</label
+										>
+										<input
+											class="account__email-input"
+											type="email"
+											name="email"
+											id="email"
+											minlength="3"
+											placeholder="Input your E-mail here"
+											required
+										/>
+										<p class="account__email-descr">
+											We'll never share your email with
+											anyone else.
+										</p>
+									</div>
+									<div class="account__gender">
+										<div class="account__gender-select">
+											<input
+												class="account__gender-select-input"
+												type="radio"
+												name="Gender"
+												id="male"
+												value="Male"
+											/>
+											<label
+												class="account__gender-select-label"
+												for="male"
+												>Male</label
+											>
+										</div>
+										<div class="account__gender-select">
+											<input
+												class="account__gender-select-input"
+												type="radio"
+												name="Gender"
+												id="female"
+												value="Female"
+											/>
+											<label
+												class="account__gender-select-label"
+												for="female"
+												>Female</label
+											>
+										</div>
+									</div>
+									<div class="account__line-wrapper">
+										<div class="account__country">
+											<label
+												class="account__country-label"
+												for="country"
+												>Country</label
+											>
+											<select
+												class="account__country-select"
+												name="country"
+												id="country"
+											>
+												<optgroup label="Europe">
+													<option value="Poland"
+														>Poland</option
+													>
+													<option
+														value="Ukraine"
+														selected
+														>Ukraine</option
+													>
+													<option
+														value="United Kingdom"
+														>United Kingdom</option
+													>
+												</optgroup>
+												<optgroup label="North America">
+													<option value="USA"
+														>USA</option
+													>
+													<option value="Canada"
+														>Canada</option
+													>
+												</optgroup>
+											</select>
+										</div>
+										<div class="account__city">
+											<label
+												class="account__city-label"
+												for="city"
+												>City</label
+											>
+											<input
+												class="account__city-input"
+												type="text"
+												name="city"
+												id="city"
+											/>
+										</div>
+									</div>
+									<button
+										class="account__button"
+										type="submit"
+									>
+										Sign Up
+									</button>
+									<p class="account__policy">
+										By clicking the 'Sign Up' button, you
+										confirm that you accept our
+										<span class="account__policy-item"
+											><a
+												class="account__policy-link"
+												href="#"
+												target="_blank"
+												>Terms of Use</a
+											></span
+										>
+										and
+										<span class="account__policy-item"
+											><a
+												class="account__policy-link"
+												href="#"
+												target="_blank"
+												>Privacy Policy</a
+											></span
+										>
+									</p>
+									<div class="account__footer">
+										<p class="account__footer-text">
+											Have an account?
+										</p>
+										<a
+											class="account__footer-linc"
+											href="#"
+											target="_blank"
+											>Log In</a
+										>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="profile">
+							<div class="profile__wrapper">
+								<h2 class="profile__title">
+									Profile
+								</h2>
+								<form
+									class="profile__photo-form photo-form"
+									action="#"
+									method="get"
+									autocomplete="off"
+									accept="multipart/form-data"
+								>
+									<div class="photo-form__container">
+										<div class="photo-form__photo-wrapper">
+											<img
+												class="photo-form__photo"
+												src="assets/img/Bender.png"
+												alt="photo"
+											/>
+										</div>
+										<div class="photo-form__form-wrapper">
+											<div class="photo-form__form-file">
+												<div
+													class="photo-form__file-upload"
+												>
+													<label
+														class="photo-form__file-upload-label"
+														for="photo"
+													></label>
+													<div
+														class="photo-form__file-upload-wrapper"
+													>
+														<input
+															class="photo-form__file-upload-input"
+															type="file"
+															name="photo"
+															accept="image/*"
+															id="photo"
+														/>
+														<div
+															class="photo-form__file-upload-icon"
+														>
+															<svg
+																class="photo-form__svg"
+															>
+																<use
+																	class="photo-form__svg-icon"
+																	xlink:href="assets/img/sprite.svg#camera"
+																></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<!--
+												<a
+													class="photo-form__file-select"
+													href="#"
+												>
+													<svg
+														class="photo-form__svg"
+													>
+														<use
+															class="photo-form__svg-icon"
+															xlink:href="assets/img/sprite.svg#camera"
+														></use>
+													</svg>
+												</a>
+												-->
+												<button
+													class="photo-form__file-button"
+													type="reset"
+												>
+													<svg
+														class="photo-form__svg-button"
+													>
+														<use
+															class="photo-form__svg-icon"
+															xlink:href="assets/img/sprite.svg#trash-box"
+														></use>
+													</svg>
+												</button>
+											</div>
+											<p class="photo-form__form-descr">
+												Up to 1 MB (300x300 px)
+											</p>
+										</div>
+									</div>
+								</form>
+								<form
+									class="profile__form"
+									action="#"
+									method="get"
+									autocomplete="off"
+								>
+									<div class="profile__line-wrapper">
+										<div class="profile__name">
+											<label
+												class="profile__name-label"
+												for="name"
+												>Name</label
+											>
+											<input
+												class="profile__name-input"
+												type="text"
+												name="name"
+												id="name"
+												minlength="3"
+												placeholder="Input your Name here"
+												required
+											/>
+										</div>
+										<div class="profile__email">
+											<label
+												class="profile__email-label"
+												for="email"
+												>E-mail</label
+											>
+											<input
+												class="profile__email-input"
+												type="email"
+												name="email"
+												id="email"
+												minlength="3"
+												placeholder="Input your E-mail here"
+												required
+											/>
+										</div>
+									</div>
+									<div class="profile__line-wrapper">
+										<div class="profile__country">
+											<label
+												class="profile__country-label"
+												for="country"
+												>Country</label
+											>
+											<select
+												class="profile__country-select"
+												name="country"
+												id="country"
+											>
+												<optgroup label="Europe">
+													<option value="Poland"
+														>Poland</option
+													>
+													<option
+														value="Ukraine"
+														selected
+														>Ukraine</option
+													>
+													<option
+														value="United Kingdom"
+														>United Kingdom</option
+													>
+												</optgroup>
+												<optgroup label="North America">
+													<option value="USA"
+														>USA</option
+													>
+													<option value="Canada"
+														>Canada</option
+													>
+												</optgroup>
+											</select>
+										</div>
+										<div class="profile__city">
+											<label
+												class="profile__city-label"
+												for="city"
+												>City</label
+											>
+											<input
+												class="profile__city-input"
+												type="text"
+												name="city"
+												id="city"
+											/>
+										</div>
+									</div>
+									<div class="profile__line-wrapper">
+										<div class="profile__zipCode">
+											<label
+												class="profile__zipCode-label"
+												for="zipCode"
+												>Zip Code</label
+											>
+											<input
+												class="profile__zipCode-input"
+												type="text"
+												name="zipCode"
+												id="zipCode"
+											/>
+										</div>
+										<div class="profile__phone">
+											<label
+												class="profile__phone-label"
+												for="phone"
+												>Phone Number</label
+											>
+											<input
+												class="profile__phone-input"
+												type="tel"
+												name="phone"
+												id="phone"
+												minlength="7"
+												required
+											/>
+										</div>
+									</div>
+									<button
+										class="profile__button"
+										type="submit"
+									>
+										Update
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

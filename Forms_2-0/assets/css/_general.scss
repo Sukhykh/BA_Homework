@@ -1,0 +1,28 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	padding-top: 50px;
+
+	font-size: 10px;
+	background-color: $bg;
+}
+
+.forms {
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 30px;
+	}
+}

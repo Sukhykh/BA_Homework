@@ -1,0 +1,66 @@
+.profile {
+	background-color: $white;
+	border-radius: 6px;
+	max-width: 50%;
+	width: 100%;
+
+	&__wrapper {
+		@include formWrapper;
+	}
+
+	&__title {
+		@include title;
+	}
+
+	&__line-wrapper {
+		@include lineWrapper;
+		margin-top: 20px;
+	}
+
+	&__name,
+	&__email,
+	&__country,
+	&__city,
+	&__zipCode,
+	&__phone {
+		@include itemWrapper;
+	}
+
+	&__name-label,
+	&__email-label,
+	&__country-label,
+	&__city-label,
+	&__zipCode-label,
+	&__phone-label {
+		@include text;
+
+		margin-bottom: 7px;
+	}
+
+	&__name-input,
+	&__email-input,
+	&__country-select,
+	&__city-input,
+	&__zipCode-input,
+	&__phone-input {
+		@include input;
+	}
+
+	&__email-input {
+		&:focus:invalid {
+			border-color: $colorError;
+		}
+	}
+
+	&__country-select {
+		background-color: $white;
+		padding: 10px;
+	}
+
+	&__button {
+		@include button;
+		margin-top: 20px;
+		padding: 8px 10px;
+		width: 150px;
+	}
+}

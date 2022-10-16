@@ -1,0 +1,151 @@
+.account {
+	background-color: $white;
+	border-radius: 6px;
+	max-width: 50%;
+	width: 100%;
+
+	&__wrapper {
+		@include formWrapper;
+	}
+
+	&__title {
+		@include title;
+	}
+
+	&__line-wrapper {
+		@include lineWrapper;
+	}
+
+	&__line-wrapper,
+	&__email,
+	&__gender {
+		margin-top: 20px;
+	}
+
+	&__email-descr {
+		@include description;
+
+		margin-top: 7px;
+	}
+
+	&__first-name,
+	&__last-name,
+	&__email,
+	&__country,
+	&__city {
+		@include itemWrapper;
+	}
+
+	&__first-name-label,
+	&__last-name-label,
+	&__email-label,
+	&__country-label,
+	&__city-label {
+		@include text;
+
+		margin-bottom: 7px;
+	}
+
+	&__first-name-input,
+	&__last-name-input,
+	&__email-input,
+	&__country-select,
+	&__city-input {
+		@include input;
+	}
+
+	&__email-input {
+		&:focus:invalid {
+			border-color: $colorError;
+		}
+	}
+
+	&__country-select {
+		background-color: $white;
+		padding: 10px;
+	}
+
+	&__button {
+		@include button;
+
+		width: 100%;
+		padding: 8px 10px;
+		margin-top: 20px;
+	}
+
+	&__gender {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__gender-select-input {
+		display: none;
+
+		&:checked + .account__gender-select-label {
+			&::before {
+				border: 6px solid $color;
+			}
+		}
+	}
+
+	&__gender-select-label {
+		@include text;
+		display: flex;
+		align-items: center;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			border: 1px solid $border;
+			margin-right: 8px;
+		}
+	}
+	/*
+	&__gender-select-label {
+		&::before {
+			content: '';
+			display: block;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			border: 1px solid $border;
+		}
+	}
+
+	&__gender-select-input:checked .account____gender-select-label::before {
+		border: 6px solid $color;
+	}*/
+
+	&__policy {
+		@include description;
+		text-align: center;
+		max-width: 380px;
+
+		margin: 22px auto 20px auto;
+	}
+
+	&__policy-link {
+		@include link-small;
+	}
+
+	&__footer {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+
+		border-top: 1px solid $border;
+		padding-top: 20px;
+	}
+
+	&__footer-text {
+		@include text;
+	}
+
+	&__footer-linc {
+		@include link-big;
+	}
+}
