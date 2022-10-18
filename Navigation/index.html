@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Responsive Navigation</title>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="assets/img/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="assets/img/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="assets/img/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="assets/img/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="assets/img/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="assets/img/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="assets/img/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="assets/img/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/img/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="assets/img/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="assets/img/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/img/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/img/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="assets/img/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body class="body">
+		<input
+			class="body__switch"
+			type="checkbox"
+			name="themeswitcher"
+			id="themeswitcher"
+			style="display: none;"
+		/>
+		<label class="body__switch-btn" for="themeswitcher">switch</label>
+		<div class="body__all">
+			<div class="body__container">
+				<div class="body__wrapper">
+					<header class="header">
+						<input
+							class="header__menu-switch"
+							type="checkbox"
+							name="menu-switch"
+							id="menu-switch"
+						/>
+						<div class="header__container">
+							<div class="header__wrapper">
+								<div class="header__logo">
+									<div class="header__logo__icon-wrapper">
+										<img
+											class="header__logo__icon-img"
+											src="assets/img/logo.svg"
+											alt="logo"
+										/>
+									</div>
+									<h1 class="header__logo__title">
+										LightBoard
+									</h1>
+									<label
+										class="header__logo-switch"
+										for="menu-switch"
+									>
+										<svg
+											class="header__logo-switch__svg"
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												class="header__logo-switch__path"
+												d="M11.0417 10L8.64375 7.38958C8.43958 7.18333 8.43958 6.84896 8.64375 6.64167C8.84792 6.43646 9.18021 6.43646 9.38333 6.64167L12.3073 9.625C12.5115 9.83229 12.5115 10.1667 12.3073 10.3719L9.38333 13.3552C9.18021 13.5625 8.84792 13.5615 8.64375 13.3552C8.43958 13.15 8.43958 12.8156 8.64375 12.6083L11.0417 10ZM10 0C15.5229 0 20 4.47708 20 10C20 15.524 15.5229 20 10 20C4.47708 20 0 15.524 0 10C0 4.47708 4.47708 0 10 0ZM10 18.7021C14.8052 18.7021 18.7021 14.8062 18.7021 10C18.7021 5.19375 14.8052 1.29792 10 1.29792C5.19271 1.29792 1.29792 5.19375 1.29792 10C1.29792 14.8062 5.19271 18.7021 10 18.7021Z"
+											/>
+										</svg>
+									</label>
+								</div>
+								<div class="header__menu menu">
+									<a class="menu__item" href="#">
+										<div class="menu__item-wrapper">
+											<svg class="menu__item-icon">
+												<use
+													class="menu__item-svg"
+													xlink:href="assets/img/sprite.svg#dashboard"
+												></use>
+											</svg>
+										</div>
+										<div class="menu__item-descr">
+											Dashboard
+										</div>
+									</a>
+									<div class="menu__section">
+										<div class="menu__section-title">
+											<div class="menu__section-divider">
+												<svg
+													class="menu__section-divider-svg"
+													width="40"
+													height="20"
+													viewBox="0 0 40 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<line
+														x1="2"
+														y1="12"
+														x2="38"
+														y2="12"
+														stroke="#9E8CFC"
+														stroke-width="4"
+														stroke-linecap="round"
+														stroke-dasharray="6, 8, 8, 8, 6"
+													/>
+												</svg>
+											</div>
+											<h2 class="menu__section-text">
+												apps
+											</h2>
+										</div>
+										<a class="menu__item" href="#">
+											<div
+												class="menu__item-wrapper menu__item-wrapper--green"
+											>
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#email"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Email
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div
+												class="menu__item-wrapper menu__item-wrapper--red"
+											>
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#chats"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Chats
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div
+												class="menu__item-wrapper menu__item-wrapper--yellow"
+											>
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#calendar"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Calendar
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#news"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												News
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#knowledge"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Knowledge
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#fileManager"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												File manager
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#leafletMaps"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Leaflet Maps
+											</div>
+										</a>
+									</div>
+									<div class="menu__section">
+										<div class="menu__section-title">
+											<div class="menu__section-divider">
+												<svg
+													class="menu__section-divider-svg"
+													width="40"
+													height="20"
+													viewBox="0 0 40 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<line
+														x1="2"
+														y1="12"
+														x2="38"
+														y2="12"
+														stroke="#9E8CFC"
+														stroke-width="4"
+														stroke-linecap="round"
+														stroke-dasharray="6, 8, 8, 8, 6"
+													/>
+												</svg>
+											</div>
+											<h2 class="menu__section-text">
+												Auth pages
+											</h2>
+										</div>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#profile"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Profile
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#permissions"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Permissions
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#logOut"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Log Out
+											</div>
+										</a>
+									</div>
+									<div class="menu__section">
+										<div class="menu__section-title">
+											<div class="menu__section-divider">
+												<svg
+													class="menu__section-divider-svg"
+													width="40"
+													height="20"
+													viewBox="0 0 40 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<line
+														x1="2"
+														y1="12"
+														x2="38"
+														y2="12"
+														stroke="#9E8CFC"
+														stroke-width="4"
+														stroke-linecap="round"
+														stroke-dasharray="6, 8, 8, 8, 6"
+													/>
+												</svg>
+											</div>
+											<h2 class="menu__section-text">
+												User Interface
+											</h2>
+										</div>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#feather"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Feather
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#ecommerce"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Ecommerce
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#components"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Components
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#pages"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Pages
+											</div>
+										</a>
+										<a class="menu__item" href="#">
+											<div class="menu__item-wrapper">
+												<svg class="menu__item-icon">
+													<use
+														class="menu__item-svg"
+														xlink:href="assets/img/sprite.svg#editor"
+													></use>
+												</svg>
+											</div>
+											<div class="menu__item-descr">
+												Editor
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+					<main class="main">
+						<div class="main__container">
+							<div class="main__wrapper">
+								<div class="main__navigation navigation">
+									<div class="navigation__wrapper">
+										<div class="navigation__left">
+											<a
+												class="navigation__item"
+												href="#"
+											>
+												<svg class="navigation__icon">
+													<use
+														class="navigation__svg"
+														xlink:href="assets/img/sprite.svg#email"
+													></use>
+												</svg>
+											</a>
+											<a
+												class="navigation__item"
+												href="#"
+											>
+												<svg class="navigation__icon">
+													<use
+														class="navigation__svg"
+														xlink:href="assets/img/sprite.svg#chats"
+													></use>
+												</svg>
+											</a>
+											<a
+												class="navigation__item"
+												href="#"
+											>
+												<svg class="navigation__icon">
+													<use
+														class="navigation__svg"
+														xlink:href="assets/img/sprite.svg#calendar"
+													></use>
+												</svg>
+											</a>
+											<a
+												class="navigation__item"
+												href="#"
+											>
+												<svg class="navigation__icon">
+													<use
+														class="navigation__svg"
+														xlink:href="assets/img/sprite.svg#star"
+													></use>
+												</svg>
+											</a>
+										</div>
+										<div class="navigation__right">
+											<a
+												class="navigation__lang"
+												href="#"
+											>
+												<div
+													class="navigation__lang__icon-wrapper"
+												>
+													<img
+														class="navigation__lang__icon"
+														src="assets/img/lang-icon.svg"
+														alt="langIcon"
+													/>
+												</div>
+												<span
+													class="navigation__lang__text"
+													>English</span
+												>
+											</a>
+											<div class="navigation__settings">
+												<a
+													class="navigation__item"
+													href="#"
+												>
+													<svg
+														class="navigation__icon"
+													>
+														<use
+															class="navigation__svg"
+															xlink:href="assets/img/sprite.svg#theme"
+														></use>
+													</svg>
+												</a>
+												<a
+													class="navigation__item"
+													href="#"
+												>
+													<svg
+														class="navigation__icon"
+													>
+														<use
+															class="navigation__svg"
+															xlink:href="assets/img/sprite.svg#search"
+														></use>
+													</svg>
+												</a>
+												<a
+													class="navigation__item"
+													href="#"
+												>
+													<svg
+														class="navigation__icon"
+													>
+														<use
+															class="navigation__svg"
+															xlink:href="assets/img/sprite.svg#set"
+														></use>
+													</svg>
+												</a>
+											</div>
+											<div
+												class="navigation__avatar-wrapper"
+											>
+												<img
+													class="navigation__avatar"
+													src="assets/img/Avatar.svg"
+													alt="avatar"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="main__site-container">
+									<div class="main__site-wrapper">
+										<img
+											class="main__site-img main__site-img--dark"
+											src="assets/img/bg-dark.png"
+											alt="site"
+										/>
+									</div>
+									<div class="main__site-wrapper">
+										<img
+											class="main__site-img main__site-img--light"
+											src="assets/img/bg-light.png"
+											alt="site"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Base resets */ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1118,8 +1119,12 @@ html {
   border-radius: 6px;
   transition: all 0.3s linear;
   margin-top: 20px;
-  padding: 8px 10px;
-  width: 150px;
+  padding: 8px 50px;
+  /*
+  Мені фігма внутрішні відступи до
+  тексту в цій кнопці не показує 8( 
+  Тому width і задавав.
+  */
 }
 .profile__button:hover, .profile__button:active {
   border: 1px solid #007bff;

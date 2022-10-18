@@ -1,0 +1,162 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	&__item {
+		@include backgroundColor($bgLight);
+		display: flex;
+		text-decoration: none;
+		gap: 20px;
+		padding: 10px 15px;
+
+		transition: all 0.3s ease-in-out;
+
+		@media screen and (max-width: $mw-1000) {
+			justify-content: center;
+		}
+
+		&:hover {
+			@include backgroundColor($menuIcon-bg-hover);
+			box-shadow: 0px 0px 20px rgba(158, 140, 252, 0.7);
+
+			& .menu__item-svg {
+				@include fillColor($menuIcon-hover);
+			}
+
+			& .menu__item-descr {
+				@include color($menuText-hover);
+			}
+		}
+	}
+
+	&__item-wrapper {
+		max-width: 26px;
+		max-height: 26px;
+
+		&--green {
+			position: relative;
+
+			&:after {
+				content: '25';
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				top: -5px;
+				right: -15px;
+				background-color: $green;
+
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				color: $darkGrey;
+			}
+		}
+
+		&--red {
+			position: relative;
+
+			&:after {
+				content: '10';
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				top: -5px;
+				right: -15px;
+				background-color: $red;
+
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				color: $white;
+			}
+		}
+
+		&--yellow {
+			position: relative;
+
+			&:after {
+				content: '5';
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				top: -5px;
+				right: -15px;
+				background-color: $yellow;
+
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				color: $darkGrey;
+			}
+		}
+	}
+
+	&__item-icon {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__item-svg {
+		@include fillColor($iconLight);
+	}
+
+	&__item-descr {
+		@include flexCenter;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		width: 100%;
+		@include color($textLight);
+
+		@media screen and (max-width: $mw-1000) {
+			display: none;
+		}
+	}
+
+	&__section-title {
+		@include backgroundColor($bgLight);
+		padding: 0 15px 5px 15px;
+	}
+
+	&__section-text {
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		@include color($titleLight);
+
+		@media screen and (max-width: $mw-1000) {
+			display: none;
+		}
+	}
+
+	&__section-divider {
+		display: none;
+
+		@media screen and (max-width: $mw-1000) {
+			@include flexCenter;
+			justify-content: center;
+		}
+	}
+}

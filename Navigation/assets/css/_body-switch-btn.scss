@@ -1,0 +1,191 @@
+.body__switch-btn {
+	cursor: pointer;
+	position: fixed;
+	bottom: 100px;
+	right: 100px;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 50px;
+	height: 50px;
+
+	@include backgroundColor($bgDark-menu);
+	border: 2px solid $mainPurple;
+	border-radius: 50%;
+	box-shadow: 0 0 10px $mainPurple, 0 0 20px $mainPurple, 0 0 30px $mainPurple;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: $mainPurple;
+}
+
+.body__switch {
+	&:checked {
+		& + .body__switch-btn {
+			background-color: $bgLight;
+		}
+
+		& ~ .body__all {
+			@include backgroundColor($bgDark-site);
+
+			& > .body__container > .body__wrapper {
+				& > header {
+					@include backgroundColor($bgDark-menu);
+
+					& > .header__container > .header__wrapper {
+						& > .header__logo {
+							& > .header__logo__title {
+								@include color($logoDark);
+							}
+							&
+								> .header__logo-switch
+								> .header__logo-switch__svg {
+								@include backgroundColor($bgDark-menu);
+
+								& > .header__logo-switch__path {
+									@include fillColor($lightGray);
+								}
+							}
+						}
+
+						& > .header__menu {
+							& > .menu__item {
+								@include backgroundColor($bgDark-menu);
+								&:hover {
+									@include backgroundColor(
+										$menuIcon-bg-hover
+									);
+									box-shadow: 0px 0px 20px
+										rgba(158, 140, 252, 0.7);
+
+									& .menu__item-svg {
+										@include fillColor($menuIcon-hover);
+									}
+
+									& .menu__item-descr {
+										@include color($menuText-hover);
+									}
+								}
+
+								& > .menu__item-descr {
+									@include color($textDark);
+								}
+
+								&
+									> .menu__item-wrapper
+									> .menu__item-icon
+									> .menu__item-svg {
+									@include fillColor($iconDark);
+								}
+							}
+
+							& > .menu__section {
+								& > .menu__section-title {
+									@include backgroundColor($bgDark-menu);
+
+									& > .menu__section-text {
+										@include color($titleDark);
+									}
+								}
+
+								& > .menu__item {
+									@include backgroundColor($bgDark-menu);
+
+									&:hover {
+										@include backgroundColor(
+											$menuIcon-bg-hover
+										);
+									}
+
+									& > .menu__item-descr {
+										@include color($textDark);
+									}
+									&:hover {
+										& .menu__item-descr {
+											@include color($menuText-hover);
+										}
+									}
+
+									&
+										> .menu__item-wrapper
+										> .menu__item-icon
+										> .menu__item-svg {
+										@include fillColor($iconDark);
+									}
+
+									&:hover {
+										&
+											> .menu__item-wrapper
+											> .menu__item-icon
+											> .menu__item-svg {
+											@include fillColor($menuIcon-hover);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				& > main {
+					@include backgroundColor($bgDark-site);
+
+					& > .main__container > .main__wrapper {
+						& > .main__navigation {
+							@include backgroundColor($bgDark-menu);
+
+							& > .navigation__wrapper {
+								& > .navigation__left > .navigation__item {
+									& > .navigation__icon > .navigation__svg {
+										@include fillColor($iconDark);
+									}
+									&:hover {
+										& .navigation__svg {
+											@include fillColor($iconDark-hover);
+										}
+									}
+								}
+
+								& > .navigation__right > .navigation__lang {
+									& > .navigation__lang__text {
+										@include color($textDark);
+									}
+									&:hover {
+										& .navigation__lang__text {
+											@include color($textDark-hover);
+										}
+									}
+								}
+
+								&
+									> .navigation__right
+									> .navigation__settings
+									> .navigation__item {
+									& > .navigation__icon > .navigation__svg {
+										@include fillColor($iconDark);
+									}
+									&:hover {
+										& .navigation__svg {
+											@include fillColor($iconDark-hover);
+										}
+									}
+								}
+							}
+						}
+						&
+							> .main__site-container
+							> .main__site-wrapper
+							> .main__site-img--dark {
+							transform: scale(1);
+						}
+					}
+				}
+			}
+		}
+	}
+}

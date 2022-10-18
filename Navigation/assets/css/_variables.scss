@@ -1,0 +1,44 @@
+/* colors */
+$white: #ffffff;
+$mainPurple: #9e8cfc;
+$logoPurple: #392c72;
+$darkGrey: #4f4f4f;
+$middleGray: #828282;
+$lightGray: #bdbdbd;
+$middleBlue: #283046;
+$darkBlue: #161d31;
+
+/* light */
+$bgLight: $white;
+$logoLight: $logoPurple;
+$iconLight: $darkGrey;
+$iconLight-hover: $mainPurple;
+$textLight: $darkGrey;
+$textLight-hover: $mainPurple;
+$titleLight: $middleGray;
+
+/* dark */
+$bgDark-menu: $middleBlue;
+$bgDark-site: $darkBlue;
+$logoDark: $lightGray;
+$iconDark: $lightGray;
+$iconDark-hover: $white;
+$textDark: $lightGray;
+$textDark-hover: $white;
+$titleDark: $middleGray;
+
+/* hover */
+$menuIcon-bg-hover: $mainPurple;
+$menuIcon-hover: $white;
+$menuText-hover: $white;
+$dividerBG: $mainPurple;
+
+/* badge */
+$red: #ea5455;
+$yellow: #f2c94c;
+$green: #6fcf97;
+
+/* width */
+$mw-1000: 1000px;
+$mw-750: 750px;
+$mw-550: 550px;

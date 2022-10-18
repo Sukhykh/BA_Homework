@@ -1,0 +1,38 @@
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+}
+
+@mixin dark {
+	@include backgroundColor($bgDark-menu);
+}
+
+@mixin color($text-color) {
+	color: $text-color;
+}
+
+@mixin backgroundColor($bg-color) {
+	background-color: $bg-color;
+}
+
+@mixin fillColor($fill-color) {
+	fill: $fill-color;
+}
+
+@mixin container {
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+@mixin containerHeader {
+	min-width: 220px;
+	width: 100%;
+
+	@media screen and (max-width: $mw-1000) {
+		min-width: 86px;
+	}
+}
+
+@mixin containerMain {
+	width: 100%;
+}

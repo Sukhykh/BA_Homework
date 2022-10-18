@@ -60,7 +60,11 @@
 	&__button {
 		@include button;
 		margin-top: 20px;
-		padding: 8px 10px;
-		width: 150px;
+		padding: 8px 50px;
+		/*
+		Мені фігма внутрішні відступи до
+		тексту в цій кнопці не показує 8( 
+		Тому width і задавав.
+		*/
 	}
 }
