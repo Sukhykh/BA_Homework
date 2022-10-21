@@ -38,7 +38,7 @@
 		max-width: 100%;
 
 		@media screen and (max-width: $desktop) {
-			max-width: dinamic-desktop(1170px);
+			width: dinamic-desktop(1170px);
 		}
 	}
 

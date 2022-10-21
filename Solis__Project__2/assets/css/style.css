@@ -1779,7 +1779,7 @@ html {
 }
 @media screen and (max-width: 1439px) {
   .promises__img {
-    max-width: 81.25vw;
+    width: 81.25vw;
   }
 }
 .promises__content {

@@ -1176,6 +1176,11 @@ html {
 .info__img {
   max-width: 100%;
 }
+@media screen and (max-width: 1439px) {
+  .info__img {
+    max-width: 81.25vw;
+  }
+}
 .info__content {
   position: absolute;
   display: flex;
