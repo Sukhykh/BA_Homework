@@ -837,6 +837,9 @@ html {
 .menu__item:hover::after {
   width: 100%;
 }
+.menu__item:active > .menu__link {
+  color: #bc3f3f;
+}
 .menu__link {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -845,6 +848,9 @@ html {
   letter-spacing: 0.08em;
   text-decoration: none;
   color: #ffffff;
+}
+.menu__link:focus {
+  color: #689ff2;
 }
 
 .burger {
@@ -900,6 +906,9 @@ html {
 .burger__item:hover::after {
   width: 100%;
 }
+.burger__item:active > .burger__link {
+  color: #bc3f3f;
+}
 .burger__link {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -908,6 +917,9 @@ html {
   letter-spacing: 0.08em;
   text-decoration: none;
   color: #ffffff;
+}
+.burger__link:focus {
+  color: #689ff2;
 }
 
 .header__burger-switch:checked ~ .body__all > .header > .burger {
@@ -1029,6 +1041,12 @@ html {
 .header__burger-menu:hover::after {
   width: 100%;
 }
+.header__burger-menu:active {
+  color: #bc3f3f;
+}
+.header__burger-menu:focus {
+  color: #689ff2;
+}
 
 .first__container {
   margin: 0 auto;
@@ -1125,6 +1143,12 @@ html {
 }
 .first__link:focus > .first__link--text::before {
   background-color: #689ff2;
+}
+.first__link:active {
+  color: #bc3f3f;
+}
+.first__link:active > .first__link--text::before {
+  background-color: #bc3f3f;
 }
 
 .info__container {
@@ -1331,6 +1355,12 @@ html {
 }
 .info__descr-link:focus > .info__descr-link--text::before {
   background-color: #689ff2;
+}
+.info__descr-link:active {
+  color: #bc3f3f;
+}
+.info__descr-link:active > .info__descr-link--text::before {
+  background-color: #bc3f3f;
 }
 
 .benefits__container {
@@ -1834,7 +1864,7 @@ html {
   display: inline-block;
   padding: 3.3rem 8.9rem;
   border: 1px solid #515773;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .promises__list-link--text {
   font-family: "Lato", sans-serif;
@@ -1886,6 +1916,13 @@ html {
 }
 .promises__list-link:focus > .promises__list-link--text::before {
   background-color: #689ff2;
+}
+.promises__list-link:active {
+  border-color: #bc3f3f;
+  color: #bc3f3f;
+}
+.promises__list-link:active > .promises__list-link--text::before {
+  background-color: #bc3f3f;
 }
 
 .reviews__container {
@@ -2164,6 +2201,12 @@ html {
 .contact__btn:focus > .contact__btn-text::before {
   background-color: #689ff2;
 }
+.contact__btn:active > .contact__btn-text {
+  color: #bc3f3f;
+}
+.contact__btn:active > .contact__btn-text::before {
+  background-color: #bc3f3f;
+}
 .contact__btn-text {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
@@ -2232,6 +2275,9 @@ html {
 }
 .footer__link:focus {
   color: #689ff2;
+}
+.footer__link:active {
+  color: #bc3f3f;
 }
 .footer__middle {
   display: flex;

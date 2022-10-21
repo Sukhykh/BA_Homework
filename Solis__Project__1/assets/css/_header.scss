@@ -75,5 +75,13 @@
 		&:hover::after {
 			width: 100%;
 		}
+
+		&:active {
+			@include color($colorError);
+		}
+
+		&:focus {
+			@include color($darkAccent);
+		}
 	}
 }

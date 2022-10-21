@@ -1,6 +1,5 @@
 .body {
 	@include backgroundColor($darkBackground);
-
 	&__all {
 		padding-top: 3rem;
 
@@ -8,6 +7,10 @@
 			padding-top: dinamic-desktop(30px);
 		}
 	}
+
+	//&__background {
+	//	position: relative;
+	//}
 
 	&__background-wrapper {
 		position: absolute;

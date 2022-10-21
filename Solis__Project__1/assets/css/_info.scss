@@ -184,5 +184,13 @@
 				@include backgroundColor($darkAccent);
 			}
 		}
+
+		&:active {
+			@include color($colorError);
+
+			& > .info__descr-link--text::before {
+				@include backgroundColor($colorError);
+			}
+		}
 	}
 }

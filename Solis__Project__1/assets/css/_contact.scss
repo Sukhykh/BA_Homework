@@ -149,6 +149,16 @@
 				@include backgroundColor($darkAccent);
 			}
 		}
+
+		&:active {
+			& > .contact__btn-text {
+				@include color($colorError);
+			}
+
+			& > .contact__btn-text::before {
+				@include backgroundColor($colorError);
+			}
+		}
 	}
 
 	&__btn-text {

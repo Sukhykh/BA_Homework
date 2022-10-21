@@ -68,5 +68,13 @@
 				@include backgroundColor($darkAccent);
 			}
 		}
+
+		&:active {
+			@include color($colorError);
+
+			& > .first__link--text::before {
+				@include backgroundColor($colorError);
+			}
+		}
 	}
 }

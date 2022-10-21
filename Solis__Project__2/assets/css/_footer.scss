@@ -43,6 +43,10 @@
 		&:focus {
 			@include color($darkAccent);
 		}
+
+		&:active {
+			@include color($colorError);
+		}
 	}
 
 	&__middle {

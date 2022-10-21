@@ -35,6 +35,12 @@
 		&:hover::after {
 			width: 100%;
 		}
+
+		&:active {
+			& > .menu__link {
+				@include color($colorError);
+			}
+		}
 	}
 
 	&__link {
@@ -46,6 +52,10 @@
 		text-decoration: none;
 
 		@include color($darkHeaderMenu);
+
+		&:focus {
+			@include color($darkAccent);
+		}
 	}
 }
 
@@ -112,6 +122,12 @@
 		&:hover::after {
 			width: 100%;
 		}
+
+		&:active {
+			& > .burger__link {
+				@include color($colorError);
+			}
+		}
 	}
 
 	&__link {
@@ -123,6 +139,10 @@
 		text-decoration: none;
 
 		@include color($darkHeaderMenu);
+
+		&:focus {
+			@include color($darkAccent);
+		}
 	}
 }
 

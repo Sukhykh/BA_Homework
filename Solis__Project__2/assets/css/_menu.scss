@@ -35,6 +35,18 @@
 		&:hover::after {
 			width: 100%;
 		}
+
+		&:focus {
+			& > .menu__link {
+				@include color($darkAccent);
+			}
+		}
+
+		&:active {
+			& > .menu__link {
+				@include color($colorError);
+			}
+		}
 	}
 
 	&__link {

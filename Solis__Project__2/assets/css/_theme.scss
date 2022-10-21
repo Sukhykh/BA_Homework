@@ -52,8 +52,63 @@
 				}
 			}
 
-			& ~ main {
-				color: aqua;
+			& ~ .main {
+				& > .first > .first__container > .first__wrapper {
+					& > .first__title {
+						@include color($lightText);
+
+						& > .first__title--strong {
+							@include color($lightAccent);
+						}
+					}
+
+					& > .first__text {
+						@include color($lightText);
+					}
+
+					& > .first__link {
+						@include color($lightLink);
+
+						& > .first__link--text {
+							@include color($lightLink);
+						}
+
+						&:hover {
+							@include color($lightLink-hover);
+
+							& > .first__link--text::before {
+								@include backgroundColor($lightLink-hover);
+							}
+						}
+
+						&:focus {
+							@include color($lightAccent);
+
+							& > .first__link--text::before {
+								@include backgroundColor($lightAccent);
+							}
+						}
+					}
+				}
+
+				& > .info > .info__container > .info__wrapper {
+					& > .info__img-wrapper::after {
+						background: unset;
+					}
+
+					& > .info__content {
+						& > .info__statistic > .info__statistic-item {
+							& > .info__statistic-title {
+								@include color($lightText);
+								& > .info__statistic-title--icon {
+									@include color($lightText);
+								}
+							}
+							& > .info__statistic-descr {
+							}
+						}
+					}
+				}
 			}
 		}
 	}

@@ -38,7 +38,7 @@
 		max-width: 100%;
 
 		@media screen and (max-width: $desktop) {
-			width: dinamic-desktop(1170px);
+			max-width: dinamic-desktop(1170px);
 		}
 	}
 
@@ -119,6 +119,8 @@
 		padding: 3.3rem 8.9rem;
 		border: 1px solid $darkBorder;
 
+		transition: all 0.5s ease-in-out;
+
 		@media screen and (max-width: $desktop) {
 			padding: dinamic-desktop(33px) dinamic-desktop(89px);
 		}
@@ -147,6 +149,15 @@
 		}
 
 		&:focus {
+			border-color: $darkAccent;
+			@include color($darkAccent);
+
+			& > .promises__list-link--text::before {
+				@include backgroundColor($darkAccent);
+			}
+		}
+
+		&:active {
 			border-color: $darkAccent;
 			@include color($darkAccent);
 
