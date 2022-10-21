@@ -1,0 +1,93 @@
+.quote {
+	font-size: 1em;
+
+	@media screen and (max-width: 680px) {
+		font-size: 0.8em;
+	}
+	&__container {
+		@include container;
+		@include sectionWrapper;
+		overflow: hidden;
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__img-wrapper {
+		position: absolute;
+		overflow: hidden;
+
+		&::after {
+			position: absolute;
+			content: '';
+
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			background: linear-gradient(
+				0deg,
+				rgba(25, 28, 41, 0.84),
+				rgba(25, 28, 41, 0.84)
+			);
+		}
+	}
+
+	&__img {
+		max-height: 100%;
+		object-fit: fill;
+	}
+
+	&__text-wrapper {
+		padding: 10rem 16rem;
+		width: 100%;
+
+		@media screen and (max-width: $desktop) {
+			padding: dinamic-desktop(100px) dinamic-desktop(160px);
+		}
+	}
+	/*
+	&__wrapper {
+        position: absolute;
+		margin: 10rem 16rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+*/
+	&__text {
+		position: relative;
+		@include lato-400;
+		font-size: 3.2em;
+		line-height: 144%;
+		letter-spacing: 0.04em;
+		@include color($commonText);
+		max-width: 71rem;
+
+		&::before {
+			content: url(../img/iconDark.png);
+			position: absolute;
+			top: -3rem;
+			left: -6rem;
+		}
+	}
+
+	&__title {
+		position: relative;
+		@include playfair-400;
+		font-style: italic;
+		font-size: 2em;
+		line-height: 100%;
+		letter-spacing: 0.08em;
+
+		margin-top: 4rem;
+
+		@include color($commonText);
+
+		@media screen and (max-width: $tablet) {
+			margin-top: 3rem;
+		}
+	}
+}

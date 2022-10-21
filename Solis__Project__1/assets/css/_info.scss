@@ -1,0 +1,175 @@
+.info {
+	&__container {
+		@include container;
+		@include sectionWrapper;
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__img-wrapper {
+		position: relative;
+
+		width: max-content;
+
+		&::after {
+			position: absolute;
+			content: '';
+
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			background: linear-gradient(
+				359.55deg,
+				rgba(33, 36, 54, 0.5) 0.64%,
+				rgba(33, 36, 54, 0) 94.04%
+			);
+		}
+
+		@media screen and (max-width: $tablet) {
+			position: absolute;
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+
+		@media screen and (max-width: $desktop) {
+			max-width: dinamic-desktop(1170px);
+		}
+	}
+
+	&__content {
+		position: absolute;
+		display: flex;
+		padding: 4.5rem 0;
+		margin-left: 4.5rem;
+
+		top: 4.5rem;
+		bottom: 4.5rem;
+		right: 0;
+
+		max-width: 770px;
+
+		@include backgroundColor($darkBackground);
+		opacity: 0.9;
+
+		@media screen and (max-width: $tablet) {
+			position: relative;
+			flex-direction: column;
+			gap: 4rem;
+			padding: 4.5rem;
+			padding-bottom: 0;
+
+			@media screen and (max-width: $desktop) {
+				padding: dinamic-desktop(45px);
+			}
+		}
+
+		@media screen and (max-width: $mobile) {
+			padding: 2rem;
+			padding-bottom: 0;
+		}
+	}
+
+	&__statistic {
+		@include flexCenter;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 4rem;
+		min-width: 37rem;
+
+		@media screen and (max-width: $tablet) {
+			min-width: 100%;
+		}
+
+		@media screen and (max-width: $mobile) {
+			gap: 2rem;
+		}
+	}
+
+	&__statistic-item {
+		@include flexCenter;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	&__statistic-title {
+		@include playfair-400;
+		font-size: 6.8rem;
+		line-height: 106%;
+		text-align: center;
+		@include color($darkText);
+
+		&--icon {
+			@include playfair-400;
+			font-size: 4rem;
+			line-height: 125%;
+			text-align: center;
+			@include color($darkText);
+
+			margin-right: 1rem;
+		}
+	}
+
+	&__statistic-descr {
+		text-align: center;
+		@include mainText;
+		@include color($darkText);
+		opacity: 0.8;
+		margin-top: 1.2rem;
+	}
+
+	&__statistic-divider {
+		display: inline-block;
+		width: 10rem;
+		min-height: 0.2rem;
+		@include backgroundColor($darkAccent);
+
+		&--none {
+			display: none;
+
+			@media screen and (max-width: $tablet) {
+				display: inline-block;
+			}
+		}
+	}
+
+	&__descr-text {
+		@include mainText;
+		@include color($darkText);
+
+		& + & {
+			margin-top: 2.6rem;
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__descr-link {
+		display: block;
+		@include link;
+		@include color($darkLink);
+
+		@media screen and (max-width: $mobile) {
+			margin-bottom: 50px;
+		}
+
+		&--text {
+			&::before {
+				@include backgroundColor($darkLink);
+				opacity: 0.3;
+			}
+		}
+
+		&:hover {
+			@include color($darkLink-hover);
+
+			& > .info__descr-link--text::before {
+				@include backgroundColor($darkLink-hover);
+			}
+		}
+	}
+}

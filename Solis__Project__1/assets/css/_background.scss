@@ -1,0 +1,71 @@
+.body {
+	&__all {
+		@include backgroundColor($darkBackground);
+		padding-top: 3rem;
+
+		@media screen and (max-width: $desktop) {
+			padding-top: dinamic-desktop(30px);
+		}
+	}
+
+	//&__background {
+	//	position: relative;
+	//}
+
+	&__background-wrapper {
+		position: absolute;
+
+		max-width: 100vw;
+
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		&--light {
+			transform: scale(0);
+
+			&::after {
+				content: '';
+
+				position: absolute;
+
+				width: 100%;
+				height: 57vw;
+
+				top: 32vw;
+
+				background: linear-gradient(
+					183.11deg,
+					rgba(255, 255, 255, 0) 46.73%,
+					#ffffff 63.21%
+				);
+			}
+		}
+
+		&--dark {
+			transform: scale(1);
+
+			&::before {
+				content: '';
+
+				position: absolute;
+
+				width: 100%;
+				height: 51vw;
+
+				top: 30vw;
+
+				background: linear-gradient(
+					183.11deg,
+					rgba(22, 25, 38, 0) 46.73%,
+					#161926 63.21%
+				);
+			}
+		}
+	}
+
+	&__background-img {
+		width: 100%;
+	}
+}

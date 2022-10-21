@@ -1,0 +1,23 @@
+/* Base resets */
+@import 'normalize';
+@import 'reset';
+
+/* General styles */
+@import 'variables';
+@import 'general';
+@import 'mixins';
+@import 'function';
+
+/* Site styles */
+@import 'menu';
+@import 'background';
+@import 'header';
+@import 'first';
+@import 'info';
+@import 'benefits';
+@import 'quote';
+@import 'video';
+@import 'promises';
+@import 'reviews';
+@import 'contact';
+@import 'footer';

@@ -1,0 +1,66 @@
+.benefits {
+	&__container {
+		@include container;
+		@include sectionWrapper;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 6rem 3rem;
+
+		@media screen and (max-width: $desktop) {
+			row-gap: dinamic-desktop(60px);
+		}
+
+		@media screen and (max-width: $tablet) {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+		}
+
+		@media screen and (max-width: $mobile) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: 3rem;
+		}
+	}
+
+	&__item {
+		width: 100%;
+		padding: 5rem 3.5rem 2.6rem 3.5rem;
+		border-top: 1px solid $darkBorder;
+
+		@media screen and (max-width: $desktop) {
+			padding: dinamic-desktop(50px) dinamic-desktop(35px)
+				dinamic-desktop(26px) dinamic-desktop(35px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			padding: 2rem;
+		}
+	}
+
+	&__title {
+		@include title;
+		@include color($darkText);
+
+		margin-top: 5rem;
+
+		@media screen and (max-width: $desktop) {
+			margin-top: dinamic-desktop(50px);
+		}
+
+		&--strong {
+			@include color($darkAccent);
+		}
+	}
+
+	&__descr {
+		@include mainText;
+		@include color($darkText);
+
+		margin-top: 2rem;
+	}
+}

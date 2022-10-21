@@ -1,0 +1,14 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-size: 10px;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 7px;
+	}
+}

@@ -1,0 +1,166 @@
+.contact {
+	&__container {
+		@include container;
+		margin-top: 10rem;
+		margin-bottom: 10rem;
+
+		@media screen and (max-width: $mobile) {
+			margin-top: 70px;
+			margin-bottom: 70px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 23rem;
+
+		padding-top: 6rem;
+		border-top: 1px solid $darkBorder;
+
+		@media screen and (max-width: $desktop) {
+			padding-top: dinamic-desktop(60px);
+			gap: dinamic-desktop(230px);
+		}
+
+		@media screen and (max-width: $tablet) {
+			flex-direction: column;
+		}
+
+		@media screen and (max-width: $mobile) {
+			gap: 20px;
+		}
+	}
+
+	&__info,
+	&__form-wrapper {
+		width: 100%;
+		max-width: 50%;
+
+		@media screen and (max-width: $tablet) {
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		@include title;
+		@include color($darkText);
+
+		margin-top: 2.1rem;
+
+		@media screen and (max-width: $desktop) {
+			margin-top: dinamic-desktop(50px);
+		}
+
+		&--strong {
+			@include color($darkAccent);
+		}
+	}
+
+	&__descr {
+		@include mainText;
+		@include color($darkText);
+
+		margin-top: 2.9rem;
+
+		&--braker {
+			display: block;
+
+			@media screen and (max-width: 1161px) {
+				display: inline;
+			}
+
+			@media screen and (max-width: $tablet) {
+				display: block;
+			}
+
+			@media screen and (max-width: 327px) {
+				display: inline;
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+	}
+
+	&__input {
+		@include playfair-400;
+		font-style: italic;
+		font-size: 1.8rem;
+		line-height: 111%;
+		letter-spacing: 0.08em;
+
+		@include color($darkText);
+		@include backgroundColor($darkBackground);
+
+		width: 100%;
+		padding-bottom: 1.2rem;
+		border: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+		&:focus {
+			border-color: $darkAccent;
+		}
+
+		&::placeholder {
+			@include playfair-400;
+			font-style: italic;
+			font-size: 1.8rem;
+			line-height: 111%;
+			letter-spacing: 0.08em;
+			opacity: 0.5;
+
+			@include color($darkText);
+		}
+
+		&--email {
+			&:focus:invalid {
+				border-color: $colorError;
+			}
+		}
+	}
+
+	&__btn {
+		width: max-content;
+		padding: 0;
+		border: none;
+		@include backgroundColor($darkBackground);
+
+		&:hover {
+			& > .contact__btn-text {
+				@include color($darkLink-hover);
+			}
+			& > .contact__btn-text::before {
+				@include backgroundColor($darkLink-hover);
+			}
+		}
+	}
+
+	&__btn-text {
+		text-transform: uppercase;
+		@include lato-700;
+		font-size: 2rem;
+		line-height: 100%;
+		letter-spacing: 0.08em;
+
+		transition: all 0.3s ease-in-out;
+
+		position: relative;
+
+		@include color($darkLink);
+		&::before {
+			position: absolute;
+			content: '';
+
+			top: 1.1rem;
+			bottom: -0.4rem;
+			right: -0.7rem;
+			left: 1rem;
+			@include backgroundColor($darkLink);
+			opacity: 0.3;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Solis</title>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="assets/img/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="assets/img/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="assets/img/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="assets/img/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="assets/img/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="assets/img/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="assets/img/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="assets/img/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/img/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="assets/img/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="assets/img/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/img/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/img/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="assets/img/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body class="body">
+		<input type="checkbox" name="" id="" style="display: none;" />
+		<input
+			class="header__burger-switch"
+			type="checkbox"
+			name="menu-switch"
+			id="menu-switch"
+		/>
+
+		<div class="body__background">
+			<div
+				class="body__background-wrapper body__background-wrapper--light"
+			>
+				<picture>
+					<source
+						srcset="assets/img/lightFirstScreen-2k.webp"
+						type="image/webp"
+						media="(min-width: 1441px)"
+					/>
+					<source
+						srcset="assets/img/lightFirstScreen.webp"
+						type="image/webp"
+						media="(max-width: 1440px)"
+					/>
+					<img
+						class="body__background-img"
+						src="assets/img/light.png"
+						alt="background"
+					/>
+				</picture>
+			</div>
+			<div
+				class="body__background-wrapper body__background-wrapper--dark"
+			>
+				<picture>
+					<source
+						srcset="assets/img/darkFirstScreen-2k.webp"
+						type="image/webp"
+						media="(min-width: 1441px)"
+					/>
+					<source
+						srcset="assets/img/darkFirstScreen.webp"
+						type="image/webp"
+						media="(max-width: 1440px)"
+					/>
+					<img
+						class="body__background-img"
+						src="assets/img/dark.png"
+						alt="background"
+					/>
+				</picture>
+			</div>
+		</div>
+
+		<div class="body__all">
+			<header class="header">
+				<div class="header__burger burger">
+					<nav class="burger__nav">
+						<ul class="burger__list">
+							<li class="burger__item">
+								<a href="#" class="burger__link">Home</a>
+							</li>
+							<li class="burger__item">
+								<a href="#" class="burger__link">About</a>
+							</li>
+							<li class="burger__item">
+								<a href="#" class="burger__link">Products</a>
+							</li>
+							<li class="burger__item">
+								<a href="#" class="burger__link">Use Cases</a>
+							</li>
+							<li class="burger__item">
+								<a href="#" class="burger__link">Pricing</a>
+							</li>
+							<li class="burger__item">
+								<a href="#" class="burger__link">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__background">
+					<div class="header__container">
+						<div class="header__wrapper">
+							<a class="header__logo-wrapper" href="#">
+								<img
+									class="header__logo-img"
+									src="assets/img/logo.svg"
+									alt="logo"
+								/>
+							</a>
+
+							<label class="header__burger-menu" for="menu-switch"
+								>menu
+							</label>
+
+							<nav class="header__menu menu">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Home</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link"
+											>Products</a
+										>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link"
+											>Use Cases</a
+										>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link"
+											>Pricing</a
+										>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link"
+											>Resources</a
+										>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<section class="main__first first">
+					<div class="first__container">
+						<div class="first__wrapper">
+							<h1 class="first__title">
+								A peer-to-peer stablecoin
+								<strong class="first__title--strong"
+									>clearinghouse </strong
+								>for the new economy
+							</h1>
+							<p class="first__text">
+								We are bringing real solutions to the payments
+								world by leveraging public blockchains.
+							</p>
+							<a class="first__link" href="#">
+								<span class="first__link--text">join now</span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="main__info info">
+					<div class="info__container">
+						<div class="info__wrapper">
+							<div class="info__img-wrapper">
+								<picture>
+									<source
+										srcset="assets/img/statistic.webp"
+										type="image/webp"
+									/>
+									<img
+										class="info__img"
+										src="assets/img/statistic.png"
+										alt="background"
+									/>
+								</picture>
+							</div>
+							<div class="info__content">
+								<div class="info__statistic">
+									<div class="info__statistic-item">
+										<h2 class="info__statistic-title">
+											<span
+												class="info__statistic-title--icon"
+												>$</span
+											>1 tril
+										</h2>
+										<p class="info__statistic-descr">
+											Market cap potential
+										</p>
+									</div>
+									<div class="info__statistic-divider"></div>
+									<div class="info__statistic-item">
+										<h2 class="info__statistic-title">
+											<span
+												class="info__statistic-title--icon"
+												>$</span
+											>3.65 mil
+										</h2>
+										<p class="info__statistic-descr">
+											Deposited to platform
+										</p>
+									</div>
+									<div class="info__statistic-divider"></div>
+									<div class="info__statistic-item">
+										<h2 class="info__statistic-title">
+											12
+										</h2>
+										<p class="info__statistic-descr">
+											Stablecoins
+										</p>
+									</div>
+									<div
+										class="info__statistic-divider info__statistic-divider--none"
+									></div>
+								</div>
+								<div class="info__descr">
+									<p class="info__descr-text">
+										Solis group is a new venture created
+										with investments from and collaboration
+										with XBTO International, XBTO Ventures
+										and Phil Potter, formerly of bitfinex.
+										Stablehouse is intended to launch a
+										first-of-its-kind clearing house for
+										stablecoins that seeks to promote the
+										next phase of the market1`s development.
+									</p>
+									<p class="info__descr-text">
+										The API-enabled, centralized platform
+										addresses the key issues of inconsistent
+										liquidity, stability and accessibility
+										which are currently preventing the
+										stablecoin market from reaching critical
+										mass.
+									</p>
+									<a href="#" class="info__descr-link">
+										<span class="info__descr-link--text"
+											>Contact sales</span
+										>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main__benefits benefits">
+					<div class="benefits__container">
+						<div class="benefits__wrapper">
+							<div class="benefits__item">
+								<h2 class="benefits__title">
+									Qualified
+									<strong class="benefits__title--strong"
+										>traders </strong
+									>and liquidty
+									<strong class="benefits__title--strong"
+										>solutions</strong
+									>
+								</h2>
+								<p class="benefits__descr">
+									Trade easily and efficiently between 12
+									stablecoins, including USDT, TrueUSD, Dai,
+									Eurs and Gemini Dollar.
+								</p>
+							</div>
+							<div class="benefits__item">
+								<h2 class="benefits__title">
+									Settlement/OTC API and
+									<strong class="benefits__title--strong"
+										>integration</strong
+									>
+								</h2>
+								<p class="benefits__descr">
+									Integrate OTC operations and settlements
+									using our efficient API.
+								</p>
+							</div>
+							<div class="benefits__item">
+								<h2 class="benefits__title">
+									The best
+									<strong class="benefits__title--strong"
+										>payments solutions</strong
+									>
+								</h2>
+								<p class="benefits__descr">
+									For all stablecoin payments, from
+									point-of-sale transactions to website
+									solutions. If you use stablecoins in your
+									business, Stablehouse is for you.
+								</p>
+							</div>
+							<div class="benefits__item">
+								<h2 class="benefits__title">
+									<strong class="benefits__title--strong"
+										>Treasury </strong
+									>and
+									<strong class="benefits__title--strong"
+										>returns </strong
+									>for stablecoin stores
+								</h2>
+								<p class="benefits__descr">
+									Automate your stablecoin store with instant
+									payments and on-the-fly conversion between
+									different stablecoins.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main__quote quote">
+					<div class="quote__container">
+						<div class="quote__wrapper">
+							<div class="quote__img-wrapper">
+								<picture>
+									<source
+										srcset="assets/img/quote.webp"
+										type="image/webp"
+									/>
+									<img
+										class="quote__img"
+										src="assets/img/quote.png"
+										alt="background"
+									/>
+								</picture>
+							</div>
+							<div class="quote__text-wrapper">
+								<p class="quote__text">
+									Solis Group serves as a liquidity nexus that
+									gives stablecoin issuers, holders and
+									exchanges certainty over access and
+									liquidity
+								</p>
+								<h2 class="quote__title">
+									Lennon Burnett, Solis Group CEO
+								</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main__video">
+					<div class="video__container">
+						<div class="video__wrapper">
+							<div class="video__content">
+								<div class="video__content-little"></div>
+								<div class="video__content-player-wrapper">
+									<div class="video__content-frame-wrapper">
+										<iframe
+											class="video__content-frame"
+											width="100%"
+											height="100%"
+											src="https://www.youtube.com/embed/vnbN9V_2Guk"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									</div>
+									<div class="video__content-saver">
+										<picture>
+											<source
+												srcset="
+													assets/img/screensaver.webp
+												"
+												type="image/webp"
+											/>
+											<img
+												class="video__content-img"
+												src="assets/img/screensaver.png"
+												alt="background"
+											/>
+										</picture>
+									</div>
+								</div>
+								<div class="video__content-big"></div>
+							</div>
+							<h2 class="video__title">
+								A
+								<strong class="video__title--strong"
+									>powerful API </strong
+								>, easy to use user interface
+							</h2>
+							<p class="video__descr">
+								Our API allows all members to interact with
+								Stablehouse`s platform, from effecting transfers
+								to deposits, withdrawals, creation and
+								redemption and reporting.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="main__promises promises">
+					<div class="promises__container">
+						<div class="promises__wrapper">
+							<div class="promises__img-wrapper">
+								<picture>
+									<source
+										srcset="assets/img/promises.webp"
+										type="image/webp"
+									/>
+									<img
+										class="info__img"
+										src="assets/img/promises.png"
+										alt="background"
+									/>
+								</picture>
+							</div>
+							<div class="promises__content">
+								<div class="promises__list-item">
+									<h2 class="promises__list-title">
+										On-Exchange Trading
+									</h2>
+									<p class="promises__list-descr">
+										Instant
+									</p>
+									<p class="promises__list-descr">
+										Passive Inventory earns fees
+									</p>
+								</div>
+								<div class="promises__list-item">
+									<h2 class="promises__list-title">
+										On-Chain Swaps
+									</h2>
+									<p class="promises__list-descr">
+										Low Counterparty risk
+									</p>
+									<p class="promises__list-descr">
+										Direct transfers
+									</p>
+								</div>
+								<div class="promises__list-item">
+									<h2 class="promises__list-title">
+										Time Settlement Swaps
+									</h2>
+									<p class="promises__list-descr">
+										LBTC / Lightning and other sidechain
+										swaps
+									</p>
+								</div>
+								<div class="promises__list-button">
+									<a class="promises__list-link" href="#"
+										><span class="promises__list-link--text"
+											>JOIN NOW</span
+										>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main__reviews reviews">
+					<div class="reviews__container">
+						<div class="reviews__wrapper">
+							<h2 class="reviews__title">
+								Client
+								<strong class="reviews__title--strong"
+									>reviews</strong
+								>
+							</h2>
+							<p class="reviews__descr">
+								Happy clients, happy us. Read our client reviews
+								about the work process and results.
+							</p>
+							<div class="reviews__bar">
+								<div class="reviews__item">
+									<div class="reviews__item-img-wrapper">
+										<picture>
+											<source
+												srcset="
+													assets/img/client-1.webp
+												"
+												type="image/webp"
+											/>
+											<img
+												class="reviews__item-img"
+												src="assets/img/client-1.jpg"
+												alt="background"
+											/>
+										</picture>
+									</div>
+									<div class="reviews__item-text-wrapper">
+										<p class="reviews__item-text">
+											Solis did a great job. Whether
+											providing direct development support
+											or giving us the opportunity to make
+											our development updates, Solis's web
+											design expertise and support
+											services were top notch! It didn't
+											take long to stand up our website,
+											and we were pleased with the design
+											and layout of the graphics and
+											information.
+										</p>
+										<p class="reviews__item-name">
+											Dr. Jamika Burge
+										</p>
+									</div>
+								</div>
+								<div class="reviews__item">
+									<div class="reviews__item-img-wrapper">
+										<picture>
+											<source
+												srcset="
+													assets/img/client-2.webp
+												"
+												type="image/webp"
+											/>
+											<img
+												class="reviews__item-img"
+												src="assets/img/client-2.jpg"
+												alt="background"
+											/>
+										</picture>
+									</div>
+									<div class="reviews__item-text-wrapper">
+										<p class="reviews__item-text">
+											Solis is a cutting edge company and
+											knows the importance of excellence.
+											Having been in business for 21
+											years, I know when I`ve found a
+											competent professional and more
+											importantly a company with
+											integrity. I highly recommend this
+											company and am available for further
+											reference if needed.
+										</p>
+										<p class="reviews__item-name">
+											Evie-Rose Prosse
+										</p>
+									</div>
+								</div>
+								<div class="reviews__item">
+									<div class="reviews__item-img-wrapper">
+										<picture>
+											<source
+												srcset="
+													assets/img/client-3.webp
+												"
+												type="image/webp"
+											/>
+											<img
+												class="reviews__item-img"
+												src="assets/img/client-3.jpg"
+												alt="background"
+											/>
+										</picture>
+									</div>
+									<div class="reviews__item-text-wrapper">
+										<p class="reviews__item-text">
+											I can`t say enough about how
+											knowledgeable Toinette Rorie is in
+											the area of Web Development. She
+											indeed is a developer and can build
+											a site from scratch. She understands
+											functionality and is great at
+											constructing a site that is robust
+											and fully functioning.
+										</p>
+										<p class="reviews__item-name">
+											Elvis Mooney
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main__contact contact">
+					<div class="contact__container">
+						<div class="contact__wrapper">
+							<div class="contact__info">
+								<h2 class="contact__title">
+									Contact
+									<strong class="contact__title--strong"
+										>our sales team</strong
+									>
+								</h2>
+								<p class="contact__descr">
+									Our team is happy to answer your sales
+									questions.
+									<span class="contact__descr--braker"
+										>Fill out the form and we`ll be in touch
+										as soon as possible.</span
+									>
+								</p>
+							</div>
+							<div class="contact__form-wrapper">
+								<form
+									class="contact__form"
+									action="#"
+									method="get"
+									autocomplete="off"
+								>
+									<input
+										class="contact__input contact__input--name"
+										type="text"
+										name="name"
+										placeholder="Your name"
+										required
+									/>
+									<input
+										class="contact__input contact__input--email"
+										type="email"
+										name="email"
+										placeholder="Email"
+										required
+									/>
+									<input
+										class="contact__input contact__input--text"
+										type="text"
+										name="text"
+										placeholder="Tell more"
+									/>
+									<button class="contact__btn" type="submit">
+										<span class="contact__btn-text"
+											>SEND REQuest</span
+										>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__wrapper">
+						<div class="footer__left">
+							<p class="footer__text">
+								© 2020 Solisgroup. All Rights Reserved.
+							</p>
+						</div>
+						<div class="footer__middle">
+							<p class="footer__text">made by</p>
+							<a href="#" class="footer__link">Zgraya.digital</a>
+						</div>
+						<div class="footer__right">
+							<a class="footer__link" href="#">User Agreement</a>
+							<a class="footer__link" href="#"> Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
