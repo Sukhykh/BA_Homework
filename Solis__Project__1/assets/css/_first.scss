@@ -16,7 +16,6 @@
 	}
 
 	&__title {
-		position: relative;
 		@include title;
 		@include color($darkText);
 
@@ -26,7 +25,6 @@
 	}
 
 	&__text {
-		position: relative;
 		@include mainText;
 		@include color($darkText);
 
