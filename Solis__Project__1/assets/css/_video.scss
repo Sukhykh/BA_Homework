@@ -151,11 +151,12 @@
 			opacity: 0.3;
 			border-radius: 50%;
 
-			@media screen and (max-width: $desktop) {
-				width: dinamic-desktop(12px);
-				height: dinamic-desktop(12px);
+			@media screen and (max-width: $tablet) {
+				width: 9rem;
+				height: 9rem;
 			}
 		}
+
 		&::after {
 			position: absolute;
 			content: '';
@@ -166,13 +167,15 @@
 			border-top: 2rem solid transparent;
 			border-bottom: 2rem solid transparent;
 			border-right: 0;
-
-			@media screen and (max-width: $desktop) {
-				border-left: dinamic-desktop(40px);
-				border-top: dinamic-desktop(20px);
-				border-bottom: dinamic-desktop(20px);
-				margin-left: dinamic-desktop(10px);
-			}
+			/*
+			@media screen and (max-width: $tablet) {
+				width: 0;
+				height: 0;
+				border-left: 2rem;
+				border-top: 1rem;
+				border-bottom: 1rem;
+				margin-left: 0.5rem;
+			}*/
 		}
 		@media screen and (max-width: $desktop) {
 			margin: dinamic-desktop(31px) 0;
