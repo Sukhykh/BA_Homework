@@ -1,0 +1,101 @@
+.reviews {
+	&__container {
+		@include container;
+		@include sectionWrapper;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		@include title;
+		@include color($darkText);
+
+		&--strong {
+			@include color($darkAccent);
+		}
+	}
+
+	&__descr {
+		@include mainText;
+		@include color($darkText);
+
+		margin-top: 2rem;
+		margin-bottom: 5rem;
+
+		@media screen and (max-width: $desktop) {
+			margin-bottom: dinamic-desktop(50px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__bar {
+		@include flexCenter;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 3rem;
+	}
+
+	&__item {
+		display: flex;
+		position: relative;
+	}
+
+	&__item-img-wrapper {
+		position: relative;
+
+		width: 100%;
+
+		&::after {
+			position: absolute;
+			content: '';
+
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			background: rgba(25, 28, 41, 0.6);
+		}
+	}
+
+	&__item-img {
+		width: 100%;
+	}
+
+	&__item-text-wrapper {
+		position: absolute;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		top: 3rem;
+		bottom: 3rem;
+		left: 4rem;
+		right: 4rem;
+	}
+
+	&__item-text {
+		@include lato-400;
+		font-size: 1.6em;
+		line-height: 162%;
+		opacity: 0.8;
+
+		@include color($commonText);
+	}
+
+	&__item-name {
+		@include lato-400;
+		font-size: 1.6em;
+		line-height: 162%;
+		opacity: 0.8;
+
+		@include color($commonText);
+	}
+}

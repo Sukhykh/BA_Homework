@@ -1,0 +1,60 @@
+.body-theme__input {
+	display: none;
+
+	&:checked {
+		& ~ .body__background {
+			& > .body__background-wrapper--light {
+				transform: scale(1);
+			}
+
+			& > .body__background-wrapper--dark {
+				transform: scale(0);
+			}
+		}
+
+		& ~ .body__all {
+			& > .header {
+				& > .burger > .burger__nav > .burger__list {
+					& > .burger__item::after {
+						background: $lightLink;
+					}
+
+					& > .burger__item > .burger__link {
+						@include color($lightHeaderMenu);
+					}
+				}
+
+				&
+					> .header__background
+					> .header__container
+					> .header__wrapper {
+					& > .header__theme {
+						@include color($lightHeaderMenu);
+						&::after {
+							background: $lightLink;
+						}
+					}
+					& > .header__burger-menu {
+						@include color($lightHeaderMenu);
+						&::after {
+							background: $lightLink;
+						}
+					}
+					& > .menu > .menu__list {
+						& > .menu__item::after {
+							background: $lightLink;
+						}
+
+						& > .menu__item > .menu__link {
+							@include color($lightHeaderMenu);
+						}
+					}
+				}
+			}
+
+			& ~ main {
+				color: aqua;
+			}
+		}
+	}
+}

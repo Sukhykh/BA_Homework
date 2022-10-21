@@ -1,0 +1,54 @@
+/* colors */
+$white: #ffffff;
+$grayLight: #e4e4e4;
+$grayDark: #515773;
+
+$green: #85bbb1;
+$green-neon: #53f3cd;
+$green-neonDark: #02e0ab;
+
+$coral: #f1897b;
+$redDark: #e64f3a;
+$red: #bc3f3f;
+
+$blue: #689ff2;
+$darkBlue: #262a3f;
+$blueDeep: #161926;
+
+/* light theme */
+$lightBackground: $white;
+$lightHeaderMenu: $darkBlue;
+$lightText: $darkBlue;
+$lightAccent: $green;
+$lightLink: $coral;
+$lightLink-hover: $redDark;
+$lightBorder: $grayLight;
+
+/* dark theme */
+$darkBackground: $blueDeep;
+$darkHeaderMenu: $white;
+$darkText: $white;
+$darkAccent: $blue;
+$darkLink: $green-neon;
+$darkLink-hover: $green-neonDark;
+$darkBorder: $grayDark;
+
+/* common */
+$commonText: $white;
+$colorError: $red;
+
+/* fonts */
+$lato: 'Lato', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+$fw400: 400;
+$fw300: 300;
+$fw700: 700;
+
+/* width */
+$desktop: 1439px;
+$desktop-math: 1440px;
+$tablet: 900px;
+$tablet-math: 768px;
+$mobile: 500px;
+$mobile-math: 320px;

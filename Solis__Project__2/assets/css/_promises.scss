@@ -119,8 +119,6 @@
 		padding: 3.3rem 8.9rem;
 		border: 1px solid $darkBorder;
 
-		transition: all 0.5s ease-in-out;
-
 		@media screen and (max-width: $desktop) {
 			padding: dinamic-desktop(33px) dinamic-desktop(89px);
 		}

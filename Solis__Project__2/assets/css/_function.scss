@@ -1,0 +1,11 @@
+@function dinamic-desktop($n) {
+	@return calc($n / $desktop-math) * 100 * 1vw;
+}
+
+@function dinamic-tablet($n) {
+	@return calc($n / $tablet-math) * 100 * 1vw;
+}
+
+@function dinamic-mobile($n) {
+	@return calc($n / $mobile-math) * 100 * 1vw;
+}
