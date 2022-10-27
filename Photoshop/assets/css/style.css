@@ -782,31 +782,6 @@ textarea {
 }
 
 /* General styles */
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-Thin.ttf") format("truetype"), url("../fonts/BebasNeue-Thin.otf") format("opentype");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-Light.ttf") format("truetype"), url("../fonts/BebasNeue-Light.otf") format("opentype");
-  font-weight: 200;
-}
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-Book.ttf") format("truetype"), url("../fonts/BebasNeue-Book.otf") format("opentype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype"), url("../fonts/BebasNeue-Regular.otf") format("opentype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../fonts/BebasNeue-Bold.ttf") format("truetype"), url("../fonts/BebasNeue-Bold.otf") format("opentype");
-  font-weight: 700;
-}
 /* colors */
 *,
 ::after,
@@ -816,252 +791,116 @@ textarea {
 
 html {
   font-size: 10px;
-}
-
-/* fonts */
-/* Site styles */
-.main {
-  background-color: #9789f9;
-}
-.main__container {
-  margin-inline: auto;
-  max-width: 120rem;
-}
-.main__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
   height: 100vh;
 }
 
-.card {
-  position: relative;
-  background-color: #f5f3f9;
-  max-width: 37rem;
-  width: 100%;
-  box-shadow: 0px 0px 20px #8677ef;
-  transition: all 0.5s linear;
+.body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.card:hover {
-  max-width: 40rem;
+
+.footer {
+  width: 100vw;
+  background-color: #121116;
 }
-.card:hover .card__badge {
-  transform: scale(1);
-  opacity: 1;
+.footer__container {
+  margin-inline: auto;
+  max-width: 117rem;
 }
-.card:hover .card__header {
-  padding-top: 5rem;
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
   padding-bottom: 4rem;
 }
-.card:hover .card__main {
-  padding-bottom: 6.7rem;
+.footer__logo-link {
+  margin-bottom: 5rem;
 }
-.card:hover .card__info {
-  transform: scale(1);
-  opacity: 1;
-  padding-top: 4.7rem;
-}
-.card:hover .card__button {
-  background-color: #fd8d7b;
-  transform: translateY(-11.2rem);
-}
-.card__badge {
-  position: absolute;
-}
-.card__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-  transition: all 0.5s linear;
-}
-.card__text {
-  position: relative;
-  text-transform: uppercase;
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 100;
-  font-size: 6rem;
-  line-height: 6rem;
-  letter-spacing: 0.08em;
-  color: #000000;
-}
-.card__text::before {
-  position: absolute;
-  content: "$";
-  text-transform: uppercase;
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 100;
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-  color: #181818;
-  top: 0.5rem;
-  left: -1rem;
-}
-.card__text::after {
-  position: absolute;
-  content: "/hr";
-  text-transform: uppercase;
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
-  color: #000000;
-  bottom: 0.5rem;
-  right: -2.5rem;
-}
-.card__title {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-  letter-spacing: 0.04em;
-  color: #000000;
-}
-.card__main {
-  background-image: url(../img/bg-image.png);
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding-top: 4rem;
-  padding-bottom: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-  transition: all 0.5s linear;
-}
-.card__icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-}
-.card__icon {
-  width: 100%;
-  height: 100%;
-}
-.card__icon-link {
-  fill: #181818;
-}
-.card__list {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.card__item {
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  letter-spacing: 0.04em;
-  color: #000000;
-}
-.card__footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.card__info {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.1rem;
-  line-height: 1.8rem;
-  letter-spacing: 0.04em;
-  color: #a9a9a9;
-  transition: all 0.5s linear;
-  transform: scale(0);
-  opacity: 0;
-  padding-top: 0.9rem;
-  padding-bottom: 3rem;
-}
-.card__button {
-  position: absolute;
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  padding: 2rem 5rem;
-  border-radius: 3rem;
-  background-color: #6fcffb;
-  transition: all 0.5s linear;
-  bottom: -50%;
-}
-.card__badge {
-  z-index: 10;
-  position: absolute;
-  top: 1rem;
-  left: 32.2rem;
-  display: flex;
-  transition: all 0.5s linear;
-  transform-origin: left;
-  transform: scale(0);
-  opacity: 0;
-}
-.card__badge-red {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4.8rem;
-  width: 4.8rem;
-  border-radius: 50%;
-  background-color: #fd8d7b;
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-  letter-spacing: unset;
-  color: #ffffff;
-}
-.card__badge-wrapper {
-  width: 2rem;
-  height: 1.7rem;
-  margin-top: -0.6rem;
-}
-.card__badge-icon {
+.footer__logo {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.card__badge-black {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  width: 9.6rem;
-  border-radius: 1.5rem;
-  background-color: #3b4040;
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 400;
+.footer__title {
   text-transform: uppercase;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
-  letter-spacing: 0.04em;
   color: #ffffff;
-  align-self: center;
-  margin-left: -1.2rem;
-  box-shadow: 0px 0px 20px #8677ef;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 100%;
 }
-.card__badge-black::before {
-  position: absolute;
-  content: "";
+.footer__divider {
   display: inline-block;
-  height: 1rem;
-  width: 1rem;
-  left: -0.3rem;
-  transform: rotateZ(45deg);
-  background-color: #3b4040;
-}/*# sourceMappingURL=style.css.map */
+  height: 0;
+  width: 24rem;
+  border-top: 0.2rem solid #ffffff;
+  border-bottom: 0.2rem solid #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer__social-bar {
+  display: flex;
+  gap: 1rem;
+}
+.footer__item {
+  max-height: 3rem;
+  max-width: 3rem;
+}
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.1rem solid #121116;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.footer__svg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__ico {
+  fill: #ffffff;
+  transition: all 0.3s linear;
+}
+.footer__descr {
+  margin-top: 8rem;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 100%;
+}
+.footer__descr--strong {
+  color: #00c7fc;
+}
+
+.footer__item:has(.footer__link:hover) .footer__link {
+  border: 0.1rem solid #ffffff;
+  box-shadow: 0 0 4rem #ffffff;
+}
+.footer__item:has(.footer__link:hover) .footer__ico {
+  fill: #00c7fc;
+}
+
+.footer__item:has(.footer__link:focus) .footer__link {
+  border: 0.1rem solid #ffffff;
+  box-shadow: 0 0 4rem #ffffff;
+}
+
+.footer__item:has(.footer__link:active) .footer__link {
+  box-shadow: 0 0 4rem #00c7fc;
+  border: 0.1rem solid #00c7fc;
+}
+.footer__item:has(.footer__link:active) .footer__ico {
+  fill: #00c7fc;
+}
+
+/* Site styles *//*# sourceMappingURL=style.css.map */
