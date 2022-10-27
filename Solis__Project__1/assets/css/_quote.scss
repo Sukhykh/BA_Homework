@@ -36,6 +36,8 @@
 	}
 
 	&__img {
+		width: unset;
+		height: unset;
 		max-height: 100%;
 		object-fit: fill;
 	}

@@ -1,0 +1,393 @@
+.body-theme__input {
+	display: none;
+}
+
+.body:has(.body-theme__input:checked) {
+	/* background */
+	@include backgroundColor($lightBackground);
+	.body__background-wrapper--light {
+		transform: scale(1);
+	}
+	.body__background-wrapper--dark {
+		transform: scale(0);
+	}
+	/* header */
+	.header__burger-menu {
+		@include color($lightHeaderMenu);
+		&::after {
+			background: $lightLink;
+			width: 100%;
+			transform: scale(0);
+		}
+		&:hover::after {
+			transform: scale(1);
+		}
+		&:active {
+			@include color($colorError);
+		}
+		&:focus {
+			@include color($lightAccent);
+		}
+	}
+	.header__theme {
+		@include color($lightHeaderMenu);
+		&::after {
+			background: $lightLink;
+			width: 100%;
+			transform: scale(0);
+		}
+		&:hover::after {
+			transform: scale(1);
+		}
+		&:active {
+			@include color($colorError);
+		}
+		&:focus {
+			@include color($lightAccent);
+		}
+	}
+	.menu__item {
+		&::after {
+			background: $lightLink;
+			width: 100%;
+			transform: scale(0);
+		}
+		&:hover::after {
+			transform: scale(1);
+		}
+		&:active {
+			& > .menu__link {
+				@include color($colorError);
+			}
+		}
+	}
+	.menu__link {
+		@include color($lightHeaderMenu);
+		&:focus {
+			@include color($lightAccent);
+		}
+	}
+	.burger__item {
+		&::after {
+			background: $lightLink;
+			width: 100%;
+			transform: scale(0);
+		}
+		&:hover::after {
+			transform: scale(1);
+		}
+		&:active {
+			& > .burger__link {
+				@include color($colorError);
+			}
+		}
+	}
+	.burger__link {
+		@include color($lightHeaderMenu);
+		&:focus {
+			@include color($lightAccent);
+		}
+	}
+
+	/* first */
+	.first__title {
+		@include color($lightText);
+		&--strong {
+			@include color($lightAccent);
+		}
+	}
+	.first__text {
+		@include color($lightText);
+	}
+	.first__link {
+		@include color($lightLink);
+		&--text {
+			&::before {
+				@include backgroundColor($lightLink);
+			}
+		}
+		&:hover {
+			@include color($lightLink-hover);
+			& > .first__link--text::before {
+				@include backgroundColor($lightLink-hover);
+			}
+		}
+		&:focus {
+			@include color($lightAccent);
+			& > .first__link--text::before {
+				@include backgroundColor($lightAccent);
+			}
+		}
+		&:active {
+			@include color($colorError);
+			& > .first__link--text::before {
+				@include backgroundColor($colorError);
+			}
+		}
+	}
+
+	/* info */
+	.info {
+		&__img-wrapper {
+			&::after {
+				background: unset;
+			}
+		}
+		&__content {
+			@include backgroundColor($lightBackground);
+		}
+		&__statistic-title {
+			@include color($lightText);
+			&--icon {
+				@include color($lightText);
+			}
+		}
+		&__statistic-descr {
+			@include color($lightText);
+		}
+		&__statistic-divider {
+			@include backgroundColor($lightAccent);
+		}
+		&__descr-text {
+			@include color($lightText);
+		}
+		&__descr-link {
+			@include color($lightLink);
+			&--text {
+				&::before {
+					@include backgroundColor($lightLink);
+				}
+			}
+			&:hover {
+				@include color($lightLink-hover);
+				& > .info__descr-link--text::before {
+					@include backgroundColor($lightLink-hover);
+				}
+			}
+			&:focus {
+				@include color($lightAccent);
+				& > .info__descr-link--text::before {
+					@include backgroundColor($lightAccent);
+				}
+			}
+			&:active {
+				@include color($colorError);
+				& > .info__descr-link--text::before {
+					@include backgroundColor($colorError);
+				}
+			}
+		}
+	}
+	/* benefits */
+	.benefits__item {
+		border-top: 1px solid $lightBorder;
+	}
+	.benefits__title {
+		@include color($lightText);
+	}
+	.benefits__title--strong {
+		@include color($lightAccent);
+	}
+	.benefits__descr {
+		@include color($lightText);
+	}
+
+	/* quote */
+	.quote {
+		&__img-wrapper {
+			&::after {
+				background: unset;
+			}
+		}
+		&__text {
+			&::before {
+				content: url(../img/iconLight.png);
+				position: absolute;
+				top: -3rem;
+				left: -6rem;
+			}
+		}
+	}
+
+	/* video */
+	.video {
+		&__title {
+			@include color($lightText);
+			&--strong {
+				@include color($lightAccent);
+			}
+		}
+		&__descr {
+			@include color($lightText);
+		}
+		&__content {
+			border: 1px solid $lightBorder;
+		}
+		&__content-little {
+			border: 1px solid $lightBorder;
+		}
+		&__content-big {
+			border: 1px solid $lightBorder;
+		}
+		&__content-frame-wrapper {
+			border: 1px solid $lightBorder;
+		}
+		&__content-saver {
+			border: 1px solid $lightBorder;
+			&::before {
+				@include backgroundColor(#586291);
+			}
+			&::after {
+				border-left: 4rem solid $darkBlue;
+			}
+		}
+		&__content-img {
+			@include backgroundColor($lightBackground);
+		}
+	}
+
+	/* promises */
+	.promises {
+		&__img-wrapper {
+			&::after {
+				background: unset;
+			}
+		}
+		&__content {
+			@include backgroundColor($lightBackground);
+		}
+		&__list-title {
+			@include color($lightText);
+		}
+		&__list-descr {
+			@include color($lightText);
+		}
+		&__list-link {
+			@include color($lightLink);
+			border: 1px solid $lightBorder;
+			&--text {
+				&::before {
+					@include backgroundColor($lightLink);
+				}
+			}
+			&:hover {
+				border-color: $lightLink-hover;
+				@include color($lightLink-hover);
+				& > .promises__list-link--text::before {
+					@include backgroundColor($lightLink-hover);
+				}
+			}
+			&:focus {
+				border-color: $lightAccent;
+				@include color($lightAccent);
+				& > .promises__list-link--text::before {
+					@include backgroundColor($lightAccent);
+				}
+			}
+			&:active {
+				border-color: $colorError;
+				@include color($colorError);
+				& > .promises__list-link--text::before {
+					@include backgroundColor($colorError);
+				}
+			}
+		}
+	}
+
+	/* reviews */
+	.reviews {
+		&__title {
+			@include color($lightText);
+			&--strong {
+				@include color($lightAccent);
+			}
+		}
+		&__descr {
+			@include color($lightText);
+		}
+	}
+
+	/* contact */
+	.contact__wrapper {
+		border-top: 1px solid $lightBorder;
+	}
+	.contact__title {
+		@include color($lightText);
+	}
+	.contact__title--strong {
+		@include color($lightAccent);
+	}
+	.contact__descr {
+		@include color($lightText);
+	}
+	.contact__input {
+		@include color($lightText);
+		@include backgroundColor($lightBackground);
+		border-bottom: 1px solid #262a3f;
+		&:focus {
+			border-color: $lightAccent;
+		}
+		&::placeholder {
+			@include color($lightText);
+		}
+		&--email {
+			&:focus:invalid {
+				border-color: $colorError;
+			}
+		}
+	}
+	.contact__btn {
+		@include backgroundColor($lightBackground);
+		&:hover {
+			& > .contact__btn-text {
+				@include color($lightLink-hover);
+			}
+			& > .contact__btn-text::before {
+				@include backgroundColor($lightLink-hover);
+			}
+		}
+		&:focus {
+			& > .contact__btn-text {
+				@include color($lightAccent);
+			}
+			& > .contact__btn-text::before {
+				@include backgroundColor($lightAccent);
+			}
+		}
+		&:active {
+			& > .contact__btn-text {
+				@include color($colorError);
+			}
+			& > .contact__btn-text::before {
+				@include backgroundColor($colorError);
+			}
+		}
+	}
+	.contact__btn-text {
+		@include color($lightLink);
+		&::before {
+			@include backgroundColor($lightLink);
+		}
+	}
+	/* footer */
+	.footer__wrapper {
+		border-top: 1px solid $lightBorder;
+	}
+	.footer__text {
+		@include color($lightText);
+	}
+	.footer__link {
+		@include color($lightText);
+		&:hover {
+			@include color($lightLink-hover);
+		}
+
+		&:focus {
+			@include color($lightAccent);
+		}
+
+		&:active {
+			@include color($colorError);
+		}
+	}
+}

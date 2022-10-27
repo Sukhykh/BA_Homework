@@ -84,4 +84,50 @@
 			@include color($darkAccent);
 		}
 	}
+
+	&__theme {
+		cursor: pointer;
+		position: relative;
+		margin-right: 1rem;
+
+		text-transform: uppercase;
+		@include lato-400;
+		font-size: 14px;
+		line-height: 171%;
+		letter-spacing: 0.08em;
+
+		@include color($darkHeaderMenu);
+
+		&::after {
+			position: absolute;
+
+			content: '';
+
+			top: 100%;
+			right: 0;
+			height: 3px;
+			width: 0;
+
+			background: linear-gradient(
+				96.73deg,
+				#53f3cd 6.73%,
+				rgba(83, 243, 205, 0) 116.9%
+			);
+			opacity: 0.3;
+
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+
+		&:active {
+			@include color($colorError);
+		}
+
+		&:focus {
+			@include color($darkAccent);
+		}
+	}
 }

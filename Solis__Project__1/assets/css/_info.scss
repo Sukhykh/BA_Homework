@@ -41,6 +41,8 @@
 
 	&__img {
 		max-width: 100%;
+		width: 100%;
+		height: unset;
 
 		@media screen and (max-width: $desktop) {
 			max-width: dinamic-desktop(1170px);
