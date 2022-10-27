@@ -1,0 +1,184 @@
+.card {
+	position: relative;
+	background-color: $bg-cards;
+	max-width: 37rem;
+	width: 100%;
+
+	box-shadow: 0px 0px 20px #8677ef;
+
+	transition: all 0.5s linear;
+
+	&:hover {
+		max-width: 40rem;
+
+		& .card__badge {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		& .card__header {
+			padding-top: 5rem;
+			padding-bottom: 4rem;
+		}
+
+		& .card__main {
+			padding-bottom: 6.7rem;
+		}
+
+		& .card__info {
+			transform: scale(1);
+			opacity: 1;
+			padding-top: 4.7rem;
+		}
+
+		& .card__button {
+			//top: -2.9rem;
+			//bottom: unset;
+			background-color: $button-hover;
+
+			transform: translateY(-11.2rem);
+		}
+	}
+
+	&__badge {
+		position: absolute;
+	}
+
+	&__header {
+		@include colum-center;
+		gap: 20px;
+
+		padding-top: 4rem;
+		padding-bottom: 3rem;
+
+		transition: all 0.5s linear;
+	}
+
+	&__text {
+		@include price;
+	}
+
+	&__title {
+		@include title;
+	}
+
+	&__main {
+		background-image: url(../img/bg-image.png);
+		background-position: center top;
+		background-repeat: no-repeat;
+
+		padding-top: 4rem;
+		padding-bottom: 6rem;
+
+		@include colum-center;
+
+		gap: 4rem;
+
+		transition: all 0.5s linear;
+	}
+
+	&__icon-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 3rem;
+		height: 3rem;
+	}
+
+	&__icon {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__icon-link {
+		fill: $icon;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	&__item {
+		text-align: left;
+		@include item;
+	}
+
+	&__footer {
+		@include colum-center;
+		position: relative;
+	}
+
+	&__info {
+		@include info;
+
+		transition: all 0.5s linear;
+
+		transform: scale(0);
+		opacity: 0;
+
+		padding-top: 0.9rem;
+		padding-bottom: 3rem;
+	}
+
+	&__button {
+		position: absolute;
+		@include button;
+		bottom: -50%;
+	}
+
+	&__badge {
+		z-index: 10;
+		position: absolute;
+		top: 1rem;
+		left: 32.2rem;
+		display: flex;
+
+		transition: all 0.5s linear;
+		transform-origin: left;
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	&__badge-red {
+		@include red;
+	}
+
+	&__badge-wrapper {
+		width: 2rem;
+		height: 1.7rem;
+		margin-top: -0.6rem;
+	}
+
+	&__badge-icon {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__badge-black {
+		position: relative;
+		@include black;
+		align-self: center;
+		margin-left: -1.2rem;
+
+		box-shadow: 0px 0px 20px #8677ef;
+
+		&::before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+			height: 1rem;
+			width: 1rem;
+			left: -0.3rem;
+
+			transform: rotateZ(45deg);
+
+			background-color: $bg-tooltip;
+		}
+	}
+}

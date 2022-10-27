@@ -3,6 +3,7 @@
 		@include container;
 	}
 	&__wrapper {
+		//z-index: 2;
 		max-width: 52.3rem;
 		margin: 15rem 0;
 
@@ -16,6 +17,7 @@
 	}
 
 	&__title {
+		//position: relative;
 		@include title;
 		@include color($darkText);
 

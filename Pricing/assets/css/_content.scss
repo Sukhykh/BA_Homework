@@ -1,0 +1,17 @@
+.main {
+	background-color: $bg-site;
+
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		gap: 3rem;
+
+		height: 100vh;
+	}
+}
