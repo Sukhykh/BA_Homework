@@ -1,0 +1,49 @@
+.header {
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		@include flex-center;
+
+		padding-top: 1.7rem;
+		padding-bottom: 1.7rem;
+	}
+
+	&__logo-wrapper {
+		@include flex-align-center;
+	}
+
+	&__logo {
+		width: 100%;
+	}
+
+	&__navigation,
+	&__list {
+		@include flex-align-center;
+		gap: 2rem;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__link {
+		@include menu-item;
+	}
+
+	&__button-wrapper {
+		@include flex-align-center;
+		gap: 2rem;
+	}
+
+	&__button {
+		&--rev {
+			@include btn-menu($btn-main: false);
+		}
+
+		&--main {
+			@include btn-menu($btn-main: true);
+		}
+	}
+}

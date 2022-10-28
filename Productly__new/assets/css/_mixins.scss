@@ -1,0 +1,190 @@
+/* fonts */
+@mixin montserrat-400 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+@mixin montserrat-500 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+@mixin montserrat-600 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+@mixin montserrat-700 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+@mixin poppins-700 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+
+@mixin gotham-700 {
+	font-family: 'Gotham', sans-serif;
+	font-weight: 700;
+}
+
+/* containers */
+@mixin container {
+	margin-inline: auto;
+	max-width: 120rem;
+}
+
+@mixin section-wrapper {
+	margin-top: 7rem;
+	margin-bottom: 10rem;
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-align-center {
+	display: flex;
+	align-items: center;
+}
+
+/* text */
+@mixin title-first {
+	@include montserrat-700;
+	font-size: 4.4rem;
+	line-height: 123%;
+	color: $title;
+}
+
+@mixin title {
+	@include montserrat-700;
+	font-size: 3.6rem;
+	line-height: 123%;
+	color: $title;
+}
+
+@mixin subtitle {
+	@include montserrat-600;
+	font-size: 2.2rem;
+	line-height: 123%;
+	color: $title;
+}
+
+@mixin strong-title {
+	@include montserrat-700;
+	font-size: 1.6rem;
+	line-height: 162%;
+	color: $title;
+}
+
+@mixin footer-title {
+	@include gotham-700;
+	font-size: 2rem;
+	line-height: 150%;
+	color: $title;
+}
+
+@mixin text-first {
+	@include montserrat-400;
+	font-size: 1.8rem;
+	line-height: 156%;
+	color: $text;
+}
+
+@mixin text {
+	@include montserrat-500;
+	font-size: 1.6rem;
+	line-height: 162%;
+	color: $text;
+}
+
+/* elements */
+@mixin menu-item {
+	text-decoration: none;
+	@include montserrat-400;
+	font-size: 1.6rem;
+	line-height: 175%;
+	color: $text-menu;
+
+	transition: all 0.3s linear;
+
+	&:hover {
+		color: $hover-menu;
+	}
+
+	&:focus {
+		text-decoration: underline;
+	}
+
+	&:active {
+		text-shadow: 1px 1px 2px $hover-menu;
+	}
+}
+
+@mixin btn-menu($btn-main: true) {
+	display: inline-block;
+	text-decoration: none;
+	@include montserrat-600;
+	font-size: 1.6rem;
+	line-height: 125%;
+	border: 0.1rem solid;
+	border-radius: 0.4rem;
+
+	transition: all 0.3s linear;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+	&:focus {
+		text-decoration: underline;
+	}
+
+	@if $btn-main {
+		color: $btn-text;
+		background-color: $btn-bg;
+		border-color: $btn-border;
+		padding: 1.3rem 2.25rem;
+
+		&:active {
+			box-shadow: 0 0 1rem $black;
+		}
+	} @else {
+		color: $btn-text-rev;
+		background-color: $btn-bg-rev;
+		border-color: $btn-border-rev;
+		padding: 1.3rem 2.6rem;
+
+		&:active {
+			box-shadow: 0 0 1rem $btn-border;
+		}
+	}
+}
+
+@mixin btn-main {
+	display: inline-block;
+	text-decoration: none;
+	@include poppins-700;
+	font-size: 1.6rem;
+	line-height: 150%;
+	color: $btn-text;
+
+	background-color: $btn-bg;
+	padding: 1.3rem 4rem;
+	border: 0.1rem solid $btn-border;
+	border-radius: 0.4rem;
+
+	transition: all 0.3s linear;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+	&:focus {
+		text-decoration: underline;
+	}
+	&:active {
+		box-shadow: 0 0 1rem $black;
+	}
+}

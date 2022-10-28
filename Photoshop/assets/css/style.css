@@ -836,8 +836,8 @@ html {
   display: inline-block;
   height: 0;
   width: 24rem;
-  border-top: 0.2rem solid #ffffff;
-  border-bottom: 0.2rem solid #ffffff;
+  border-top: 0.1rem solid #ffffff;
+  border-bottom: 0.1rem solid #ffffff;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }

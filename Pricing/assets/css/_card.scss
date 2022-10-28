@@ -4,7 +4,13 @@
 	max-width: 37rem;
 	width: 100%;
 
+	-webkit-box-shadow: 0px 0px 20px #8677ef;
+
 	box-shadow: 0px 0px 20px #8677ef;
+
+	-webkit-transition: all 0.5s linear;
+
+	-o-transition: all 0.5s linear;
 
 	transition: all 0.5s linear;
 
@@ -12,6 +18,8 @@
 		max-width: 40rem;
 
 		& .card__badge {
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
 			transform: scale(1);
 			opacity: 1;
 		}
@@ -26,6 +34,8 @@
 		}
 
 		& .card__info {
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
 			transform: scale(1);
 			opacity: 1;
 			padding-top: 4.7rem;
@@ -35,6 +45,10 @@
 			//top: -2.9rem;
 			//bottom: unset;
 			background-color: $button-hover;
+
+			-webkit-transform: translateY(-11.2rem);
+
+			-ms-transform: translateY(-11.2rem);
 
 			transform: translateY(-11.2rem);
 		}
@@ -50,6 +64,10 @@
 
 		padding-top: 4rem;
 		padding-bottom: 3rem;
+
+		-webkit-transition: all 0.5s linear;
+
+		-o-transition: all 0.5s linear;
 
 		transition: all 0.5s linear;
 	}
@@ -74,12 +92,22 @@
 
 		gap: 4rem;
 
+		-webkit-transition: all 0.5s linear;
+
+		-o-transition: all 0.5s linear;
+
 		transition: all 0.5s linear;
 	}
 
 	&__icon-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 
 		width: 3rem;
@@ -96,7 +124,12 @@
 	}
 
 	&__list {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		gap: 3rem;
 	}
@@ -114,7 +147,15 @@
 	&__info {
 		@include info;
 
+		-webkit-transition: all 0.5s linear;
+
+		-o-transition: all 0.5s linear;
+
 		transition: all 0.5s linear;
+
+		-webkit-transform: scale(0);
+
+		-ms-transform: scale(0);
 
 		transform: scale(0);
 		opacity: 0;
@@ -133,11 +174,22 @@
 		z-index: 10;
 		position: absolute;
 		top: 1rem;
-		left: 32.2rem;
+		left: 1rem;
+		//left: 32.2rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 
+		-webkit-transition: all 0.5s linear;
+
+		-o-transition: all 0.5s linear;
+
 		transition: all 0.5s linear;
+		-webkit-transform-origin: left;
+		-ms-transform-origin: left;
 		transform-origin: left;
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
 		transform: scale(0);
 		opacity: 0;
 	}
@@ -155,16 +207,26 @@
 	&__badge-icon {
 		height: 100%;
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
 	&__badge-black {
 		position: relative;
 		@include black;
+		-ms-flex-item-align: center;
+		-ms-grid-row-align: center;
 		align-self: center;
 		margin-left: -1.2rem;
+
+		-webkit-box-shadow: 0px 0px 20px #8677ef;
 
 		box-shadow: 0px 0px 20px #8677ef;
 
@@ -175,6 +237,10 @@
 			height: 1rem;
 			width: 1rem;
 			left: -0.3rem;
+
+			-webkit-transform: rotateZ(45deg);
+
+			-ms-transform: rotate(45deg);
 
 			transform: rotateZ(45deg);
 

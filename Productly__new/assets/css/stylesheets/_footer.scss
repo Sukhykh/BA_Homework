@@ -1,0 +1,98 @@
+.footer {
+	border-top: 0.1rem solid rgba(188, 208, 229, 0.496913);
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo-wrapper {
+		display: flex;
+	}
+
+	&__logo {
+		width: 100%;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+
+		width: 34rem;
+	}
+
+	&__form-title {
+		@include footer-title;
+		max-width: 28rem;
+	}
+
+	&__input {
+		@include montserrat-400;
+		font-size: 1.6rem;
+		line-height: 125%;
+		color: $text;
+
+		width: 100%;
+		padding: 1.5rem 1rem;
+
+		border: 0.1rem solid $border;
+		border-radius: 4px;
+
+		transition: all 0.3s linear;
+
+		&:focus {
+			border-color: $orange;
+		}
+
+		&::placeholder {
+			@include montserrat-400;
+			font-size: 1.6rem;
+			line-height: 125%;
+			color: $gray;
+		}
+
+		&:focus:invalid {
+			border-color: $error;
+		}
+	}
+
+	&__btn {
+		@include btn-main;
+		width: max-content;
+	}
+}
+
+.quick-links,
+.legal-stuff {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	&__title {
+		@include footer-title;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__link {
+		@include menu-item;
+		@include montserrat-500;
+		line-height: 162%;
+		color: $text;
+	}
+}
