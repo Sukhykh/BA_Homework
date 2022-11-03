@@ -1,3 +1,7 @@
+@function dinamic-desktop($n) {
+	@return calc($n / $desktop) * 100 * 1vw;
+}
+
 /* fonts */
 @mixin roboto {
 	font-family: 'Roboto', sans-serif;
@@ -11,7 +15,7 @@
 
 @mixin container {
 	margin-inline: auto;
-	max-width: 120rem;
+	max-width: dinamic-desktop(1200px);
 }
 
 @mixin colum-center {
@@ -119,8 +123,8 @@
 	-ms-flex-align: center;
 	align-items: center;
 
-	height: 4.8rem;
-	width: 4.8rem;
+	height: dinamic-desktop(48px);
+	width: dinamic-desktop(48px);
 	border-radius: 50%;
 	background-color: $bg-badge;
 
@@ -145,7 +149,7 @@
 	padding: 0.55rem 0;
 
 	//height: 3rem;
-	width: 9.6rem;
+	width: dinamic-desktop(96px);
 	border-radius: 1.5rem;
 	background-color: $bg-tooltip;
 

@@ -825,7 +825,7 @@ html {
 }
 .main__container {
   margin-inline: auto;
-  max-width: 120rem;
+  max-width: 83.3333333333vw;
 }
 .main__wrapper {
   display: flex;
@@ -837,13 +837,13 @@ html {
 .card {
   position: relative;
   background-color: #f5f3f9;
-  max-width: 37rem;
+  max-width: 25.6944444444vw;
   width: 100%;
   box-shadow: 0px 0px 20px #8677ef;
   transition: all 0.5s linear;
 }
 .card:hover {
-  max-width: 40rem;
+  max-width: 27.7777777778vw;
 }
 .card:hover .card__badge {
   transform: scale(1);
@@ -1000,7 +1000,7 @@ html {
   z-index: 10;
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  left: 22.3611111111vw;
   display: flex;
   transition: all 0.5s linear;
   transform-origin: left;
@@ -1011,8 +1011,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 3.3333333333vw;
+  width: 3.3333333333vw;
   border-radius: 50%;
   background-color: #fd8d7b;
   font-family: "BebasNeue", sans-serif;
@@ -1041,7 +1041,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0.55rem 0;
-  width: 9.6rem;
+  width: 6.6666666667vw;
   border-radius: 1.5rem;
   background-color: #3b4040;
   font-family: "BebasNeue", sans-serif;

@@ -1,7 +1,7 @@
 .card {
 	position: relative;
 	background-color: $bg-cards;
-	max-width: 37rem;
+	max-width: dinamic-desktop(370px);
 	width: 100%;
 
 	-webkit-box-shadow: 0px 0px 20px #8677ef;
@@ -15,7 +15,7 @@
 	transition: all 0.5s linear;
 
 	&:hover {
-		max-width: 40rem;
+		max-width: dinamic-desktop(400px);
 
 		& .card__badge {
 			-webkit-transform: scale(1);
@@ -174,8 +174,8 @@
 		z-index: 10;
 		position: absolute;
 		top: 1rem;
-		left: 1rem;
-		//left: 32.2rem;
+
+		left: dinamic-desktop(322px);
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
