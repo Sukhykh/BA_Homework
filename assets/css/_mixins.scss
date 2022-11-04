@@ -1,0 +1,38 @@
+@mixin container {
+	margin-inline: auto;
+	max-width: 1170px;
+}
+
+@mixin roboto-400 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+@mixin roboto-700 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+@mixin text {
+	@include roboto-400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+@mixin subtitle {
+	@include roboto-700;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+@mixin main-title {
+	@include roboto-400;
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+}
+
+@mixin title {
+	@include roboto-700;
+	font-size: 2.1rem;
+	line-height: 2.5rem;
+}
