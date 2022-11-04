@@ -1,15 +1,17 @@
 .menu {
-	max-width: 50%;
+	//max-width: 50%;
 	width: 100%;
-
-	padding: 2rem 0 2rem 2rem;
 
 	&__title {
 		@include title;
-		color: $white;
+		color: $yellow;
 		text-transform: uppercase;
-
+		margin-top: 2rem;
 		margin-bottom: 2rem;
+
+		&--project {
+			margin-top: 5rem;
+		}
 	}
 
 	&__link {
@@ -18,15 +20,15 @@
 		text-decoration: none;
 
 		&:hover {
-			color: $gray;
+			color: $yellow;
 		}
 
 		&:focus {
-			color: $black;
+			color: $gray;
 		}
 
 		&:active {
-			color: $yellow;
+			color: $red;
 		}
 	}
 }
@@ -34,9 +36,8 @@
 .content {
 	&__title {
 		@include main-title;
-		color: $red;
+		color: $black;
 		text-align: center;
-		margin-bottom: 2rem;
 	}
 
 	&__wrapper {
@@ -45,14 +46,21 @@
 
 		display: flex;
 		align-items: center;
-		justify-content: center;
 	}
 
 	&__container {
-		background-color: $gray;
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background-color: $red;
 		border-radius: 2rem;
 		overflow: hidden;
-		width: 60%;
-		height: 70%;
+		max-width: 48rem;
+		max-height: 64rem;
+		width: 100%;
+		height: 100%;
 	}
 }
