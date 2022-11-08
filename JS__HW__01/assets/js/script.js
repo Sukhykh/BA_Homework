@@ -1,3 +1,5 @@
+alert('Домашня робота на тему "Основи JavaScriptS"');
+
 // Hello User!
 userName = prompt("Як ти кажеш тебе звати?");
 alert(`Привіт, ${userName}! (дублюється в консоль)`);

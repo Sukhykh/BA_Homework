@@ -54,8 +54,10 @@ sum = +sum.toFixed(2);
 let allMoney = deposit + sum;
 alert(`You will earn ${sum}. In general, you will have ${allMoney}`);
 console.log(`You will earn ${sum}. In general, you will have ${allMoney}`);
-
+/*
 //максимум 2
 alert(2 && 0 && 3);
 alert(2 || 0 || 3);
 alert(2 && 0 || 3);
+*/
+alert('Це все. Далі буде 8)');
