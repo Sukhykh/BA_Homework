@@ -321,7 +321,6 @@ while (true) {
 //мінімум 5
 //Пошук дільників числі
 let anyNumberForNumerator;
-let allDenominators = '';
 
 while (true) {
 	while (true) {
@@ -341,6 +340,7 @@ while (true) {
 		}
 	}
 
+	let allDenominators = '';
 	anyNumberForNumerator = +anyNumberForNumerator;
 	let denominatorCounter = anyNumberForNumerator;
 
@@ -742,7 +742,7 @@ while (true) {
 	}
 
 	while (true) {
-		secondNumberArea = prompt('Встанови нижню межу пошуку твого числа', 0);
+		secondNumberArea = prompt('Встанови верхню межу пошуку твого числа', 0);
 		if (isNaN(secondNumberArea)) {
 			alert(`Добре. Верхньою межею будемо вважати "100"`);
 			console.log(`Добре. Верхньою межею будемо вважати "100"`);
@@ -792,7 +792,7 @@ while (true) {
 		}
 	}
 
-	alert(`Ага! Я знаю твоэ число! Це ${guesNumber}!`);
+	alert(`Ага! Я знаю твоє число! Це ${guesNumber}!`);
 	console.log(`Ага! Я знаю твоэ число! Це ${guesNumber}!`);
 
 	let nextRundomNumber = confirm('Хочеш зіграти ще один раз?');

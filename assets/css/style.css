@@ -924,6 +924,7 @@ html {
   line-height: 2rem;
   color: #f2f5f0;
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 .menu__link:hover {
   color: #f5ab35;
