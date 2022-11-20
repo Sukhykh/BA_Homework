@@ -331,6 +331,9 @@ let time = {
 				if (temporarySeconds < 0) {
 					temporarySeconds = -temporarySeconds;
 					temporarySeconds = 60 - temporarySeconds;
+				} else if (temporarySeconds == 0) {
+					this.seconds = 0;
+					time.addingTime(0, -1, 0);
 				}
 				this.seconds = 60 - temporarySeconds;
 				time.addingTime(0, -Math.floor(seconds / 60), 0);
@@ -355,6 +358,9 @@ let time = {
 				if (temporaryMinutes < 0) {
 					temporaryMinutes = -temporaryMinutes;
 					temporaryMinutes = 60 - temporaryMinutes;
+				} else if (temporaryMinutes == 0) {
+					this.seconds = 0;
+					time.addingTime(-1, 0, 0);
 				}
 				this.minutes = 60 - temporaryMinutes;
 				time.addingTime(0, -Math.floor(minutes / 60), 0);
