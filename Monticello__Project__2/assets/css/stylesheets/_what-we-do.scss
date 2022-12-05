@@ -1,0 +1,75 @@
+.what-we-do {
+	@include sectionMargin;
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		@include sectionTitle;
+		color: $darkBlue;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: dinamic(177px);
+
+		margin-top: dinamic(147px);
+
+		@media screen and (max-width: $tablet) {
+			margin-top: 7rem;
+			gap: 7rem;
+		}
+	}
+}
+
+.item {
+	display: flex;
+	gap: dinamic(64px);
+
+	&--reverse {
+		flex-direction: row-reverse;
+	}
+
+	@media screen and (max-width: $tablet) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__picture-wrapper {
+		@include flexAllCenter;
+		box-shadow: dinamic(-215px) dinamic(-57px) 0 $lightBlue;
+		height: fit-content;
+		width: dinamic(630px);
+		max-width: 63rem;
+		flex-grow: 2;
+
+		&--reverse {
+			box-shadow: dinamic(215px) dinamic(-57px) 0 $middleBlue;
+		}
+
+		@media screen and (max-width: $tablet) {
+			width: 100%;
+		}
+	}
+
+	&__picture {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__text-wrapper {
+		@include what-we-do;
+		max-width: 476px;
+		width: dinamic(480px);
+
+		@media screen and (max-width: $tablet) {
+			width: 100%;
+		}
+	}
+}

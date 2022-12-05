@@ -1,0 +1,346 @@
+// function
+@function dinamic($n) {
+	@return calc($n / $dinamic) * 100 * 1vw;
+}
+
+// fonts
+@mixin sourceSansPro--400 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+}
+@mixin montserrat--400 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+@mixin openSans--400 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+@mixin openSans--400--italic {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+@mixin montserrat--700 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+// text
+@mixin fs14--lh17 {
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+}
+@mixin fs14--lh18 {
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+@mixin fs15--lh20 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+@mixin fs18--lh22 {
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+@mixin fs18--lh22--ls03 {
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	letter-spacing: 0.3em;
+}
+@mixin fs18--lh25 {
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+}
+@mixin fs18--lh27 {
+	font-size: 1.8rem;
+	line-height: 2.7rem;
+}
+@mixin fs18--lh28 {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	}
+}
+@mixin fs18--lh30 {
+	font-size: 1.8rem;
+	line-height: 3rem;
+}
+@mixin fs22--lh27 {
+	font-size: 2.2rem;
+	line-height: 2.7rem;
+}
+@mixin fs44--lh54 {
+	font-size: 4.4rem;
+	line-height: 5.4rem;
+
+	@media screen and (max-width: 400px) {
+		font-size: 3.5rem;
+		line-height: 4rem;
+	}
+}
+@mixin fs80--lh98--ls01 {
+	font-size: 8rem;
+	line-height: 9.8rem;
+	letter-spacing: 0.1em;
+
+	@media screen and (max-width: 1100px) {
+		font-size: 6rem;
+		line-height: 7.4rem;
+	}
+
+	@media screen and (max-width: $tablet) {
+		font-size: 4.5rem;
+		line-height: 5rem;
+	}
+}
+
+// containers
+@mixin container {
+	margin-inline: auto;
+	max-width: 117rem;
+
+	@media screen and (max-width: $desktop) {
+		width: dinamic(1170px);
+	}
+}
+
+@mixin containerSliderHeader {
+	margin-inline: auto;
+	max-width: 150rem;
+
+	@media screen and (max-width: $desktop) {
+		width: dinamic(1500px);
+	}
+}
+
+@mixin containerSliderMain {
+	margin-inline: auto;
+	max-width: 137rem;
+
+	@media screen and (max-width: $desktop) {
+		width: dinamic(1370px);
+	}
+}
+
+@mixin sectionMargin {
+	margin-top: 10rem;
+	margin-bottom: 15rem;
+
+	@media screen and (max-width: $desktop) {
+		margin-top: dinamic(100px);
+		margin-bottom: dinamic(150px);
+	}
+
+	@media screen and (max-width: $tablet) {
+		margin-top: 6rem;
+		margin-bottom: 8rem;
+	}
+}
+
+// positions
+@mixin flexAllCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flexColumnSpaceBetween {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+@mixin flexRowSpaceBetween {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+// activ elements
+@mixin siteBotton {
+	@include flexAllCenter;
+	display: inline-flex;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 1.6rem;
+	padding-bottom: 1.7rem;
+
+	border: 1px solid $darkBlue;
+
+	@include montserrat--400;
+	@include fs14--lh17;
+	color: $black;
+	background-color: $white;
+
+	transition: all 3 linear;
+}
+
+@keyframes colorHover {
+	0% {
+		color: $middleBlue;
+	}
+	50% {
+		color: $lightBlue;
+	}
+	100% {
+		color: $middleBlue;
+	}
+}
+
+@keyframes colorHoverBtn {
+	0% {
+		background-color: #7e5aff80;
+	}
+	50% {
+		background-color: #55b8ff80;
+	}
+	100% {
+		background-color: #7e5aff80;
+	}
+}
+
+// elements
+@mixin sectionTitle {
+	text-align: center;
+	@include montserrat--700;
+	@include fs44--lh54;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&::before {
+		content: '';
+
+		display: block;
+		align-self: center;
+		margin-bottom: 3rem;
+		width: 10rem;
+
+		border: 1px solid $darkBlue;
+	}
+}
+
+@mixin what-we-do {
+	color: $darkBlue;
+
+	&-descr {
+		@include montserrat--400;
+		@include fs22--lh27;
+		color: inherit;
+		text-transform: uppercase;
+	}
+
+	&-title {
+		@include montserrat--700;
+		@include fs44--lh54;
+		color: inherit;
+		text-transform: uppercase;
+
+		margin-bottom: dinamic(19px);
+
+		@media screen and (max-width: $tablet) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&-text {
+		@include openSans--400--italic;
+		@include fs18--lh30;
+		color: inherit;
+
+		margin-bottom: dinamic(40px);
+
+		@media screen and (max-width: $tablet) {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	&-link {
+		@include siteBotton;
+		padding-inline: 4.1rem;
+		color: $darkBlue;
+
+		transition: all 0.3s linear;
+
+		&:hover,
+		&:focus {
+			margin: 1px;
+			border: unset;
+			animation: colorHover 2s linear infinite;
+		}
+
+		&:active {
+			animation: none;
+			color: $darkBlue;
+		}
+	}
+
+	&-location {
+		margin-top: dinamic(60px);
+		display: flex;
+
+		@media screen and (max-width: $tablet) {
+			margin-top: 3.5rem;
+		}
+	}
+
+	&-swg-wrapper {
+		width: 0.9rem;
+		height: 1.7rem;
+	}
+
+	&-swg {
+		max-width: 100%;
+		max-height: 100%;
+		@include flexAllCenter;
+	}
+
+	&-icon {
+		fill: $black;
+	}
+
+	&-location-text {
+		margin-left: 1rem;
+
+		@include openSans--400--italic;
+		@include fs15--lh20;
+		color: $black;
+	}
+}
+
+@mixin burger {
+	position: relative;
+	display: none;
+	justify-content: center;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	transition: all 0.3s linear;
+
+	&::before {
+		content: '';
+		opacity: 0.5;
+		position: absolute;
+		display: block;
+		width: 2rem;
+		top: 50%;
+		transform: translateY(0.5rem);
+		border: 1px solid $white;
+		transition: all 0.3s linear;
+	}
+
+	&::after {
+		content: '';
+		opacity: 0.5;
+		position: absolute;
+		display: block;
+		width: 2rem;
+		top: 50%;
+		transform: translateY(-0.5rem);
+		border: 1px solid $white;
+		transition: all 0.3s linear;
+	}
+}

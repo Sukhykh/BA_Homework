@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Monticello</title>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="assets/img/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="assets/img/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="assets/img/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="assets/img/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="assets/img/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="assets/img/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="assets/img/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="assets/img/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/img/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="assets/img/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="assets/img/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/img/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/img/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="assets/img/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body>
+		<header class="header" id="header">
+			<div class="header__background">
+				<picture>
+					<source
+						srcset="assets/img/header__background.webp"
+						type="image/webp"
+						media="(min-width: 769px)"
+					/>
+					<source
+						srcset="assets/img/header__background--small.webp"
+						type="image/webp"
+						media="(max-width: 768px)"
+					/>
+					<img
+						class="header__background-img"
+						width="1600"
+						height="800"
+						src="assets/img/header__background.png"
+						alt="background"
+					/>
+				</picture>
+			</div>
+			<div class="header__content">
+				<div class="header__wrapper">
+					<div class="header__navigation">
+						<div class="header__container">
+							<div class="header__logo-wrapper" id="logoBtn">
+								<a href="#" class="header__logo">
+									<picture>
+										<img
+											class="header__logo-img"
+											width="241"
+											height="54"
+											src="assets/img/Logo.png"
+											alt="logo"
+										/>
+									</picture>
+								</a>
+							</div>
+							<nav class="header__navigation menu">
+								<ul class="menu__bar">
+									<li class="menu__item" id="aboutBtn">
+										<a href="#" class="menu__link"
+											>about us</a
+										>
+									</li>
+									<li class="menu__item" id="projecrsBtn">
+										<a href="#" class="menu__link"
+											>projects</a
+										>
+									</li>
+									<li class="menu__item" id="newsBtn">
+										<a href="#" class="menu__link">news</a>
+									</li>
+									<li class="menu__item" id="contactsBtn">
+										<a href="#" class="menu__link"
+											>contact</a
+										>
+									</li>
+								</ul>
+								<div class="menu__burger"></div>
+							</nav>
+
+							<div class="header__social social">
+								<div class="social__wrapper">
+									<a
+										class="social__link facebook"
+										href="https://www.facebook.com/"
+										target="_blank"
+										rel="noindex, nofollow, noreferrer, noopener"
+									>
+										<svg class="social__svg">
+											<use
+												class="social__icon"
+												xlink:href="assets/img/sprite.svg#facebook"
+											></use>
+										</svg>
+									</a>
+									<a
+										class="social__link twitter"
+										href="https://twitter.com/"
+										target="_blank"
+										rel="noindex, nofollow, noreferrer, noopener"
+									>
+										<svg class="social__svg">
+											<use
+												class="social__icon"
+												xlink:href="assets/img/sprite.svg#twitter"
+											></use>
+										</svg>
+									</a>
+									<a
+										class="social__link instagram"
+										href="https://www.instagram.com/"
+										target="_blank"
+										rel="noindex, nofollow, noreferrer, noopener"
+									>
+										<svg class="social__svg">
+											<use
+												class="social__icon"
+												xlink:href="assets/img/sprite.svg#instagram"
+											></use>
+										</svg>
+									</a>
+								</div>
+								<div class="social__burger"></div>
+							</div>
+						</div>
+					</div>
+					<div class="header__slider-container">
+						<div class="header__slider slider swiper">
+							<div class="slider__wrapper swiper-wrapper">
+								<div class="slider__slide swiper-slide">
+									<h1 class="slider__title">
+										SIMPLE & MODERN
+									</h1>
+									<p class="slider__text">
+										WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+									</p>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<h2 class="slider__title">Slide 2</h2>
+									<p class="slider__text">
+										Lorem ipsum dolor sit amet.
+									</p>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<h2 class="slider__title">Slide 3</h2>
+									<p class="slider__text">
+										Lorem ipsum dolor sit amet.
+									</p>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<h2 class="slider__title">Slide 4</h2>
+									<p class="slider__text">
+										Lorem ipsum dolor sit amet.
+									</p>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<h2 class="slider__title">Slide 5</h2>
+									<p class="slider__text">
+										Lorem ipsum dolor sit amet.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__button" id="scrollDownBtn">
+						<a href="#" class="header__link">
+							<svg class="header__svg">
+								<use
+									class="header__icon"
+									xlink:href="assets/img/sprite.svg#arrow"
+								></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="slider__pagination swiper-pagination"></div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="what-we-do" id="whatWeDo">
+				<div class="what-we-do__container">
+					<div class="what-we-do__wrapper">
+						<h2 class="what-we-do__title">what we do</h2>
+						<div class="what-we-do__content">
+							<div class="what-we-do__item item">
+								<div class="item__picture-wrapper">
+									<picture>
+										<source
+											srcset="
+												assets/img/what-we-do-1.webp
+											"
+											type="image/webp"
+										/>
+										<img
+											class="item__picture"
+											width="630"
+											height="470"
+											src="assets/img/what-we-do-1.png"
+											alt="picture"
+										/>
+									</picture>
+								</div>
+								<div class="item__text-wrapper">
+									<div class="item__text-wrapper-descr">
+										one world
+									</div>
+									<h3 class="item__text-wrapper-title">
+										trade centre
+									</h3>
+									<p class="item__text-wrapper-text">
+										Increasing prosperity in our lives can
+										be accomplished by having the right
+										frame of mind. The truth is, our
+										thoughts are very powerful.
+									</p>
+									<div class="button__wrapper">
+										<a
+											class="item__text-wrapper-link"
+											href="#"
+											>more details</a
+										>
+									</div>
+									<div class="item__text-wrapper-location">
+										<span
+											class="item__text-wrapper-swg-wrapper"
+										>
+											<svg class="item__text-wrapper-swg">
+												<use
+													class="item__text-wrapper-icon"
+													xlink:href="assets/img/sprite.svg#location"
+												></use>
+											</svg>
+										</span>
+										<i
+											class="item__text-wrapper-location-text"
+											>New York City, United States - 1776
+											feet</i
+										>
+									</div>
+								</div>
+							</div>
+							<div class="what-we-do__item item item--reverse">
+								<div
+									class="item__picture-wrapper item__picture-wrapper--reverse"
+								>
+									<picture>
+										<source
+											srcset="
+												assets/img/what-we-do-2.webp
+											"
+											type="image/webp"
+										/>
+										<img
+											class="item__picture"
+											width="630"
+											height="470"
+											src="assets/img/what-we-do-2.png"
+											alt="picture"
+										/>
+									</picture>
+								</div>
+								<div class="item__text-wrapper">
+									<div class="item__text-wrapper-descr">
+										international
+									</div>
+									<h3 class="item__text-wrapper-title">
+										commerce centre
+									</h3>
+									<p class="item__text-wrapper-text">
+										Successful businesses have many things
+										in common, today we`ll look at the big
+										`R` of recognition and how a digital
+										advertising network may help.
+									</p>
+									<div class="button__wrapper">
+										<a
+											class="item__text-wrapper-link"
+											href="#"
+											>more details</a
+										>
+									</div>
+									<div class="item__text-wrapper-location">
+										<span
+											class="item__text-wrapper-swg-wrapper"
+										>
+											<svg class="item__text-wrapper-swg">
+												<use
+													class="item__text-wrapper-icon"
+													xlink:href="assets/img/sprite.svg#location"
+												></use>
+											</svg>
+										</span>
+										<i
+											class="item__text-wrapper-location-text"
+											>Hong Kong - 1588 feet</i
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="latest-news" id="latestNews">
+				<div class="latest-news__background">
+					<picture>
+						<source
+							srcset="assets/img/news-bg.webp"
+							type="image/webp"
+							media="(min-width: 769px)"
+						/>
+						<source
+							srcset="assets/img/news-bg--small.webp"
+							type="image/webp"
+							media="(max-width: 768px)"
+						/>
+						<img
+							class="latest-news__background-img"
+							width="1600"
+							height="590"
+							src="assets/img/news-bg.png"
+							alt="background"
+						/>
+					</picture>
+				</div>
+				<div class="latest-news__container">
+					<div class="latest-news__wrapper">
+						<h2 class="latest-news__title">latest news</h2>
+						<div class="latest-news__slider-container">
+							<div class="latest-news__slider news-slider swiper">
+								<div
+									class="news-slider__wrapper swiper-wrapper"
+								>
+									<div
+										class="news-slider__slide news-slide swiper-slide"
+									>
+										<div class="news-slide__img-wrapper">
+											<picture>
+												<source
+													srcset="
+														assets/img/news-1.webp
+													"
+													type="image/webp"
+												/>
+												<img
+													class="news-slide__picture"
+													width="370"
+													height="240"
+													src="assets/img/news-1.png"
+													alt="picture"
+												/>
+											</picture>
+										</div>
+										<div class="news-slide__text-wrapper">
+											<h3 class="news-slide__title">
+												SEE THE UNMATCHED BEAUTY OF THE
+												GREAT.
+											</h3>
+											<p class="news-slide__text">
+												Free directories: directories
+												are perfect for customers that
+												are searching for...
+											</p>
+											<div class="news-slide__person">
+												<div
+													class="news-slide__photo-wrapper"
+												>
+													<picture>
+														<img
+															class="news-slide__photo"
+															width="60"
+															height="60"
+															src="assets/img/user-1.png"
+															alt="picture"
+														/>
+													</picture>
+												</div>
+												<div
+													class="news-slide__descr-wrapper"
+												>
+													<div
+														class="news-slide__name"
+													>
+														ALJA BRUN
+													</div>
+													<div
+														class="news-slide__date"
+													>
+														20 Jan 2020
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="news-slider__slide news-slide swiper-slide"
+									>
+										<div class="news-slide__img-wrapper">
+											<picture>
+												<source
+													srcset="
+														assets/img/news-2.webp
+													"
+													type="image/webp"
+												/>
+												<img
+													class="news-slide__picture"
+													width="370"
+													height="240"
+													src="assets/img/news-2.png"
+													alt="picture"
+												/>
+											</picture>
+										</div>
+										<div class="news-slide__text-wrapper">
+											<h3 class="news-slide__title">
+												EFFECTIVE ADVERTISING POINTERS.
+											</h3>
+											<p class="news-slide__text">
+												Having a home based business is
+												a wonderful asset to your
+												life...
+											</p>
+											<div class="news-slide__person">
+												<div
+													class="news-slide__photo-wrapper"
+												>
+													<picture>
+														<img
+															class="news-slide__photo"
+															width="60"
+															height="60"
+															src="assets/img/user-2.png"
+															alt="picture"
+														/>
+													</picture>
+												</div>
+												<div
+													class="news-slide__descr-wrapper"
+												>
+													<div
+														class="news-slide__name"
+													>
+														DOMINIC FREEMAN
+													</div>
+													<div
+														class="news-slide__date"
+													>
+														13 Dec 2019
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="news-slider__slide news-slide swiper-slide"
+									>
+										<div class="news-slide__img-wrapper">
+											<picture>
+												<source
+													srcset="
+														assets/img/news-3.webp
+													"
+													type="image/webp"
+												/>
+												<img
+													class="news-slide__picture"
+													width="370"
+													height="240"
+													src="assets/img/news-3.png"
+													alt="picture"
+												/>
+											</picture>
+										</div>
+										<div class="news-slide__text-wrapper">
+											<h3 class="news-slide__title">
+												HYPNOTIZE YOURSELF INTO THE
+												GHOST.
+											</h3>
+											<p class="news-slide__text">
+												There are many things that are
+												important to catalog design...
+											</p>
+											<div class="news-slide__person">
+												<div
+													class="news-slide__photo-wrapper"
+												>
+													<picture>
+														<img
+															class="news-slide__photo"
+															width="60"
+															height="60"
+															src="assets/img/user-3.png"
+															alt="picture"
+														/>
+													</picture>
+												</div>
+												<div
+													class="news-slide__descr-wrapper"
+												>
+													<div
+														class="news-slide__name"
+													>
+														ALICE WARD
+													</div>
+													<div
+														class="news-slide__date"
+													>
+														30 Nov 2019
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="news-slider__slide news-slide swiper-slide"
+									>
+										<div class="news-slide__img-wrapper">
+											<picture>
+												<source
+													srcset="
+														assets/img/news-2.webp
+													"
+													type="image/webp"
+												/>
+												<img
+													class="news-slide__picture"
+													width="370"
+													height="240"
+													src="assets/img/news-2.png"
+													alt="picture"
+												/>
+											</picture>
+										</div>
+										<div class="news-slide__text-wrapper">
+											<h3 class="news-slide__title">
+												Lorem ipsum dolor sit amet.
+											</h3>
+											<p class="news-slide__text">
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+											</p>
+											<div class="news-slide__person">
+												<div
+													class="news-slide__photo-wrapper"
+												>
+													<picture>
+														<img
+															class="news-slide__photo"
+															width="60"
+															height="60"
+															src="assets/img/user-1.png"
+															alt="picture"
+														/>
+													</picture>
+												</div>
+												<div
+													class="news-slide__descr-wrapper"
+												>
+													<div
+														class="news-slide__name"
+													>
+														Lorem, ipsum.
+													</div>
+													<div
+														class="news-slide__date"
+													>
+														random date
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="news-slider__slide news-slide swiper-slide"
+									>
+										<div class="news-slide__img-wrapper">
+											<picture>
+												<source
+													srcset="
+														assets/img/news-2.webp
+													"
+													type="image/webp"
+												/>
+												<img
+													class="news-slide__picture"
+													width="370"
+													height="240"
+													src="assets/img/news-2.png"
+													alt="picture"
+												/>
+											</picture>
+										</div>
+										<div class="news-slide__text-wrapper">
+											<h3 class="news-slide__title">
+												Last slide
+											</h3>
+											<p class="news-slide__text">
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+											</p>
+											<div class="news-slide__person">
+												<div
+													class="news-slide__photo-wrapper"
+												>
+													<picture>
+														<img
+															class="news-slide__photo"
+															width="60"
+															height="60"
+															src="assets/img/user-2.png"
+															alt="picture"
+														/>
+													</picture>
+												</div>
+												<div
+													class="news-slide__descr-wrapper"
+												>
+													<div
+														class="news-slide__name"
+													>
+														Lorem, ipsum.
+													</div>
+													<div
+														class="news-slide__date"
+													>
+														random date
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="news-slider__pagination"></div>
+							<div class="news-slider__btn-prev news-slider__btn">
+								<svg class="news-slider__svg">
+									<use
+										class="news-slider__icon"
+										xlink:href="assets/img/sprite.svg#arrow"
+									></use>
+								</svg>
+							</div>
+							<div class="news-slider__btn-next news-slider__btn">
+								<svg class="news-slider__svg">
+									<use
+										class="news-slider__icon"
+										xlink:href="assets/img/sprite.svg#arrow"
+									></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="gallery__container">
+					<div class="gallery__wrapper">
+						<h2 class="gallery__title">gallery</h2>
+						<div class="gallery__content">
+							<div
+								class="gallery__img-wrapper gallery__img-wrapper--big"
+							>
+								<picture>
+									<source
+										srcset="assets/img/gallery-1.webp"
+										type="image/webp"
+									/>
+									<img
+										class="gallery__img"
+										width="285"
+										height="214"
+										src="assets/img/gallery-1.png"
+										alt="picture"
+									/>
+								</picture>
+							</div>
+							<div class="gallery__img-wrapper">
+								<picture>
+									<source
+										srcset="assets/img/gallery-2.webp"
+										type="image/webp"
+									/>
+									<img
+										class="gallery__img"
+										width="285"
+										height="214"
+										src="assets/img/gallery-2.png"
+										alt="picture"
+									/>
+								</picture>
+							</div>
+							<div class="gallery__img-wrapper">
+								<picture>
+									<source
+										srcset="assets/img/gallery-3.webp"
+										type="image/webp"
+									/>
+									<img
+										class="gallery__img"
+										width="285"
+										height="214"
+										src="assets/img/gallery-3.png"
+										alt="picture"
+									/>
+								</picture>
+							</div>
+							<div class="gallery__img-wrapper">
+								<picture>
+									<source
+										srcset="assets/img/gallery-4.webp"
+										type="image/webp"
+									/>
+									<img
+										class="gallery__img"
+										width="285"
+										height="214"
+										src="assets/img/gallery-4.png"
+										alt="picture"
+									/>
+								</picture>
+							</div>
+							<div class="gallery__img-wrapper">
+								<picture>
+									<source
+										srcset="assets/img/gallery-5.webp"
+										type="image/webp"
+									/>
+									<img
+										class="gallery__img"
+										width="285"
+										height="214"
+										src="assets/img/gallery-6.png"
+										alt="picture"
+									/>
+								</picture>
+							</div>
+						</div>
+						<div class="button__wrapper">
+							<a class="gallery__button" href="#">see more</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" id="contacts">
+			<div class="footer__wrapper">
+				<div class="footer__map-wrapper">
+					<div id="map"></div>
+				</div>
+				<div class="footer__basement-wrapper">
+					<picture>
+						<source
+							srcset="assets/img/footer-bg.webp"
+							type="image/webp"
+							media="(min-width: 769px)"
+						/>
+						<!--
+						<source
+							srcset="assets/img/footer-bg--small.webp"
+							type="image/webp"
+							media="(max-width: 768px)"
+						/>-->
+						<img
+							class="footer__basement-img"
+							width="1600"
+							height="549"
+							src="assets/img/footer-bg.png"
+							alt="background"
+						/>
+					</picture>
+				</div>
+				<div class="footer__content">
+					<div class="footer__location-container">
+						<h2 class="footer__title">GET IN TOUCH</h2>
+						<div class="footer__location-wrapper">
+							<div class="footer__contacts">
+								<div class="footer__contact-item">
+									<span class="footer__contact-swg-wrapper">
+										<svg class="footer__contact-swg">
+											<use
+												class="footer__contact-icon"
+												xlink:href="assets/img/sprite.svg#location"
+											></use>
+										</svg>
+									</span>
+									<span class="footer__contact-text">
+										91 Nolan Extensions Suite 670</span
+									>
+								</div>
+								<div class="footer__contact-item">
+									<span class="footer__contact-swg-wrapper">
+										<svg class="footer__contact-swg">
+											<use
+												class="footer__contact-icon"
+												xlink:href="assets/img/sprite.svg#phone"
+											></use>
+										</svg>
+									</span>
+									<a
+										class="footer__contact-text"
+										href="tel:001 356-868-2454"
+										>+001 356-868-2454</a
+									>
+								</div>
+								<div class="footer__contact-item">
+									<span class="footer__contact-swg-wrapper">
+										<svg class="footer__contact-swg">
+											<use
+												class="footer__contact-icon"
+												xlink:href="assets/img/sprite.svg#inbox"
+											></use>
+										</svg>
+									</span>
+									<a
+										class="footer__contact-text"
+										href="mailto:montichello@service.com?subject=Mail from Our Site"
+										>montichello@service.com</a
+									>
+								</div>
+								<div class="footer__contact-item">
+									<span class="footer__contact-swg-wrapper">
+										<svg class="footer__contact-swg">
+											<use
+												class="footer__contact-icon"
+												xlink:href="assets/img/sprite.svg#clock"
+											></use>
+										</svg>
+									</span>
+									<span class="footer__contact-text">
+										From 07:05AM to 19:30PM</span
+									>
+								</div>
+							</div>
+							<div class="footer__form-wrapper">
+								<form
+									class="footer__form"
+									action="#"
+									method="GET"
+									autocomplete="off"
+								>
+									<input
+										class="footer__input footer__input--name"
+										type="text"
+										name="name"
+										placeholder="Mollie Medina"
+										required
+									/>
+									<input
+										class="footer__input footer__input--email"
+										type="email"
+										name="email"
+										placeholder="Email"
+										required
+									/>
+									<button
+										class="footer__button"
+										type="submit"
+									>
+										submit
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="footer__links-container">
+						<div class="footer__links-wrapper">
+							<div class="footer__logo-wrapper" id="logoBtn">
+								<a href="#" class="footer__logo">
+									<picture>
+										<img
+											class="footer__logo-img"
+											width="241"
+											height="54"
+											src="assets/img/Logo.png"
+											alt="logo"
+										/>
+									</picture>
+								</a>
+							</div>
+							<div class="footer__social social">
+								<div class="social__wrapper">
+									<a
+										class="social__link facebook"
+										href="https://www.facebook.com/"
+										target="_blank"
+										rel="noindex, nofollow, noreferrer, noopener"
+									>
+										<svg class="social__svg">
+											<use
+												class="social__icon"
+												xlink:href="assets/img/sprite.svg#facebook"
+											></use>
+										</svg>
+									</a>
+									<a
+										class="social__link twitter"
+										href="https://twitter.com/"
+										target="_blank"
+										rel="noindex, nofollow, noreferrer, noopener"
+									>
+										<svg class="social__svg">
+											<use
+												class="social__icon"
+												xlink:href="assets/img/sprite.svg#twitter"
+											></use>
+										</svg>
+									</a>
+									<a
+										class="social__link instagram"
+										href="https://www.instagram.com/"
+										target="_blank"
+										rel="noindex, nofollow, noreferrer, noopener"
+									>
+										<svg class="social__svg">
+											<use
+												class="social__icon"
+												xlink:href="assets/img/sprite.svg#instagram"
+											></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						Copyrights © 2020 Montichello
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+		<script
+			async
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByDxWzsUxjakbzMXMleTlutT1I8J8O1c0&callback=initMap"
+		></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>

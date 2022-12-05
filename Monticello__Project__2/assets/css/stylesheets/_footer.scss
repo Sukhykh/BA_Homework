@@ -1,0 +1,249 @@
+.footer {
+	position: relative;
+
+	&__basement-wrapper {
+		@include flexAllCenter;
+		width: 100%;
+		height: 100%;
+		background: $gradientFooter;
+		overflow: hidden;
+	}
+
+	&__basement-img {
+		width: auto;
+		height: 100%;
+		object-fit: cover;
+		object-position: center bottom;
+	}
+
+	&__content {
+		position: absolute;
+		bottom: 23.4rem;
+		right: 50%;
+		transform: translateX(50%);
+		max-width: 77rem;
+		width: 100%;
+
+		@media screen and (max-width: 900px) {
+			@include container;
+			bottom: 11.7rem;
+		}
+	}
+
+	&__location-container {
+		background-color: $white;
+		padding: dinamic(60px) dinamic(60px) dinamic(68px);
+	}
+
+	&__title {
+		@include sectionTitle;
+		color: $darkBlue;
+	}
+
+	&__location-wrapper {
+		margin-top: 4.2rem;
+		display: flex;
+		gap: dinamic(54px);
+
+		@media screen and (max-width: 900px) {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+	}
+
+	&__contacts {
+		flex-grow: 2;
+		display: flex;
+		flex-direction: column;
+		gap: 2.8rem;
+
+		@media screen and (max-width: 900px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		@media screen and (max-width: 900px) {
+			justify-content: flex-start;
+		}
+	}
+
+	&__contact-item {
+		display: flex;
+		align-items: center;
+		max-width: 100%;
+	}
+
+	&__contact-swg-wrapper {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+
+	&__contact-swg {
+		max-width: 100%;
+		max-height: 100%;
+		@include flexAllCenter;
+	}
+
+	&__contact-icon {
+		fill: $middleBlue;
+	}
+
+	&__contact-text {
+		margin-left: 1rem;
+		text-decoration: none;
+		@include montserrat--400;
+		@include fs18--lh28;
+		color: $black;
+
+		@media screen and (max-width: 600px) {
+			display: inline-flex;
+			word-wrap: unset;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__form-wrapper {
+		flex-grow: 1;
+
+		@media screen and (max-width: 900px) {
+			width: 100%;
+		}
+	}
+
+	&__form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 3rem;
+
+		@media screen and (max-width: 900px) {
+			align-items: center;
+		}
+	}
+
+	&__input {
+		@include montserrat--400;
+		@include fs18--lh27;
+		color: $black;
+		padding-bottom: 1.4rem;
+		border: none;
+		border-bottom: 1px solid rgba(44, 64, 88, 0.2);
+
+		&::placeholder {
+			@include montserrat--400;
+			@include fs18--lh27;
+			color: $black;
+			padding-bottom: 1.4rem;
+			opacity: 0.5;
+		}
+
+		transition: all 0.3s ease-in-out;
+
+		&:focus {
+			border-color: $darkBlue;
+		}
+
+		&--email {
+			&:focus:invalid {
+				border-color: $red;
+			}
+		}
+
+		@media screen and (max-width: 900px) {
+			width: 100%;
+		}
+	}
+
+	&__button {
+		@include siteBotton;
+		@include fs18--lh27;
+		color: $darkBlue;
+		background-color: $white;
+		padding: 1.1rem 3.4rem 1.2rem;
+		width: max-content;
+
+		transition: all 0.3s linear;
+
+		&:hover,
+		&:focus {
+			animation: colorHoverBtn 2s linear infinite;
+		}
+
+		&:active {
+			color: $white;
+		}
+	}
+
+	&__links-container {
+		margin-top: 5.4rem;
+	}
+
+	&__links-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		@media screen and (max-width: 600px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
+
+	&__logo-wrapper {
+		@include flexAllCenter;
+	}
+
+	&__logo-img {
+		width: 100%;
+		height: auto;
+	}
+
+	& .social {
+		@include flexAllCenter;
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			gap: 2rem;
+		}
+
+		&__link {
+			display: flex;
+			width: 4rem;
+			height: 4rem;
+			padding: 1.1rem 0;
+			border-radius: 50%;
+			border: 1px solid rgba(255, 255, 255, 0.4);
+		}
+
+		&__svg {
+			width: 100%;
+			height: 100%;
+			@include flexAllCenter;
+		}
+
+		&__icon {
+			fill: $white;
+		}
+	}
+
+	&__copyright {
+		margin-top: 4.1rem;
+		@include montserrat--400;
+		@include fs14--lh17;
+		color: $white;
+
+		@media screen and (max-width: 600px) {
+			text-align: center;
+		}
+	}
+}
+
+#map {
+	height: 70rem;
+	width: 100%;
+	background-color: aqua;
+}
