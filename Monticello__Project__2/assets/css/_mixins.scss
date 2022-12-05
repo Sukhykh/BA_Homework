@@ -143,24 +143,46 @@
 
 // positions
 @mixin flexAllCenter {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 @mixin flexColumnSpaceBetween {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 @mixin flexRowSpaceBetween {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 // activ elements
 @mixin siteBotton {
 	@include flexAllCenter;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -174,7 +196,23 @@
 	color: $black;
 	background-color: $white;
 
+	-webkit-transition: all 3 linear;
+
+	-o-transition: all 3 linear;
+
 	transition: all 3 linear;
+}
+
+@-webkit-keyframes colorHover {
+	0% {
+		color: $middleBlue;
+	}
+	50% {
+		color: $lightBlue;
+	}
+	100% {
+		color: $middleBlue;
+	}
 }
 
 @keyframes colorHover {
@@ -186,6 +224,18 @@
 	}
 	100% {
 		color: $middleBlue;
+	}
+}
+
+@-webkit-keyframes colorHoverBtn {
+	0% {
+		background-color: #7e5aff80;
+	}
+	50% {
+		background-color: #55b8ff80;
+	}
+	100% {
+		background-color: #7e5aff80;
 	}
 }
 
@@ -207,14 +257,23 @@
 	@include montserrat--700;
 	@include fs44--lh54;
 	text-transform: uppercase;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	&::before {
 		content: '';
 
 		display: block;
-		align-self: center;
+		-ms-flex-item-align: center;
+		    -ms-grid-row-align: center;
+		    align-self: center;
 		margin-bottom: 3rem;
 		width: 10rem;
 
@@ -262,23 +321,31 @@
 		padding-inline: 4.1rem;
 		color: $darkBlue;
 
+		-webkit-transition: all 0.3s linear;
+
+		-o-transition: all 0.3s linear;
+
 		transition: all 0.3s linear;
 
 		&:hover,
 		&:focus {
 			margin: 1px;
 			border: unset;
-			animation: colorHover 2s linear infinite;
+			-webkit-animation: colorHover 2s linear infinite;
+			        animation: colorHover 2s linear infinite;
 		}
 
 		&:active {
-			animation: none;
+			-webkit-animation: none;
+			        animation: none;
 			color: $darkBlue;
 		}
 	}
 
 	&-location {
 		margin-top: dinamic(60px);
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 
 		@media screen and (max-width: $tablet) {
@@ -313,11 +380,15 @@
 @mixin burger {
 	position: relative;
 	display: none;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
 	border: 1px solid rgba(255, 255, 255, 0.4);
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 
 	&::before {
@@ -327,8 +398,12 @@
 		display: block;
 		width: 2rem;
 		top: 50%;
-		transform: translateY(0.5rem);
+		-webkit-transform: translateY(0.5rem);
+		    -ms-transform: translateY(0.5rem);
+		        transform: translateY(0.5rem);
 		border: 1px solid $white;
+		-webkit-transition: all 0.3s linear;
+		-o-transition: all 0.3s linear;
 		transition: all 0.3s linear;
 	}
 
@@ -339,8 +414,12 @@
 		display: block;
 		width: 2rem;
 		top: 50%;
-		transform: translateY(-0.5rem);
+		-webkit-transform: translateY(-0.5rem);
+		    -ms-transform: translateY(-0.5rem);
+		        transform: translateY(-0.5rem);
 		border: 1px solid $white;
+		-webkit-transition: all 0.3s linear;
+		-o-transition: all 0.3s linear;
 		transition: all 0.3s linear;
 	}
 }

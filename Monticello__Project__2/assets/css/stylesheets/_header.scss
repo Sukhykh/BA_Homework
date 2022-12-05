@@ -19,7 +19,6 @@
 		height: 100%;
 		opacity: 0.1;
 		object-fit: cover;
-		//object-position: center bottom;
 	}
 
 	&__content {
@@ -45,7 +44,7 @@
 	&__navigation {
 		margin-inline: auto;
 		max-width: 117rem;
-		//@include container;
+
 		width: 100%;
 
 		@media screen and (max-width: $desktop) {

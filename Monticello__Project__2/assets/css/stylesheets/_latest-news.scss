@@ -34,7 +34,10 @@
 		height: 100%;
 		margin-top: dinamic(90px);
 		@include flexAllCenter;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		position: relative;
 	}
 }
@@ -48,10 +51,17 @@
 	}
 
 	&__pagination {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		margin-top: 4rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		gap: 4rem;
 		bottom: -40px;
 		min-width: 0;
@@ -66,7 +76,9 @@
 		border: 1px solid $white;
 		opacity: 0.5;
 		top: 50%;
-		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		    -ms-transform: translateY(-50%);
+		        transform: translateY(-50%);
 		padding: 1.2rem 1.8rem;
 
 		@media screen and (max-width: 768px) {
@@ -76,14 +88,18 @@
 
 	&__btn-prev {
 		& .news-slider__svg {
-			transform: rotateZ(90deg);
+			-webkit-transform: rotateZ(90deg);
+			    -ms-transform: rotate(90deg);
+			        transform: rotateZ(90deg);
 		}
 		left: 0;
 	}
 
 	&__btn-next {
 		& .news-slider__svg {
-			transform: rotateZ(-90deg);
+			-webkit-transform: rotateZ(-90deg);
+			    -ms-transform: rotate(-90deg);
+			        transform: rotateZ(-90deg);
 		}
 		right: 0;
 	}
@@ -100,10 +116,17 @@
 }
 
 .news-slide {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	//justify-content: center;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	&__img-wrapper {
 		max-width: 37rem;
@@ -157,6 +180,8 @@
 	}
 
 	&__person {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		gap: 2rem;
 	}
@@ -174,9 +199,16 @@
 	}
 
 	&__descr-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		gap: 0.6rem;
 	}
 
