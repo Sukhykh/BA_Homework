@@ -3,19 +3,19 @@
 
 	@media screen and (max-width: 1300px) {
 		-ms-grid-row: 2;
-		    grid-row-start: 2;
+		grid-row-start: 2;
 		-ms-grid-column-span: 2;
 		grid-column: span 2;
 	}
 
 	@media screen and (max-width: 600px) {
 		-ms-grid-row: 2;
-		    grid-row-start: 2;
+		grid-row-start: 2;
 		-ms-grid-column: 2;
-		    grid-column-start: 2;
+		grid-column-start: 2;
 		-webkit-box-pack: end;
-		    -ms-flex-pack: end;
-		        justify-content: flex-end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
 		position: relative;
 	}
 
@@ -35,14 +35,14 @@
 		&--activ {
 			&::before {
 				-webkit-transform: rotateZ(45deg);
-				    -ms-transform: rotate(45deg);
-				        transform: rotateZ(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotateZ(45deg);
 			}
 
 			&::after {
 				-webkit-transform: rotateZ(-45deg);
-				    -ms-transform: rotate(-45deg);
-				        transform: rotateZ(-45deg);
+				-ms-transform: rotate(-45deg);
+				transform: rotateZ(-45deg);
 			}
 		}
 	}
@@ -112,26 +112,26 @@
 
 .about--activ {
 	-webkit-transform: translateX(-70%);
-	    -ms-transform: translateX(-70%);
-	        transform: translateX(-70%);
+	-ms-transform: translateX(-70%);
+	transform: translateX(-70%);
 	scale: 1;
 }
 .projects--activ {
 	-webkit-transform: translateX(-60%) translateY(140%);
-	    -ms-transform: translateX(-60%) translateY(140%);
-	        transform: translateX(-60%) translateY(140%);
+	-ms-transform: translateX(-60%) translateY(140%);
+	transform: translateX(-60%) translateY(140%);
 	scale: 1;
 }
 .news--activ {
 	-webkit-transform: translateX(-113%) translateY(280%);
-	    -ms-transform: translateX(-113%) translateY(280%);
-	        transform: translateX(-113%) translateY(280%);
+	-ms-transform: translateX(-113%) translateY(280%);
+	transform: translateX(-113%) translateY(280%);
 	scale: 1;
 }
 .contact--activ {
 	-webkit-transform: translateX(-40%) translateY(420%);
-	    -ms-transform: translateX(-40%) translateY(420%);
-	        transform: translateX(-40%) translateY(420%);
+	-ms-transform: translateX(-40%) translateY(420%);
+	transform: translateX(-40%) translateY(420%);
 	scale: 1;
 }
 
@@ -147,11 +147,11 @@
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
 		-webkit-box-pack: end;
-		    -ms-flex-pack: end;
-		        justify-content: end;
+		-ms-flex-pack: end;
+		justify-content: end;
 		gap: dinamic(20px);
 	}
 
@@ -171,26 +171,26 @@
 		&--activ {
 			&::before {
 				-webkit-transform: rotateZ(45deg);
-				    -ms-transform: rotate(45deg);
-				        transform: rotateZ(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotateZ(45deg);
 			}
 
 			&::after {
 				-webkit-transform: rotateZ(-45deg);
-				    -ms-transform: rotate(-45deg);
-				        transform: rotateZ(-45deg);
+				-ms-transform: rotate(-45deg);
+				transform: rotateZ(-45deg);
 			}
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		-ms-grid-row: 2;
-		    grid-row-start: 2;
+		grid-row-start: 2;
 		-ms-grid-column: 1;
-		    grid-column-start: 1;
+		grid-column-start: 1;
 		-webkit-box-pack: start;
-		    -ms-flex-pack: start;
-		        justify-content: start;
+		-ms-flex-pack: start;
+		justify-content: start;
 	}
 
 	&__link {
@@ -236,12 +236,12 @@
 	&:focus {
 		border-color: $facebook;
 		-webkit-box-shadow: 0 0 15px $white;
-		        box-shadow: 0 0 15px $white;
+		box-shadow: 0 0 15px $white;
 	}
 
 	&:active {
 		-webkit-box-shadow: 0 0 15px $facebook;
-		        box-shadow: 0 0 15px $facebook;
+		box-shadow: 0 0 15px $facebook;
 
 		& .social__icon {
 			fill: $facebook;
@@ -250,8 +250,8 @@
 
 	&--activ {
 		-webkit-transform: translateX(150%);
-		    -ms-transform: translateX(150%);
-		        transform: translateX(150%);
+		-ms-transform: translateX(150%);
+		transform: translateX(150%);
 		scale: 1;
 	}
 }
@@ -261,12 +261,12 @@
 	&:focus {
 		border-color: $twitter;
 		-webkit-box-shadow: 0 0 15px $white;
-		        box-shadow: 0 0 15px $white;
+		box-shadow: 0 0 15px $white;
 	}
 
 	&:active {
 		-webkit-box-shadow: 0 0 15px $twitter;
-		        box-shadow: 0 0 15px $twitter;
+		box-shadow: 0 0 15px $twitter;
 
 		& .social__icon {
 			fill: $twitter;
@@ -275,8 +275,8 @@
 
 	&--activ {
 		-webkit-transform: translateY(120%) translateX(120%);
-		    -ms-transform: translateY(120%) translateX(120%);
-		        transform: translateY(120%) translateX(120%);
+		-ms-transform: translateY(120%) translateX(120%);
+		transform: translateY(120%) translateX(120%);
 		scale: 1;
 	}
 }
@@ -286,12 +286,12 @@
 	&:focus {
 		border-color: $instagram;
 		-webkit-box-shadow: 0 0 15px $white;
-		        box-shadow: 0 0 15px $white;
+		box-shadow: 0 0 15px $white;
 	}
 
 	&:active {
 		-webkit-box-shadow: 0 0 15px $instagram;
-		        box-shadow: 0 0 15px $instagram;
+		box-shadow: 0 0 15px $instagram;
 
 		& .social__icon {
 			fill: $instagram;
@@ -300,8 +300,8 @@
 
 	&--activ {
 		-webkit-transform: translateY(150%);
-		    -ms-transform: translateY(150%);
-		        transform: translateY(150%);
+		-ms-transform: translateY(150%);
+		transform: translateY(150%);
 		scale: 1;
 	}
 }
