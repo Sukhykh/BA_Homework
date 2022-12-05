@@ -1,0 +1,296 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	background-color: $bg;
+}
+
+.homework {
+	width: 100%;
+	height: 100vh;
+
+	&__container {
+		max-width: 80%;
+		height: 100%;
+		width: 100%;
+		margin-inline: auto;
+	}
+
+	&__wrapper {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 5rem;
+		line-height: 120%;
+		color: $text;
+	}
+
+	&__btn {
+		font-weight: 700;
+		font-size: 3rem;
+		line-height: 120%;
+		padding: 2rem 5rem;
+		border: 2px solid $grey;
+		background-color: $accent;
+		border-radius: 1rem;
+		text-transform: uppercase;
+		color: $grey;
+		cursor: pointer;
+		transition: all 0.3s linear;
+
+		&:hover {
+			box-shadow: 0 0 5rem $text;
+			border-color: $text;
+			color: $text;
+		}
+
+		&:active {
+			box-shadow: 0 0 5rem $blue;
+			border-color: $blue;
+			color: $blue;
+		}
+	}
+}
+
+.traffic-lights {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	&__css-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__css {
+		display: block;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		border: 2px solid $text;
+		cursor: pointer;
+		transition: all 0.3s linear;
+	}
+
+	&__jg-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__oneBtn {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.input {
+	display: none;
+}
+
+.traffic-lights__css--red:has(input:checked) {
+	background-color: $red;
+	box-shadow: 0 0 4rem $red;
+}
+.traffic-lights__css--yellow:has(input:checked) {
+	background-color: $yellow;
+	box-shadow: 0 0 4rem $yellow;
+}
+.traffic-lights__css--green:has(input:checked) {
+	background-color: $green;
+	box-shadow: 0 0 4rem $green;
+}
+
+.light__red,
+.light__yellow,
+.light__green {
+	display: block;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	border: 2px solid $text;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.light__red--checked {
+	background-color: $red;
+	box-shadow: 0 0 4rem $red;
+}
+
+.light__yellow--checked {
+	background-color: $yellow;
+	box-shadow: 0 0 4rem $yellow;
+}
+
+.light__green--checked {
+	background-color: $green;
+	box-shadow: 0 0 4rem $green;
+}
+
+.single-light {
+	display: block;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	border: 2px solid $text;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.single-btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 120%;
+
+	border: 2px solid $grey;
+	background-color: $accent;
+	text-transform: uppercase;
+	color: $grey;
+	cursor: pointer;
+	transition: all 0.3s linear;
+
+	&:hover {
+		box-shadow: 0 0 5rem $text;
+		border-color: $text;
+		color: $text;
+	}
+
+	&:active {
+		box-shadow: 0 0 5rem $blue;
+		border-color: $blue;
+		color: $blue;
+	}
+}
+
+.main {
+	position: relative;
+}
+
+.modal {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	background-color: $greyPure;
+
+	&__container {
+		margin: 10rem;
+		padding: 2rem;
+
+		background-color: $bg;
+		border: 2px solid $text;
+		border-radius: 10rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5rem;
+	}
+
+	&__song-list {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 5rem;
+		line-height: 120%;
+		color: $text;
+	}
+
+	&__btn {
+		font-weight: 700;
+		font-size: 3rem;
+		line-height: 120%;
+		padding: 2rem 5rem;
+		border: 2px solid $grey;
+		background-color: $accent;
+		border-radius: 1rem;
+		text-transform: uppercase;
+		color: $grey;
+		cursor: pointer;
+		transition: all 0.3s linear;
+
+		&:hover {
+			box-shadow: 0 0 5rem $text;
+			border-color: $text;
+			color: $text;
+		}
+
+		&:active {
+			box-shadow: 0 0 5rem $blue;
+			border-color: $blue;
+			color: $blue;
+		}
+	}
+
+	&__song-item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__author {
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: $text;
+		text-shadow: -2px 2px 5px $blue;
+	}
+
+	&__song {
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: $text;
+		text-shadow: 2px 2px 5px $blue;
+	}
+
+	&__separator {
+		display: inline-block;
+		margin-inline: 1rem;
+		width: 1rem;
+		height: 1rem;
+		background-color: $blue;
+		border-radius: 50%;
+		border: 2px solid $text;
+	}
+}
+
+.none {
+	display: none;
+}

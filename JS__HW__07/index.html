@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>JS homework 07</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body>
+		<header class="header"></header>
+		<main class="main">
+			<div class="main__modal modal none" id="modal">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<h2 class="modal__title">List of songs</h2>
+						<ul class="modal__song-list">
+							<li class="modal__song-item">
+								<span class="modal__author">author</span>
+								<span class="modal__separator"></span>
+								<span class="modal__song">song</span>
+							</li>
+						</ul>
+						<div class="modal__btn">
+							close the modal window
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="homework">
+				<div class="homework__container">
+					<div class="homework__wrapper">
+						<h2 class="homework__title">JS homework 07</h2>
+						<div class="homework__btn">
+							open a modal window
+						</div>
+						<div class="homework__traffic-lights traffic-lights">
+							<div class="traffic-lights__css-wrapper">
+								<label
+									class="traffic-lights__css traffic-lights__css--red"
+								>
+									<input
+										class="input"
+										type="radio"
+										name="color"
+									/>
+								</label>
+								<label
+									class="traffic-lights__css traffic-lights__css--yellow"
+								>
+									<input
+										class="input"
+										type="radio"
+										name="color"
+									/>
+								</label>
+								<label
+									class="traffic-lights__css traffic-lights__css--green"
+								>
+									<input
+										class="input"
+										type="radio"
+										name="color"
+									/>
+								</label>
+							</div>
+							<div class="traffic-lights__jg-wrapper">
+								<div class="light__red"></div>
+								<div class="light__yellow"></div>
+								<div class="light__green"></div>
+							</div>
+							<div class="traffic-lights__oneBtn">
+								<div
+									class="single-light"
+									data-counter="1"
+								></div>
+								<div class="single-btn">
+									swich
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
