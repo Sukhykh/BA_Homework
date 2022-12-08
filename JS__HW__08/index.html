@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>JS homework 08</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body>
+		<header class="header"></header>
+		<main class="main">
+			<section class="modal first none" id="first">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<h2 class="modal__title">Перше завдання</h2>
+						<p class="modal__descr">
+							Створити HTML-сторінку для відображення/редагування
+							тексту. При відкритті сторінки текст відображається
+							за допомогою тега div. При натисканні Ctrl + E,
+							замість div з'являється textarea з тим же текстом,
+							який тепер можна редагувати. При натисканні Ctrl +
+							S, замість textarea з'являється div з уже зміненим
+							текстом. Не забудь вимкнути поведінку за
+							замовчуванням для цих поєднань клавіш.
+						</p>
+						<div class="modal__task">
+							<div class="first__text">
+								Lorem, ipsum dolor sit
+							</div>
+							<textarea
+								class="first__area none"
+								name="firstArea"
+								id="firstArea"
+							></textarea>
+						</div>
+						<div class="modal__btn" id="closeBtnFirst">
+							закрити
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="modal second none" id="second">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<h2 class="modal__title">Друге завдання</h2>
+						<p class="modal__descr">
+							Створити HTML-сторінку з великою таблицею. При кліку
+							на заголовок стовпця, необхідно відсортувати дані
+							цього стовпця. Врахуй, що числові значення повинні
+							сортуватися як числа, а не як рядки.
+						</p>
+						<div class="modal__task">
+							<div class="second__text"></div>
+						</div>
+						<div class="modal__btn" id="closeBtnSecond">
+							закрити
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="modal third none" id="third">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<h2 class="modal__title">Третє завдання</h2>
+						<p class="modal__descr">
+							Створити HTML-сторінку з блоком тексту в рамці.
+							Реалізувати можливість змінювати розмір блоку, якщо
+							затиснути мишку в правому нижньому кутку та тягнути
+							її далі.
+						</p>
+						<div class="modal__task">
+							<div class="second__text"></div>
+						</div>
+						<div class="modal__btn" id="closeBtnThird">
+							закрити
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="main__container">
+				<div class="main__wrapper">
+					<h1 class="main__title">JS homework 08</h1>
+					<div class="main__btn-bar">
+						<div class="main__btn" id="firstBtn">First task</div>
+						<div class="main__btn" id="secondBtn">second task</div>
+						<div class="main__btn" id="thirdBtn">third task</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
