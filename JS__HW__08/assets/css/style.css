@@ -914,12 +914,11 @@ html {
 }
 .modal__task {
   width: 100%;
-  height: 20vh;
+  height: 100%;
   background-color: #a3a49d;
   padding: 1rem;
   border-radius: 1rem;
   border: 2px solid #f6f7f6;
-  overflow: hidden;
 }
 
 .none {
@@ -940,11 +939,80 @@ html {
   border: unset;
   resize: none;
   width: 100%;
-  height: 100%;
+  min-height: 20vh;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 120%;
   color: #3b413b;
+}
+
+.second__table {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: #3b413b;
+  border: 2px solid #3b413b;
+}
+.second__title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 120%;
+  color: #3b413b;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 1px solid #3b413b;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: bold;
+  border: 2px solid #3b413b;
+  background-color: #927b78;
+  transition: all 0.3s linear;
+}
+th:hover {
+  cursor: pointer;
+}
+th:hover {
+  color: #f6f7f6;
+}
+th:active {
+  text-shadow: 0 0 15px #f6f7f6;
+  color: #f6f7f6;
+}
+
+.third__text {
+  position: relative;
+  border: 1px solid #3b413b;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #3b413b;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+.third__area {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 2rem solid #927b78;
+  border-bottom: 1rem solid #a3a49d;
+  border-top: 1rem solid #a3a49d;
+  width: 0;
+  height: 0;
+  z-index: 3;
+}
+
+.overflow {
+  overflow-x: scroll;
 }
 
 /* Site styles *//*# sourceMappingURL=style.css.map */

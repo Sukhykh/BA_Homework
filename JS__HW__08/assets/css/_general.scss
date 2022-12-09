@@ -152,14 +152,12 @@ html {
 
 	&__task {
 		width: 100%;
-		height: 20vh;
+		height: 100%;
 		background-color: $gray;
 
 		padding: 1rem;
 		border-radius: 1rem;
 		border: 2px solid $white;
-
-		overflow: hidden;
 	}
 }
 
@@ -182,10 +180,87 @@ html {
 	border: unset;
 	resize: none;
 	width: 100%;
-	height: 100%;
+	min-height: 20vh;
 
 	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 120%;
 	color: $black;
+}
+
+.second {
+	&__table {
+		width: 100%;
+		font-weight: 400;
+		font-size: 1.2rem;
+		line-height: 120%;
+		color: $black;
+		border: 2px solid $black;
+	}
+	&__title {
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 120%;
+		color: $black;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 2rem;
+	}
+}
+
+th,
+td {
+	padding: 1rem;
+	border: 1px solid $black;
+	text-align: center;
+	vertical-align: middle;
+}
+
+th {
+	font-weight: bold;
+	border: 2px solid $black;
+	background-color: $red;
+
+	transition: all 0.3s linear;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:hover {
+		color: $white;
+	}
+
+	&:active {
+		text-shadow: 0 0 15px $white;
+		color: $white;
+	}
+}
+
+.third {
+	&__text {
+		position: relative;
+		border: 1px solid $black;
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 120%;
+		color: $black;
+		padding: 1rem;
+		overflow-y: scroll;
+	}
+	&__area {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		border-left: 2rem solid $red;
+		border-bottom: 1rem solid $gray;
+		border-top: 1rem solid $gray;
+		width: 0;
+		height: 0;
+		z-index: 3;
+	}
+}
+
+.overflow {
+	overflow-x: scroll;
 }
