@@ -1,0 +1,72 @@
+// fonts
+@mixin montserrat($fontWeight) {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: $fontWeight;
+}
+
+@mixin h1 {
+	@include montserrat($m700);
+	font-size: 5rem;
+	line-height: 6.1rem;
+	text-transform: uppercase;
+}
+
+@mixin h2 {
+	@include montserrat($m700);
+	font-size: 3.2rem;
+	line-height: 3.9rem;
+	text-transform: uppercase;
+}
+
+@mixin h2-768 {
+	@include montserrat($m700);
+	font-size: 2rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+}
+
+@mixin prodName {
+	@include montserrat($m600);
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+
+@mixin price {
+	@include montserrat($m700);
+	font-size: 2.4rem;
+	line-height: 2.9rem;
+}
+
+@mixin buttonText {
+	@include montserrat($m500);
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	text-transform: uppercase;
+}
+
+@mixin menu {
+	@include montserrat($m500);
+	font-size: 2rem;
+	line-height: 2.4rem;
+
+	@media screen and (max-width: $res400) {
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
+}
+
+// container
+@mixin container($container, $resolution) {
+	margin: 0 auto;
+	max-width: calc($container / $resolution) * 100%;
+	width: 100%;
+}
+
+@mixin svgFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+}
