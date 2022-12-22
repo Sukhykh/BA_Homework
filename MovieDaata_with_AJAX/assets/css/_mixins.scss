@@ -1,0 +1,16 @@
+// fonts
+@mixin montserrat ($fw) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $fw;
+}
+
+@mixin uniFont ($px) {
+    font-size: $px;
+    line-height: 120%;
+}
+
+// container
+@mixin container {
+    margin: 0 auto;
+    max-width: 80%;
+}

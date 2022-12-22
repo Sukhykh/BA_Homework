@@ -1,0 +1,258 @@
+html {
+    background-color: $softGreen;
+}
+
+.header {
+    background-color: $dark;
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        padding: 2rem 0;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form-wrapper {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    &__search {
+        background-color: $dark;
+        border: none;
+        border-bottom: 1px solid transparent;
+        width: 50%;
+
+        color: $light;
+        @include uniFont (2rem);
+        @include montserrat (500);
+
+        transition: all 0.3s linear;
+
+        &::placeholder {
+            color: $light;
+            @include uniFont (2rem);
+            @include montserrat (500);
+            opacity: 0.5;
+        }
+
+        &:focus,
+        &:hover {
+            border-bottom: 1px solid $red;
+        }
+    }
+
+    &__selector {
+        background-color: $dark;
+        border: none;
+        border-bottom: 1px solid transparent;
+        text-transform: uppercase;
+        color: $light;
+        @include uniFont (2rem);
+        @include montserrat (500);
+
+        transition: all 0.3s linear;
+
+        &:focus,
+        &:hover {
+            border-bottom: 1px solid $red;
+        }
+
+        & option {
+            @include uniFont (1.5rem);
+        }
+    }
+
+    &__btn {
+        background-color: $red;
+        border: none;
+        border-radius: 1rem;
+        padding: 1rem 5rem;
+        text-transform: uppercase;
+        color: $dark;
+        @include uniFont (1.5rem);
+        @include montserrat (700);
+
+        transition: all 0.3s linear;
+
+        &:focus,
+        &:hover {
+            box-shadow: 0 0 0.5rem 0.5rem $red;
+        }
+
+        &:active {
+            background-color: $green;
+            box-shadow: 0 0 0.5rem 0.5rem $green;
+        }
+    }
+}
+
+.main {
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        padding: 2rem 0;
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__movie-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        max-width: 50%;
+        width: 100%;
+
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 2px solid $dark;
+    }
+
+    &__movie-serch {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__movie-pagination {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+
+        color: $dark;
+        @include uniFont (1.5rem);
+        @include montserrat (500);
+
+        & li {
+            border-radius: 1rem;
+            padding: 0 1rem;
+            border-bottom: 2px solid $dark;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: $green;
+            }
+        }
+    }
+
+    &__full-info {
+        max-width: 50%;
+        width: 100%;
+    }
+}
+
+.action {
+    background-color: $red;
+
+}
+
+.film-item {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $dark;
+    color: $dark;
+    @include uniFont (1.5rem);
+    @include montserrat (500);
+
+
+    &__btn {
+        margin-top: 0.5rem;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid $dark;
+        border-radius: 1rem;
+        text-transform: uppercase;
+        color: $dark;
+        @include uniFont (1.5rem);
+        @include montserrat (700);
+
+        transition: all 0.3s linear;
+
+        &:focus,
+        &:hover {
+            background-color: $red;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: $green;
+        }
+    }
+}
+
+.full-info {
+
+
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid $dark;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        color: $dark;
+        @include montserrat (500);
+    }
+
+    &__title {
+        text-shadow: 1px 1px 2px $dark, 0 0 1rem $green;
+        color: $light;
+        @include uniFont (2rem);
+        @include montserrat (700);
+        margin-bottom: 0.5rem;
+    }
+
+    &__country,
+    &__language,
+    &__genre,
+    &__people,
+    &__descr {
+        @include uniFont (1.5rem);
+    }
+
+    &__country,
+    &__genre,
+    &__people-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    &__people-wrapper {
+        border-bottom: 1px solid $dark;
+        border-top: 1px solid $dark;
+        padding: 0.5rem;
+    }
+
+    &__descr-wrapper {
+        border: 1px solid $dark;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    &__descr-title {
+        text-shadow: 1px 1px 2px $dark, 0 0 1rem $green;
+        color: $light;
+        @include uniFont (1.5rem);
+        @include montserrat (700);
+        margin-bottom: 0.5rem;
+    }
+
+    .test-title {
+        text-shadow: 1px 1px 2px $dark, 0 0 1rem $red;
+        color: $light;
+    }
+
+
+}
