@@ -1,5 +1,3 @@
-// add: активний клас пагінації. без запитів при кліку на активну пагінацію
-
 window.addEventListener('DOMContentLoaded', () => {
 	let form = document.getElementById('searchForm');
 	if (form) {
@@ -8,6 +6,18 @@ window.addEventListener('DOMContentLoaded', () => {
 			findFilms(undefined, event.target);
 		});
 	}
+
+	document
+		.querySelector('#searchPagination')
+		.addEventListener('click', (event) => {
+			if (event.target.nodeName !== 'li') {
+				return;
+			}
+			console.log(event);
+			console.log(event.target);
+			console.log(event.target.innerHTML);
+			console.log(event.target.innerText);
+		});
 });
 
 function findFilms(page = 1, form) {
@@ -105,6 +115,8 @@ function addListenerToPaginationItem(pageNumber) {
 				return;
 			}
 			console.log(item);
+			console.log(item.innerHTML);
+			console.log(item.innerText);
 			findFilms(event.target.innerText, form);
 		});
 	});

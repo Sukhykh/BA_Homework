@@ -121,6 +121,10 @@ html {
     &__movie-serch {
         display: flex;
         flex-direction: column;
+
+        color: $dark;
+        @include uniFont (2rem);
+        @include montserrat (700);
     }
 
     &__movie-pagination {

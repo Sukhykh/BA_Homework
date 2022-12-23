@@ -917,6 +917,11 @@ html {
 .main__movie-serch {
   display: flex;
   flex-direction: column;
+  color: #1C2815;
+  font-size: 2rem;
+  line-height: 120%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 .main__movie-pagination {
   display: flex;
