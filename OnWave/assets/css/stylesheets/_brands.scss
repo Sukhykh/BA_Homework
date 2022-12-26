@@ -1,0 +1,120 @@
+.brands {
+    @include sectionPadding;
+    background-color: $brownLight;
+
+    &__container {
+        position: relative;
+        @include container(1320px, $desktop);
+
+        @media screen and (max-width: $tablet) {
+            @include container(754px, $tablet);
+        }
+
+        @media screen and (max-width: $mobile) {
+            @include container(300px, $mobile);
+        }
+    }
+
+    &__title {
+        @include h2;
+        color: $black;
+        text-align: center;
+        margin-bottom: 4rem;
+
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__swiper {
+        @include container(1200px, $desktop);
+
+        @media screen and (max-width: $tablet) {
+            @include container(734px, $tablet);
+        }
+
+        @media screen and (max-width: $mobile) {
+            @include container(299px, $mobile);
+        }
+    }
+
+    &__swiper-pagination {
+        display: none;
+        gap: 1.2rem;
+        justify-content: center;
+        margin-top: 2rem;
+        z-index: 5;
+
+        @media screen and (max-width: $res620) {
+            display: flex;
+        }
+    }
+
+    &__swiper-bullet {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background: $darkDotInactive;
+
+        &--active {
+            background: $tomatoLight
+        }
+    }
+
+    &__swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__swiper-button-container {
+        position: absolute;
+        top: 60%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: $res620) {
+            display: none;
+        }
+    }
+
+    &__swiper-button {
+        cursor: pointer;
+        width: 4rem;
+        height: 7.4rem;
+        z-index: 15;
+
+        &:hover .brands__swiper-button-ico {
+            fill: $tomatoLight;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 1.6rem;
+            height: 3rem;
+        }
+
+        &-svg {
+            @include svgFlex;
+        }
+
+        &-ico {
+            transition: all 0.3s linear;
+            fill: $arrowInactive;
+        }
+    }
+
+    &__swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6.6rem;
+    }
+
+    &__swiper-img {
+        width: 100%;
+        height: auto;
+    }
+}

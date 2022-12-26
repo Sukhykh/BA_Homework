@@ -1,0 +1,199 @@
+.new {
+    @include sectionPadding;
+
+    &__container {
+        position: relative;
+        @include container(1320px, $desktop);
+
+        @media screen and (max-width: $tablet) {
+            @include container(754px, $tablet);
+        }
+
+        @media screen and (max-width: $mobile) {
+            @include container(300px, $mobile);
+        }
+    }
+
+    &__title {
+        @include h2;
+        color: $black;
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 4rem;
+        }
+    }
+
+    &__btn {
+        display: inline-flex;
+        padding: 1.5rem 5.7rem;
+        @include buttonText;
+        color: $black;
+        border: 2px solid $black;
+        text-decoration: none;
+
+        transition: all 0.3s linear;
+
+        @media screen and (max-width: $res900) {
+            padding: 1rem 2.6rem;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $tomatoLight;
+            background-color: $tomatoLight;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    &__swiper {
+        @include container(1200px, $desktop);
+
+        @media screen and (max-width: $tablet) {
+            @include container(704px, $tablet);
+        }
+
+        @media screen and (max-width: $mobile) {
+            @include container(299px, $mobile);
+        }
+    }
+
+    &__swiper-pagination {
+        display: none;
+        gap: 1.2rem;
+        justify-content: center;
+        margin-top: 2rem;
+        z-index: 5;
+
+        @media screen and (max-width: $res580) {
+            display: flex;
+        }
+    }
+
+    &__swiper-bullet {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background: $darkDotInactive;
+
+        &--active {
+            background: $tomatoLight
+        }
+    }
+
+    &__swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__swiper-slide-container {
+        position: relative;
+        padding: 2rem 1rem;
+    }
+
+    &__swiper-img-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    &__swiper-img {
+        @media screen and (max-width: $mobile) {
+            height: 37rem;
+            width: auto;
+        }
+    }
+
+    &__swiper-badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include badge;
+        color: $brownLight;
+        background-color: $tomatoLight;
+        padding: 0.4rem 0.6rem;
+    }
+
+    &__swiper-title {
+        @include prodName;
+        color: $black;
+        margin-top: 1.8rem;
+        text-align: center
+    }
+
+    &__swiper-cost {
+        @include price;
+        color: $black;
+        margin-top: 1rem;
+        text-align: center
+    }
+
+    &__swiper-button-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+
+        transform: translateY(-50%);
+
+        @media screen and (max-width: $res580) {
+            display: none;
+        }
+    }
+
+    &__swiper-button {
+        cursor: pointer;
+        width: 4rem;
+        height: 7.4rem;
+        z-index: 15;
+
+        &:hover .new__swiper-button-ico {
+            fill: $tomatoLight;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 1.6rem;
+            height: 3rem;
+        }
+
+        &-svg {
+            @include svgFlex;
+        }
+
+        &-ico {
+            transition: all 0.3s linear;
+            fill: $arrowInactive;
+        }
+    }
+}
+
+.sold {
+    & .new__swiper-slide-container {
+        border: 1px solid $tomatoLight;
+    }
+
+    & .new__swiper-badge {
+        background-color: $brownLight;
+        color: $black;
+        padding: 0.4rem 1.6rem;
+    }
+}

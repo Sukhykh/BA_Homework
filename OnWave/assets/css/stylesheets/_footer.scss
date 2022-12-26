@@ -1,0 +1,224 @@
+.footer {
+    background-color: $brownDark;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+
+    @media screen and (max-width: $tablet) {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    &__container {
+        @include container(1142px, $desktop);
+
+        @media screen and (max-width: $tablet) {
+            @include container(720px, $tablet);
+        }
+
+        @media screen and (max-width: $mobile) {
+            @include container(300px, $mobile);
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo-wrapper {
+        align-items: center;
+
+        &--mobile {
+            display: none;
+
+            @media screen and (max-width: $res700) {
+                display: flex;
+                margin-bottom: 4rem;
+            }
+        }
+
+        &--dasktop {
+            display: flex;
+
+            @media screen and (max-width: $res700) {
+                display: none;
+            }
+        }
+    }
+
+    &__logo {
+        width: 15rem;
+        height: 3rem;
+    }
+
+    &__logo-svg {
+        @include svgFlex;
+    }
+
+    &__logo-icon {
+        fill: $brownLight;
+    }
+
+    &__content-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-section {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+
+        @media screen and (max-width: $tablet) {
+            align-items: flex-start;
+            flex-direction: row;
+            gap: 12.6rem;
+        }
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        @include menu;
+        color: $brownLight;
+
+        transition: all 0.3s linear;
+
+        &:focus,
+        &:hover {
+            color: $tomatoLight;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    &__right-section {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: $res700) {
+            align-items: flex-end;
+        }
+    }
+
+    &__title {
+        @include footer;
+        color: $brownLight;
+
+        margin-bottom: 4.8rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 2.6rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__phone {
+        @include footer;
+        color: $brownLight;
+
+        margin-top: 3.2rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 2rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 2.5rem;
+        }
+    }
+
+    &__link-bar {
+        display: flex;
+        gap: 2rem;
+
+        @media screen and (max-width: $res900) {
+            gap: 1rem;
+        }
+    }
+
+    &__link {
+        width: 4rem;
+        height: 3rem;
+
+        @media screen and (max-width: $res900) {
+            width: 2.7rem;
+            height: 2rem;
+        }
+
+        transition: $transition;
+
+        &-svg {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        &-icon {
+            fill: $brownLight;
+            transition: $transition;
+
+
+            &--another {
+                transition: $transition;
+                stroke: $brownLight;
+                fill: transparent;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            & .footer__link-icon {
+                fill: $tomatoLight;
+            }
+
+            & .footer__link-icon--another {
+                stroke: $tomatoLight;
+            }
+        }
+
+        &:active {
+            & .footer__link-icon {
+                fill: $brownLight;
+            }
+
+            & .footer__link-icon--another {
+                stroke: $brownLight;
+            }
+
+            box-shadow: 0 0 1rem 1rem $tomatoLight;
+            background-color: $tomatoLight;
+            border-radius: 50%
+        }
+    }
+
+    &__copyright {
+        @include copy;
+        color: $brownLight;
+        margin-top: 5rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 4rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 5rem;
+        }
+    }
+}

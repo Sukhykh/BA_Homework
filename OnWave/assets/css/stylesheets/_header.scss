@@ -23,7 +23,6 @@
     }
 
     &__logo-wrapper {
-
         display: flex;
         align-items: center;
     }
@@ -60,13 +59,11 @@
     &__menu-list {
         display: flex;
         list-style: none;
-
     }
 
     &__menu-item {
         transform-style: preserve-3d;
         perspective: 50rem;
-
     }
 
     &__menu-link {
@@ -270,5 +267,6 @@
     left: 0;
     right: 0;
 
+    z-index: 5;
     background-color: $brownLight;
 }
