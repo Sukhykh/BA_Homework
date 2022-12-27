@@ -137,7 +137,7 @@ function showFilmDetails(event) {
 	console.log(selectedMovie.getAttribute('data-id'));
 
 	axios({
-		url: 'http://www.omdbapi.com/?apikey=79bad6da&',
+		url: 'https://www.omdbapi.com/?apikey=79bad6da&',
 		method: 'GET',
 		params: {
 			i: selectedMovie.getAttribute('data-id'),
