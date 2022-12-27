@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function getGeo(sity, father) {
 	axios({
-		url: 'http://api.openweathermap.org/geo/1.0/direct?',
+		url: 'https://api.openweathermap.org/geo/1.0/direct?',
 		method: 'GET',
 		params: {
 			q: sity,
