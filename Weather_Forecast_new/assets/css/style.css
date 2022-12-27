@@ -1,0 +1,150 @@
+html {
+
+    min-width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans Unicode';
+    color: white;
+    min-width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 25px;
+    margin: 60px 0 35px 0;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 35px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+h1 + span {
+    font-size: 27px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #3399CC;
+    border: 25px solid #2B81AC;
+}
+
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.content__tabble {
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+}
+
+li {
+    max-width: 25%;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    padding: 27px 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.content__tabble:hover li {
+    opacity: 0.5;
+}
+
+.content__tabble:hover li:hover {
+    opacity: 1;
+}
+
+p + p {
+    margin-top: 20px;
+    opacity: 0.7;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+p + span {
+    opacity: 0.7;
+    font-size: 35px;
+    vertical-align: bottom;
+}
+
+ul li:nth-child(1) {
+    max-width: 50%;
+    background: #3399CC;
+}
+
+ul li:nth-child(2) {
+    max-width: 25%;
+    background: #33CCCC;
+}
+
+ul li:nth-child(3) {
+    max-width: 25%;
+    background: #996699;
+}
+
+ul li:nth-child(4) {
+    max-width: 25%;
+    background: #C24747;
+}
+
+ul li:nth-child(5) {
+    max-width: 25%;
+    background: #E2674A;
+}
+
+ul li:nth-child(6) {
+    max-width: 25%;
+    background: #FFCC66;
+}
+
+ul li:nth-child(7) {
+    max-width: 25%;
+    background: #99CC99;
+}
+
+ul li:nth-child(8) {
+    max-width: 25%;
+    background: #669999;
+}
+
+ul li:nth-child(9) {
+    max-width: 50%;
+    background: #CC6699;
+}
+
+ul li:nth-child(10) {
+    max-width: 25%;
+    background: #339966;
+}
+
+ul li:nth-child(11) {
+    max-width: 100%;
+    background: #666699;
+}
+
+.btn {
+    margin-left: 50px;
+    cursor: pointer;
+
+}
