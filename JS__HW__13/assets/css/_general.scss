@@ -5,5 +5,367 @@
 }
 
 html {
+    font-family: 'Roboto', sans-serif;
     font-size: 10px;
+    background-color: $rockBlue;
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    &__container {
+        margin-inline: auto;
+        max-width: 80%;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__wrapper {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 120%;
+        color: $whisper;
+    }
+
+    &__btn-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    &__btn {
+        display: inline-flex;
+        background-color: $vanilla;
+        border: 2px solid $baliHai;
+        box-shadow: 0 0 2rem $baliHai;
+        border-radius: 1rem;
+
+        padding: 2rem 5rem;
+
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 120%;
+
+        text-transform: uppercase;
+        color: $baliHai;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover {
+            box-shadow: 0 0 5rem $whisper;
+            border-color: $whisper;
+            color: $whisper;
+        }
+
+        &:active {
+            box-shadow: 0 0 5rem $hippieBlue;
+            border-color: $hippieBlue;
+            color: $hippieBlue;
+        }
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: $vanilla;
+
+    &__container {
+        margin: 10rem;
+        padding: 2rem;
+
+        background-color: $rockBlue;
+        border: 2px solid $hippieBlue;
+        border-radius: 2rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    &__btn {
+        display: inline-flex;
+        background-color: $vanilla;
+        border: 2px solid $baliHai;
+        box-shadow: 0 0 2rem $baliHai;
+        border-radius: 1rem;
+
+        padding: 2rem 5rem;
+
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 120%;
+
+        text-transform: uppercase;
+        color: $baliHai;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover {
+            box-shadow: 0 0 5rem $hippieBlue;
+            border-color: $hippieBlue;
+            color: $hippieBlue;
+        }
+
+        &:active {
+            box-shadow: 0 0 5rem $whisper;
+            border-color: $whisper;
+            color: $whisper;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 120%;
+        color: $whisper;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+        color: $whisper;
+        text-align: center;
+    }
+
+    &__task {
+        width: 100%;
+        height: 100%;
+        background-color: $baliHai;
+
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px solid $hippieBlue;
+    }
+}
+
+.none {
+    display: none;
+}
+
+.first {
+    &__radius-input {
+        display: flex;
+        gap: 5rem;
+    }
+
+    &__radius-btn {
+        display: inline-flex;
+        background-color: $vanilla;
+        border: 2px solid $baliHai;
+        box-shadow: 0 0 2rem $baliHai;
+        border-radius: 1rem;
+
+        padding: 0.5rem 2rem;
+
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 120%;
+
+        text-transform: uppercase;
+        color: $baliHai;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover {
+            box-shadow: 0 0 5rem $hippieBlue;
+            border-color: $hippieBlue;
+            color: $hippieBlue;
+        }
+
+        &:active {
+            box-shadow: 0 0 5rem $whisper;
+            border-color: $whisper;
+            color: $whisper;
+        }
+
+    }
+
+    &__area {
+        background-color: unset;
+        border: unset;
+        border-bottom: 2px solid $hippieBlue;
+        resize: none;
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+        color: $whisper;
+
+        &::placeholder {
+            color: $whisper;
+            opacity: 0.7;
+        }
+    }
+
+    &__results {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 5rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+        color: $whisper;
+        color: #ee82ee;
+    }
+}
+
+.second {
+    &__title {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 120%;
+        color: $whisper;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__options {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__rechargeable-title {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 120%;
+        color: $whisper;
+
+    }
+
+    &__rechargeable-option {
+        display: flex;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        border: 2px solid $whisper;
+        margin-left: 1rem;
+        cursor: pointer;
+
+        &--select {
+            box-shadow: inset 0 0 5px 5px $whisper;
+        }
+    }
+
+    &__color-select {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &__new-color {
+        border-radius: 5px;
+        width: 3rem;
+        height: 3rem;
+        border: 2px solid $whisper;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__picked-color {
+        opacity: 1;
+        box-shadow: 0 0 1rem $whisper;
+    }
+
+    &__text-area {
+        margin-top: 2rem;
+        background-color: $whisper;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: unset;
+        resize: none;
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+
+        &::placeholder {
+            color: $baliHai;
+            opacity: 0.7;
+        }
+    }
+
+    &__text-title {
+        margin-top: 2rem;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 120%;
+        color: $whisper;
+        text-align: center;
+    }
+
+    &__text-output {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        background-color: $whisper;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+    }
+
+    &__text-inform {
+        margin-top: 2rem;
+        background-color: unset;
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+        color: $whisper;
+    }
+}
+
+.third {
+    &__table {
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+        color: $whisper;
+        border: 2px solid $whisper;
+        text-transform: uppercase;
+    }
+
+}
+
+th,
+td {
+    padding: 1rem;
+    border: 1px solid $whisper;
+    text-align: center;
+    vertical-align: middle;
 }

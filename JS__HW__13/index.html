@@ -5,14 +5,134 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Document</title>
+		<title>JS homework 13</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 
 	<body>
 		<header class="header"></header>
-		<main class="main"></main>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__wrapper">
+					<h1 class="main__title">JS homework 13</h1>
+					<div class="main__btn-bar">
+						<div class="main__btn" id="firstBtn">Circle</div>
+						<div class="main__btn" id="secondBtn">marker</div>
+						<div class="main__btn" id="thirdBtn">Employee</div>
+					</div>
+				</div>
+			</div>
+			<section class="modal first none" id="first">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<h2 class="modal__title">Перше завдання</h2>
+						<p class="modal__descr">
+							Реалізуй клас, що описує коло. У класі повинні бути
+							такі компоненти: поле, що зберігає радіус кола;
+							get-властивість, яке повертає радіус кола;
+							set-властивість, що встановлює радіус кола;
+							get-властивість, яке повертає діаметр кола; метод,
+							що обчислює площу кола; метод, що обчислює довжину
+							кола. Продемонструй роботу властивостей i методів.
+						</p>
+						<div class="modal__task">
+							<div class="first__radius-input">
+								<textarea
+									class="first__area"
+									name="redius"
+									id="redius"
+									rows="1"
+									placeholder="Введіть тут радіус кола"
+								></textarea>
+								<div class="first__radius-btn">розрахувати</div>
+							</div>
+							<div class="first__results"></div>
+						</div>
+						<div class="modal__btn" id="closeBtnFirst">
+							закрити
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="modal second none" id="second">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<h2 class="modal__title">Друге завдання</h2>
+						<p class="modal__descr">
+							Реалізуй клас, що описує канцелярський маркер. У
+							класі повинні бути такі компоненти: поле, яке
+							зберігає колір маркера; поле, яке зберігає кількість
+							чорнил у маркері (у відсотках); метод для вводу
+							(приймає рядок і виводить текст відповідним
+							кольором; текст виводиться доти, доки в маркері є
+							чорнило; один не пробільний символ — це 0,5 % чорнил
+							у маркері). Також реалізуй клас, що описує маркер,
+							який можна перезаправляти. Успадкуй цей клас від
+							простого маркера й додай метод для заправки.
+							Продемонструй роботу написаних методів.
+						</p>
+						<div class="modal__task">
+							<div class="second__title">
+								Вибери колір та тип маркера
+							</div>
+							<div class="second__options">
+								<div class="second__color-select"></div>
+								<div class="second__rechargeable-title">
+									Дозаправка:<span
+										class="second__rechargeable-option"
+									></span>
+								</div>
+							</div>
+							<textarea
+								class="second__text-area"
+								name="text"
+								id="text"
+								rows="3"
+								placeholder="Після вибору кольору почни вводити тут текст"
+							></textarea>
+							<div class="second__text-title">
+								Нижче з'явиться текст, написаний вибраним
+								маркером
+							</div>
+							<div class="second__text-output"></div>
+							<div class="second__text-inform"></div>
+						</div>
+						<div class="modal__btn" id="closeBtnSecond">
+							закрити
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="modal third" id="third">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<h2 class="modal__title">Друге завдання</h2>
+						<p class="modal__descr">
+							Реалізуй клас Employee, що описує працівника, і
+							створи масив працівників банку. Реалізуй клас
+							EmpTable для генерації HTML-коду таблиці зі списком
+							працівників банку. Масив працівників необхідно
+							передавати через конструктор, а отримувати HTML-код
+							за допомогою методу getHtml (). Створи об’єкт класу
+							EmpTable і виведи на екран результат роботи методу
+							getHtml ().
+						</p>
+						<div class="modal__task table-task"></div>
+						<div class="modal__btn" id="closeBtnThird">
+							закрити
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="footer"></footer>
 		<script src="assets/js/script.js"></script>
 	</body>
