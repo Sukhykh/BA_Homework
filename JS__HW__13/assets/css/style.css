@@ -1085,6 +1085,7 @@ html {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 120%;
+  white-space: break-spaces;
 }
 .second__text-inform {
   margin-top: 2rem;

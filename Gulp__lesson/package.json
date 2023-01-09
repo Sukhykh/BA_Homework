@@ -1,9 +1,12 @@
 {
   "name": "gulp__lesson",
   "version": "1.0.0",
+  "homepage": "https://github.com/Sukhykh/GulpLesson.git",
   "description": "lesson about gulp",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp",
     "prod": "gulp --prod"
@@ -16,6 +19,7 @@
     "babel-loader": "^9.1.0",
     "browser-sync": "^2.27.10",
     "del": "^7.0.0",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-fonter": "^0.3.0",
     "gulp-imagemin": "^8.0.0",
