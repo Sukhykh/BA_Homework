@@ -1,7 +1,7 @@
 {
   "name": "gulp__lesson",
   "version": "1.0.0",
-  "homepage": "https://github.com/Sukhykh/GulpLesson.git",
+  "homepage": "https://sukhykh.github.io/gulp-test/",  
   "description": "lesson about gulp",
   "main": "index.js",
   "scripts": {
