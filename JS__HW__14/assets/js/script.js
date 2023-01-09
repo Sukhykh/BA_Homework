@@ -290,6 +290,7 @@ addClockBtn.addEventListener('click', (event) => {
 					sityInfo[1]
 				);
 				oneMoreClock.setClock();
+				document.querySelector('.second__area').value = '';
 			})
 			.catch(() => {});
 	} else {
