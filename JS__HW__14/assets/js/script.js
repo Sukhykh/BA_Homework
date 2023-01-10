@@ -262,8 +262,7 @@ class Clock {
 	deleteClock(element) {
 		let changeData = element.parentElement.parentElement;
 		console.log(changeData);
-		changeData.innerHTML = '';
-		changeData.classList.add('none');
+		changeData.remove();
 	}
 }
 
@@ -282,15 +281,22 @@ addClockBtn.addEventListener('click', (event) => {
 			responseType: 'json',
 		})
 			.then((res) => {
-				let timeInfo = res.data.datetime.split(' ');
-				let sityInfo = res.data.timezone_location.split('/');
-				let oneMoreClock = new Clock(
-					timeInfo[1],
-					timeInfo[0],
-					sityInfo[1]
-				);
-				oneMoreClock.setClock();
-				document.querySelector('.second__area').value = '';
+				let testString = JSON.stringify(res.data);
+				console.log(testString.length);
+				if (testString.length !== 2) {
+					let timeInfo = res.data.datetime.split(' ');
+					let sityInfo = res.data.timezone_location.split('/');
+					let oneMoreClock = new Clock(
+						timeInfo[1],
+						timeInfo[0],
+						sityInfo[1]
+					);
+					oneMoreClock.setClock();
+					document.querySelector('.second__area').value = '';
+				} else {
+					document.querySelector('.second__errors').innerHTML =
+						'Локацію не знайдено!';
+				}
 			})
 			.catch(() => {});
 	} else {
